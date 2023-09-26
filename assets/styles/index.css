@@ -21,7 +21,6 @@
     background-position: center;
 }
 
-
 section.banner div h1 {
     font-size: 3.2rem;
     font-weight: 700;
@@ -64,3 +63,42 @@ section.banner div a:hover {
 }
 
 /*Products*/
+
+section.products-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+/*review*/
+
+section.review-grid {
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.review {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}

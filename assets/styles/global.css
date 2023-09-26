@@ -1,57 +1,19 @@
 @charset "utf-8";
 @import url("../resets/reset.css");
 
-/* ----------------------------- Color palette ----------------------------- */
-/*
-    Color palette 
-    https://colorhunt.co/palette/f0f0f02135554f709ce5d283
-
-    Light Colors
-    #050315 -> Black -> Text
-    #F0F0F0 -> Grey -> Background
-    #4F709C -> Blue -> Primary
-    #E5D283 -> Yellow -> Secondary
-    #213555 -> Dark Blue -> Accent
-
-    Realtime Colors (Light)
-    https://www.realtimecolors.com/?colors=050315-F0F0F0-4F709C-E5D283-213555
-
-    Dark Colors
-    #ebe9fc -> White -> Text
-    #0f0f0f -> Black -> Background
-    #6385b0 -> Blue -> Primary
-    #7a671a -> Yellow -> Secondary
-    #abbede -> Light Blue -> Accent
-
-    Realtime Colors (Dark)
-    https://www.realtimecolors.com/?colors=eae9fc-0f0f0f-6385b0-7a671a-abbdde
-*/
-
-/* ----------------------------- Google Fonts ----------------------------- */
-
-/* 
-    Nunito Sans
-    https://fonts.google.com/specimen/Nunito+Sans
-*/
-
-/* ------------------------- CSS custom properties ------------------------- */
-
-
 :root {
     --app-color-primary: #F0F0F0;
-    --app-color-secondary: #1B3254;
+    --app-color-secondary: #182D4C;
     --app-color-tertiary: #4E709D;
-    --app-color-quaternary: #fff7d8;
+    --app-color-quaternary: #fffcf0;
     --app-color-hover: #b8c7df;
     --color-white: #FFFFFF;
     --color-black: #000000;
 }
 
-/* ----------------------- GLOBAL STRUCTURE : HEADER ----------------------- */
+/* GLOBAL STRUCTURE : HEADER */
 
 header {
-    color: var(--app-light-header-color);
-    background-color: var(--app-light-color-primary);
     height: 6.4rem;
     width: 100%;
     display: flex;
@@ -59,6 +21,7 @@ header {
     align-items: center;
     background-color: var(--app-color-secondary);
     color: var(--color-white);
+    box-shadow: var(--app-color-secondary) 0 0 1px 1px;
 }
 
 header h1 {
@@ -67,25 +30,23 @@ header h1 {
 }
 
 header nav {
-    text-align: right;
+    display: flex;
+    align-items: center;
 }
 
 header nav ul {
-    list-style-type: none;
-    font-size: 0;
+    display: flex;
+    list-style: none;
 }
 
 header nav ul li {
-    display: inline;
-    line-height: 6.4rem;
+    margin-left: 1.6rem;
 }
 
 header nav ul li a {
-    display: inline-block;
-    padding: 0 1.6rem;
     font-size: 1.6rem;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out;
+    font-weight: 700;
+    color: var(--color-white);
 }
 
 header nav ul li a:last-child {
@@ -93,9 +54,8 @@ header nav ul li a:last-child {
 }
 
 header nav ul li a:hover {
-    text-shadow: 1 1 1px #00000025;
-    transition: all 0.2s ease-in-out;
-    background-color: var(--app-light-color-accent);
+    color: var(--app-color-hover);
+    text-shadow: 1 1 1px #000;
 }
 
 .nav-form, .nav-form input {
@@ -107,15 +67,15 @@ header nav ul li a:hover {
     border: none;
     border-radius: 0.4rem;
     outline: none;
-    background: var(--app-light-color-accent);
+    background: #142641;
 }
 
 .nav-form input {
     width: 100%;
     height: 100%;
-    color: var(--app-dark-text-color);
+    color: var(--color-white);
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .nav-form i {
@@ -131,29 +91,29 @@ header nav ul li a:hover {
     text-shadow: 1 1 1px #000;
 }
 
-/* ------------------------ GLOBAL STRUCTURE : MAIN ------------------------ */
+/* GLOBAL STRUCTURE : MAIN */
 
 main {
-    color: var(--app-light-text-color);
-    background-color: var(--app-light-background-color);
-    min-height: 100dvh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1.6rem 3.2rem;
+    background-color: var(--app-color-quaternary);
+    color: var(--app-color-secondary);
 }	
 
-/* ----------------------- GLOBAL STRUCTURE : FOOTER ----------------------- */
+/* GLOBAL STRUCTURE : FOOTER */
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1.6rem 3.2rem;
-    color: var(--app-light-header-color);
-    background-color: var(--app-light-color-primary);
+    background-color: var(--app-color-tertiary);
+    color: var(--color-white);
 }	
 
 footer p {
@@ -164,6 +124,7 @@ footer p {
 footer a {
     font-size: 1.6rem;
     font-weight: 700;
+    color: var(--color-white);
 }
 
 footer i {
@@ -177,14 +138,14 @@ footer i {
     text-align: center;
     align-items: center;
     justify-content: center;
-    box-shadow: #00000025 1px 1px 1px 1px;
-    transition: all 0.2s ease-in-out;
+    color: var(--color-white);
+    box-shadow: #000 1px 1px 1px 1px;
 }
 
 footer i:hover {
+    color: var(--color-black);
     text-shadow: 1 1 1px #000;
-    background-color: var(--app-light-color-accent);
-    transition: all 0.2s ease-in-out;
+    background-color: var(--color-white);
 }
 
 
