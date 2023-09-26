@@ -59,7 +59,7 @@ section.banner div a:hover {
     background: var(--app-var-bn-hover);
     color: var(--app-var-background-color);
     text-shadow: 1px 1px 1px #000;
-    transition: all 1s ease;
+    transition: all 0.3s ease;
 }
 
 /*Products*/
