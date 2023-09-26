@@ -18,34 +18,33 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./assets/resets/reset.css" />
-    <link rel="stylesheet" href="./assets/styles/landpage.css" />
+    <link rel="stylesheet" href="./assets/styles/global.css" />
     <title>EduPath About us</title>
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="logo">
-          <img src="images/logo.png" alt="logo" />
-          <h1>EduPath</h1>
+        <div class="container container--flex">
+          <div class="logo container--flex">
+            <img src="images/logo.png" alt="logo" />
+            <h1>EduPath</h1>
+          </div>
+          <div class="nav-search container--flex">
+            <form class="nav-form">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search" />
+            </form>
+            <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="nav-search">
-          <form>
-            <i></i>
-            <input type="text" placeholder="Search" />
-            <input type="submit" value="Search" />
-          </form>
-          <nav>
-            <ul>
-              <li><a href="landpage.html">Home</a></li>
-              <li><a href="products.html">Products</a></li>
-              <li><a href="about-us.html">About Us</a></li>
-              <li><a href="contact-us.html">Contact Us</a></li>
-              <li><a href="login.html">Login</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+      </header>
     <main>
         <div class="container">
             <section class="container about-us-section">
@@ -85,17 +84,17 @@
         </div>
     </main>
     <footer>
-      <div class="container">
-        <div class="ft-links">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-github"></i></a>
+        <div class="container container--flex">
+            <div class="ft-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="ft-copyright">
+                <p>© 2023 EduPath. All rights reserved.</p>
+            </div>
         </div>
-        <div class="ft-copyright">
-          <p>© 2023 EduPath. All rights reserved.</p>
-        </div>
-      </div>
     </footer>
   </body>
 </html>

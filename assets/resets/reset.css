@@ -28,6 +28,11 @@ body {
    -moz-osx-font-smoothing: grayscale;
 }
 
+main {
+  height: 100%;
+  width: 100%;
+}
+
 h1, h2, h3, h4 {
   text-wrap: balance;
 }
@@ -51,6 +56,10 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+}
+
+a:visited {
+  color: inherit;
 }
 
 img, picture, video, canvas, svg {
@@ -80,4 +89,16 @@ input[type=reset], button, a {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+.container {
+  width: min(100% - 250px, 1080px);
+  margin: 0 auto;
+}
+
+.container--flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }

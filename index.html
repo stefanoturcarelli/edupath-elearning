@@ -19,24 +19,24 @@
     />
     <link rel="stylesheet" href="./assets/resets/reset.css" />
     <link rel="stylesheet" href="./assets/styles/index.css" />
+    <link rel="stylesheet" href="./assets/styles/global.css" />
     <title>EduPath</title>
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="logo">
+      <div class="container container--flex">
+        <div class="logo container--flex">
           <img src="images/logo.png" alt="logo" />
           <h1>EduPath</h1>
         </div>
-        <div class="nav-search">
-          <form>
-            <i></i>
-            <input type="text" placeholder="Search" />
-            <input type="submit" value="Search" />
-          </form>
+        <div class="nav-search container--flex">
+            <form class="nav-form">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search" />
+            </form>
           <nav>
             <ul>
-              <li><a href="landpage.html">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="products.html">Products</a></li>
               <li><a href="about-us.html">About Us</a></li>
               <li><a href="contact-us.html">Contact Us</a></li>
@@ -46,56 +46,57 @@
         </div>
       </div>
     </header>
-    <main class="container">
-      <section class="banner">
-        <h1>Expand</h1>
-        <h2>
-          Discover Your Future with EduPath! Explore our diverse online courses
-          and start your learning journey today. Join us, where the world of
-          knowledge awaits you!”
-        </h2>
-        <a href="login.html">Get started</a>
-      </section>
-      <section class="container products-grid">
-        <h1>Products</h1>
-        <div class="product">
-          <img src="images/product-1.png" alt="product" />
-          <p>star value</p>
-          <i class="fas fa-star"></i>
-          <h2>Product 1</h2>
-          <p>$ 49,90</p>
-          <button>Buy</button>
-        </div>
-        <div class="product">
-          <img src="images/product-2.png" alt="product" />
-          <p>star value</p>
-          <i class="fas fa-star"></i>
-          <h2>Product 2</h2>
+    <main>
+        <div class="container">
+            <section class="banner">
+                <h1>Expand</h1>
+                <h2>
+                    Discover Your Future with EduPath! Explore our diverse online courses
+                    and start your learning journey today. Join us, where the world of
+                    knowledge awaits you!”
+                </h2>
+                <a href="login.html">Get started</a>
+            </section>
+            <section class="container products-grid">
+                <h1>Products</h1>
+                <div class="product">
+                    <img src="images/product-1.png" alt="product" />
+                    <p>star value</p>
+                    <i class="fas fa-star"></i>
+                    <h2>Product 1</h2>
+                    <p>$ 49,90</p>
+                    <button>Buy</button>
+                </div>
+                <div class="product">
+                    <img src="images/product-2.png" alt="product" />
+                    <p>star value</p>
+                    <i class="fas fa-star"></i>
+                    <h2>Product 2</h2>
           <p>$ 39,90</p>
             <button>Buy</button>
         </div>
         <div class="product">
-          <img src="images/product-3.png" alt="product" />
-          <p>star value</p>
-          <i class="fas fa-star"></i>
-          <h2>Product 3</h2>
-          <p>$ 99,90</p>
+            <img src="images/product-3.png" alt="product" />
+            <p>star value</p>
+            <i class="fas fa-star"></i>
+            <h2>Product 3</h2>
+            <p>$ 99,90</p>
             <button>Buy</button>
         </div>
         <div class="product">
-          <img src="images/product-4.png" alt="product" />
-          <p>star value</p>
-          <i class="fas fa-star"></i>
-          <h2>Product 4</h2>
-          <p>$ 35,00</p>
+            <img src="images/product-4.png" alt="product" />
+            <p>star value</p>
+            <i class="fas fa-star"></i>
+            <h2>Product 4</h2>
+            <p>$ 35,00</p>
             <button>Buy</button>
         </div>
         <div class="product">
-          <img src="images/product-5.png" alt="product" />
-          <p>star value</p>
-          <i class="fas fa-star"></i>
-          <h2>Product 5</h2>
-          <p>$ 84</p>
+            <img src="images/product-5.png" alt="product" />
+            <p>star value</p>
+            <i class="fas fa-star"></i>
+            <h2>Product 5</h2>
+            <p>$ 84</p>
             <button>Buy</button>
         </div>
         <div class="product">
@@ -104,14 +105,14 @@
           <i class="fas fa-star"></i>
           <h2>Product 6</h2>
           <p>$ 100.00</p>
-            <button>Buy</button>
+          <button>Buy</button>
         </div>
         <div class="product">
-          <img src="images/product-7.png" alt="product" />
-          <p>star value</p>
-          <i class="fas fa-star"></i>
-          <h2>Product 7</h2>
-          <p>$ 100.00</p>
+            <img src="images/product-7.png" alt="product" />
+            <p>star value</p>
+            <i class="fas fa-star"></i>
+            <h2>Product 7</h2>
+            <p>$ 100.00</p>
             <button>Buy</button>
         </div>
         <div class="product">
@@ -120,15 +121,15 @@
           <i class="fas fa-star"></i>
           <h2>Product 8</h2>
           <p>$ 100.00</p>
-            <button>Buy</button>
+          <button>Buy</button>
         </div>
-      </section>
-      <section class="container review-grid">
+    </section>
+    <section class="container review-grid">
         <h1>Reviews</h1>
         <p>Lore</p>
         <div class="review">
-          <img src="images/review-1.png" alt="review" />
-          <h2>Review 1</h2>
+            <img src="images/review-1.png" alt="review" />
+            <h2>Review 1</h2>
           <p>Lore</p>
           <div class="rating">
             <p>star value</p>
@@ -137,50 +138,52 @@
             <i class="far fa-star"></i>
             <i class="far fa-star"></i>
             <i class="far fa-star"></i>
-          </div>
         </div>
-        <div class="review">
+    </div>
+    <div class="review">
           <img src="images/review-2.png" alt="review" />
           <h2>Review 2</h2>
           <p>Lore</p>
           <div class="rating">
-            <p>star value</p>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
+              <p>star value</p>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
           </div>
         </div>
         <div class="review">
-          <img src="images/review-3.png" alt="review" />
-          <h2>Review 3</h2>
-          <p>Lore</p>
-          <div class="rating">
-            <p>star value</p>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
+            <img src="images/review-3.png" alt="review" />
+            <h2>Review 3</h2>
+            <p>Lore</p>
+            <div class="rating">
+                <p>star value</p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
         </div>
         <div class="review">
-          <img src="images/review-4.png" alt="review" />
-          <h2>Review 4</h2>
-          <p>Lore</p>
-          <div class="rating">
-            <p>star value</p>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-      </section>
+            <img src="images/review-4.png" alt="review" />
+            <h2>Review 4</h2>
+            <p>Lore</p>
+            <div class="rating">
+                <p>star value</p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+        </section>
+    </div>
+</div>
     </main>
     <footer>
-        <div class="container">
+        <div class="container container--flex">
             <div class="ft-links">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
