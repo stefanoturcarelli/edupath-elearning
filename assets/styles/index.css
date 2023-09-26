@@ -1,10 +1,104 @@
 :root {
     --app-var-background-color: #fff;
     --app-var-primary-color: #2f27ce;
+    --app-var-bn-hover: #3d3a9c;
 }
-
 
 /* 
     URL with the colors
     https://www.realtimecolors.com/?colors=050315-fbfbfe-2f27ce-dedcff-433bff
 */
+
+/*HERO BANNER DESIGN*/
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--app-var-primary-color);
+    color: var(--app-var-background-color);
+    background-image: url(../media/images/coding-19.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+section.banner div h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 4rem;
+}
+
+section.banner div p {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+section.banner div a {
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    margin: 0 auto;
+    padding: 1rem 3.2rem;
+    border: none;
+    border-radius: 0.4rem;
+    outline: none;
+    background: var(--app-var-background-color);
+    color: var(--app-var-primary-color);
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+section.banner div a:hover {
+    background: var(--app-var-bn-hover);
+    color: var(--app-var-background-color);
+    text-shadow: 1px 1px 1px #000;
+    transition: all 1s ease;
+}
+
+/*Products*/
+
+section.products-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+/*review*/
+
+section.review-grid {
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.review {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
