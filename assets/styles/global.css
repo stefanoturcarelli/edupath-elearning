@@ -130,7 +130,7 @@ header {
 /* --------------------------------- MAIN --------------------------------- */
 
 main {
-    min-height: 100dvh;
+    /* min-height: 100dvh; */
     width: 100%;
     padding: 1.6rem 3.2rem;
     background-color: var(--app-color-quaternary);
