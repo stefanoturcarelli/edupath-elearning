@@ -38,6 +38,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+section {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
 /* -------------------------------- HEADER -------------------------------- */
 
 header {
