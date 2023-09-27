@@ -1,63 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Marcelo Lopes" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./assets/resets/reset.css" />
-    <link rel="stylesheet" href="./assets/styles/index.css" />
-    <link rel="stylesheet" href="./assets/styles/global.css" />
-    <title>EduPath</title>
-  </head>
-  <body>
-    <header>
-      <div class="container container--flex">
-        <div class="logo container--flex">
-          <img src="images/logo.png" alt="logo" />
-          <h1>Edu-Path</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Marcelo Lopes" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/resets/reset.css" />
+  <link rel="stylesheet" href="./assets/styles/global.css" />
+  <link rel="stylesheet" href="./assets/styles/index.css" />
+  <title>EduPath</title>
+</head>
+
+<body>
+
+
+
+
+  <header>
+    <div class="container ">
+      <div class="flex-container-header">
+        <div class="logo">
+          <h1>EduPath</h1>
         </div>
-        <div class="nav-search container--flex">
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="products.html">Products</a></li>
-              <li><a href="about-us.html">About Us</a></li>
-              <li><a href="contact-us.html">Contact Us</a></li>
-              <li><a href="login.html">Login</a></li>
-            </ul>
-          </nav>
-          <form class="nav-form">
-            <i class="fas fa-search"></i>
-            <input type="text" placeholder="Search" />
-          </form>
+        <div class="nav-bar">
+          <ul>
+            <!-- <li><a href="index.html">Home</a></li> -->
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li class="search-bar">
+              <input class="search" type="text" placeholder="Search">
+            </li>
+          </ul>
+        </div>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
         </div>
       </div>
-    </header>
-    <section class="banner">
-      <div class="container">
-        <h1>Expand</h1>
-        <p>
-          Discover Your Future with EduPath! Explore our diverse online
-          courses and start your learning journey today. Join us, where the
-          world of knowledge awaits you!
-        </p>
-        <a href="login.html">Get started</a>
-      </div>
-    </section>
-    <main>
+    </div>
+
+
+
+    <div class="hero-banner">
+      <h1>Expand</h1>
+      <p>
+        Explore our diverse online
+        courses and start your learning journey today.
+      </p>
+      <a href="login.html">Get started</a>
+    </div>
+
+
+
+  </header>
+
+
+
+
+  <main>
+    <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div class="container">
         <h1>Products</h1>
         <section class="container products-grid">
@@ -182,21 +205,26 @@
           </div>
         </section>
       </div>
-    </main>
-    <footer>
-      <div class="container container--flex">
-        <div class="ft-links">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </main>
+
+
+
+  <footer>
+    <div class="container">
+      <div class="flex-container">
+        <div>
+          <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-github"></i></a>
         </div>
-        <div class="ft-copyright">
-          <p>© 2023 EduPath. All rights reserved.</p>
+        <div>
+          <p>&copy; 2023 EduPath</p>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
-
-
