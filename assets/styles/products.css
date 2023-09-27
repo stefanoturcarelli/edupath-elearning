@@ -3,6 +3,7 @@
     --app-var-primary-color: #2f27ce;
     --app-var-bn-hover: #3d3a9c;
     --app-var-star-color: #f1c40f;
+    --app-var-hover-product-bg-color: #f5f5f5;
 }
 
 /*Products*/
@@ -31,6 +32,14 @@ section.products-grid {
     border-radius: 0.5rem;
 }
 
+.product:hover {
+    box-shadow: #000 0px 0px 1px 0px;
+    transform: scale(1.02);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    background-color: var(--app-var-hover-product-bg-color);
+}
+
 img {
     width: 100%;
     height: auto;
@@ -48,6 +57,7 @@ div button {
     outline: none;
     background: var(--app-var-background-color);
     color: var(--app-var-primary-color);
+    box-shadow: #000 0px 0px 1px 0px;
     font-size: 1.6rem;
     font-weight: 700;
     text-align: center;
