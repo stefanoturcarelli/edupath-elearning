@@ -44,7 +44,7 @@ header {
     background-color: var(--app-color-secondary);
     color: var(--color-white);
     overflow: hidden;
-    height: calc(100vh - 6.4rem);
+    /* height: calc(100vh - 6.4rem); */
 }
 
 .flex-container-header {
