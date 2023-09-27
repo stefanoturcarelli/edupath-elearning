@@ -72,11 +72,6 @@ div button:hover {
     transition: all 0.3s ease;
 }
 
-h1 {
-    font-size: 5rem;
-    font-weight: 700;
-    position: relative;
-}
 
 div h3 {
     align-items: left;

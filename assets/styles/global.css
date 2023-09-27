@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import url("../resets/reset.css");
 
 :root {
     --app-color-primary: #F0F0F0;
@@ -9,112 +8,210 @@
     --app-color-hover: #b8c7df;
     --color-white: #FFFFFF;
     --color-black: #000000;
+    --app-var-background-color: #fff;
+    --app-var-primary-color: #2f27ce;
+    --app-var-bn-hover: #3d3a9c;
 }
 
-/* GLOBAL STRUCTURE : HEADER */
+/* -------------------------------- GLOBAL -------------------------------- */
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin: 0 auto;
+}
+
+
+.flex-container, .container--flex {
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+/* -------------------------------- HEADER -------------------------------- */
 
 header {
-    height: 6.4rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: var(--app-color-secondary);
     color: var(--color-white);
-    box-shadow: var(--app-color-secondary) 0 0 1px 1px;
+    overflow: hidden;
+    /* height: calc(100vh - 6.4rem); */
 }
 
-header h1 {
-    font-size: 2.4rem;
-    font-weight: 700;
-}
-
-header nav {
+.flex-container-header {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
+    padding: 1.6rem 3.2rem;
 }
 
-header nav ul {
+.logo {
+    flex: 1;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo:hover {
+    color: var(--app-color-hover);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-bar {
+    flex: 1;
+    text-align: left;
+    font-weight: 500;
+}
+
+.nav-bar ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2.4rem;
+    align-items: center;
     list-style: none;
 }
 
-header nav ul li {
-    margin-left: 1.6rem;
-}
-
-header nav ul li a {
-    font-size: 1.6rem;
-    font-weight: 700;
+.nav-bar ul li a {
     color: var(--color-white);
+    transition: all 0.3s ease-in-out;
 }
 
-header nav ul li a:last-child {
-    margin-right: 1.6rem;
-}
-
-header nav ul li a:hover {
+.nav-bar ul li a:hover {
     color: var(--app-color-hover);
-    text-shadow: 1 1 1px #000;
+    transition: all 0.3s ease-in-out;
 }
 
-.nav-form, .nav-form input {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    padding: 0 1.6rem;
-    height: 3rem;
+.search-bar {
+    flex: 1;
+    text-align: right;
+    margin-left: 2.4rem;
+}
+
+.search-bar input[type="text"] {
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.7rem;
     border: none;
-    border-radius: 0.4rem;
     outline: none;
-    background: #142641;
-}
-
-.nav-form input {
-    width: 100%;
-    height: 100%;
-    color: var(--color-white);
     font-size: 1.6rem;
-    font-weight: 700;
-}
-
-.nav-form i {
-    margin-right: 1.6rem;
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--color-white);
-    cursor: pointer;
-}
-
-.nav-form i:hover {
-    color: var(--app-color-hover);
-    text-shadow: 1 1 1px #000;
-}
-
-/* GLOBAL STRUCTURE : MAIN */
-
-main {
-    min-height: 100vh;
+    font-weight: 500;
     width: 100%;
+    color: var(--color-white);
+    padding-left: 4rem;
+    background: url(../img/search.png) no-repeat scroll 1rem 1rem var(--app-color-tertiary);
+    background-size: 2rem;
+    border: 1px solid var(--app-color-tertiary);
+    transition: all 0.3s ease-in-out;
+}
+
+.search-bar input[type="text"]:focus {
+    border: 1px solid var(--app-color-hover);
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* ------------------------------ HERO BANNER ------------------------------ */
+
+.hero-banner {
+    background-color: var(--app-color-secondary);
+    background-image: url(../img/index.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #fff;
+    padding: 20rem 0;
+    position: relative;
+    height: 100%;
+}
+
+.hero-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.575);
+    z-index: 1;
+}
+
+.hero-banner h1 {
+    font-size: 4.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.6rem;
+    color: #fff;
+    z-index: 2;
+}
+
+.hero-banner p {
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    margin-bottom: 1.6rem;
+}
+
+.hero-banner a {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1.6rem;
+    color: #fff;
+    z-index: 2;
+    background-color: #182D4C;
+    padding: 1rem 3.2rem;
+    border-radius: 0.7rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-banner a:hover {
+    background-color: var(--app-color-hover);
+    transition: all 0.3s ease-in-out;
+    color: var(--app-color-secondary);
+}
+
+/* --------------------------------- MAIN --------------------------------- */
+
+main {
+    min-height: 100dvh;
+    width: 100%;
     padding: 1.6rem 3.2rem;
     background-color: var(--app-color-quaternary);
     color: var(--app-color-secondary);
-}	
+}
 
-/* GLOBAL STRUCTURE : FOOTER */
+
+
+/* -------------------------------- FOOTER -------------------------------- */
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 1.6rem 3.2rem;
     background-color: var(--app-color-tertiary);
     color: var(--color-white);
-}	
+}
 
 footer p {
     font-size: 1.6rem;
@@ -140,12 +237,14 @@ footer i {
     justify-content: center;
     color: var(--color-white);
     box-shadow: #000 1px 1px 1px 1px;
+    transition: all 0.3s ease-in-out;
 }
 
 footer i:hover {
     color: var(--color-black);
     text-shadow: 1 1 1px #000;
     background-color: var(--color-white);
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -198,3 +297,145 @@ footer i:hover {
     color: var(--app-color-hover);
     text-shadow: 1 1 1px #000;
 } */
+
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    overflow-wrap: break-word;
+}
+
+ul[role=list],
+ol[role=list] {
+    list-style: none;
+}
+
+a,
+i,
+figure,
+img,
+button,
+input[type=button],
+input[type=submit] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:visited {
+    color: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+    border-style: none;
+    outline-style: none;
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset],
+button,
+a {
+    cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+/* ----------------------------- INDEX.html ----------------------------- */
+
+
+/*Products*/
+
+section.products-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+/*review*/
+
+section.review-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.review {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+/* --------------------------------- MEDIA --------------------------------- */
+
+
+@media screen and (max-width: 1050px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
