@@ -1,0 +1,40 @@
+@media all and (min-width: 768px) {
+	.dropdown-container {
+		display: none;
+	}
+}
+@media all and (max-width: 768px) {
+	.nav-search nav {
+		display: none;
+	}
+}
+
+@media all and (max-width: 640px) {
+	header .nav-search {
+		flex-grow: 0;
+	}
+	.product .product-container {
+		max-width: 100%;
+		width: 100%;
+	}
+	.product {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+@media all and (max-width: 501px) {
+	.logo h2 {
+		display: none;
+	}
+	.products-container {
+		grid-template-columns: 1fr;
+	}
+}
+@media all and (max-width: 400px) {
+	footer .container {
+		justify-content: center;
+	}
+	header .nav-form {
+		display: none;
+	}
+}

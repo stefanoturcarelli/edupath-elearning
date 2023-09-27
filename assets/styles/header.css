@@ -1,0 +1,205 @@
+@font-face {
+	font-family: SpaceGrotesk;
+	src: url("../font/SpaceGrotesk.ttf");
+}
+:root {
+	/* Light colors */
+	--app-light-text-color: #050315;
+	--app-light-background-color: #f0f0f0;
+	--app-light-color-primary: #4f709c;
+	--app-light-color-secondary: #e5d283;
+	--app-light-color-accent: #213555;
+	--app-light-header-color: #ebe9fc;
+	/* Dark colors */
+	--app-dark-text-color: #ebe9fc;
+	--app-dark-background-color: #0f0f0f;
+	--app-dark-color-primary: #6385b0;
+	--app-dark-color-secondary: #7a671a;
+	--app-dark-color-accent: #abbede;
+	--white: #fff;
+}
+*:not(i) {
+	font-family: SpaceGrotesk;
+}
+body {
+	min-height: 100vh;
+	min-height: 100dvh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+body main {
+	flex-grow: 1;
+}
+header {
+	background-color: var(--app-light-color-primary);
+	color: var(--white);
+	padding: 0.7rem 1rem;
+}
+header .container {
+	display: flex;
+	max-width: 1024px;
+	margin-inline: auto;
+	justify-content: space-between;
+}
+header .logo {
+	display: flex;
+	align-items: center;
+	width: 3rem;
+	gap: 5px;
+}
+header .nav-search {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-grow: 0.2;
+	justify-content: space-between;
+	gap: 1rem;
+}
+nav ul {
+	display: flex;
+	align-items: center;
+}
+nav ul a {
+	font-size: 0.8rem;
+	transition: 300ms ease-in;
+	background-color: transparent;
+	padding: 10px;
+	border-radius: 3px;
+	display: flex;
+}
+img,
+.img-fluid {
+	height: auto;
+	max-width: 100%;
+}
+nav ul a:hover {
+	background-color: var(--app-light-color-accent);
+}
+header .nav-form {
+	position: relative;
+}
+header .nav-form i {
+	position: absolute;
+	top: 50%;
+	translate: 0 -50%;
+	left: 0.5rem;
+	color: rgb(255 255 255 / 0.5);
+}
+header .nav-form .form-control {
+	min-height: 2.6rem;
+	border-radius: 5px;
+	padding-inline: 2rem;
+	font-size: 0.9rem;
+	background-color: var(--app-light-color-accent);
+	display: flex;
+	align-items: center;
+	caret-color: var(--white);
+}
+header .nav-form .form-control::placeholder {
+	font-size: 0.8rem;
+	color: rgba(255 255 255 / 0.8);
+}
+header .dropdown-container {
+	position: relative;
+}
+header .dropdown {
+	position: absolute;
+	top: 100%;
+	background-color: #fff;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	width: 200px;
+	right: 0;
+	border-radius: 4px;
+	padding: 5px;
+	translate: 0 8px;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: 300ms ease;
+}
+header .dropdown a {
+	display: block;
+	color: var(--app-dark-background-color);
+	font-size: 0.8rem;
+	padding: 8px 10px;
+	border-radius: 4px;
+	transition: 300ms ease-in-out;
+}
+header .dropdown-container .menu-button {
+	background-color: transparent;
+	border-radius: 50%;
+	padding: 8px;
+	cursor: pointer;
+}
+header .menu-button svg {
+	--size: 1.4rem;
+	height: var(--size);
+	width: var(--size);
+}
+header .dropdown-container .menu-button:hover {
+	background-color: var(--app-light-color-accent);
+}
+header .dropdown-container:hover .dropdown {
+	translate: 0 0;
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}
+header .dropdown a:hover {
+	background-color: var(--app-dark-color-primary);
+	color: var(--white);
+}
+main {
+	padding: 0 1rem;
+}
+
+/* products */
+main .container {
+	margin-top: 5rem;
+}
+main .get-started {
+	margin-top: 2rem;
+}
+main .get-started a {
+	background-color: var(--app-dark-color-primary);
+	padding: 0.7rem 1rem;
+	display: flex;
+	width: max-content;
+	border-radius: 3px;
+	color: var(--white);
+}
+main .get-started a:hover {
+	background-color: var(--app-light-color-primary);
+}
+.products-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 3rem 2.5rem;
+	margin-top: 3rem;
+}
+
+.product {
+	display: flex;
+	align-items: center;
+	gap: 1rem 2rem;
+}
+.product .product-container {
+	aspect-ratio: 16 / 11;
+	overflow: hidden;
+	border-radius: 6px;
+	max-width: 15rem;
+	width: 100%;
+}
+.product .product-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.product-detail button {
+	padding: 0.6rem 1.8rem;
+	margin-top: 1rem;
+	font-size: 0.9rem;
+	font-size: 500;
+	border-radius: 4px;
+}

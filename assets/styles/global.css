@@ -1,0 +1,221 @@
+@charset "utf-8";
+@import url("../resets/reset.css");
+
+/* ----------------------------- Color palette ----------------------------- */
+/*
+    Color palette 
+    https://colorhunt.co/palette/f0f0f02135554f709ce5d283
+
+    Light Colors
+    #050315 -> Black -> Text
+    #F0F0F0 -> Grey -> Background
+    #4F709C -> Blue -> Primary
+    #E5D283 -> Yellow -> Secondary
+    #213555 -> Dark Blue -> Accent
+
+    Realtime Colors (Light)
+    https://www.realtimecolors.com/?colors=050315-F0F0F0-4F709C-E5D283-213555
+
+    Dark Colors
+    #ebe9fc -> White -> Text
+    #0f0f0f -> Black -> Background
+    #6385b0 -> Blue -> Primary
+    #7a671a -> Yellow -> Secondary
+    #abbede -> Light Blue -> Accent
+
+    Realtime Colors (Dark)
+    https://www.realtimecolors.com/?colors=eae9fc-0f0f0f-6385b0-7a671a-abbdde
+*/
+
+/* ----------------------------- Google Fonts ----------------------------- */
+
+/* 
+    Nunito Sans
+    https://fonts.google.com/specimen/Nunito+Sans
+*/
+
+/* ------------------------- CSS custom properties ------------------------- */
+
+:root {
+	/* Light colors */
+	--app-light-text-color: #050315;
+	--app-light-background-color: #f0f0f0;
+	--app-light-color-primary: #4f709c;
+	--app-light-color-secondary: #e5d283;
+	--app-light-color-accent: #213555;
+	--app-light-header-color: #ebe9fc;
+	/* Dark colors */
+	--app-dark-text-color: #ebe9fc;
+	--app-dark-background-color: #0f0f0f;
+	--app-dark-color-primary: #6385b0;
+	--app-dark-color-secondary: #7a671a;
+	--app-dark-color-accent: #abbede;
+}
+a,
+button {
+	transition: 300ms ease-in-out;
+}
+body {
+	font-family: "Nunito Sans", "Inter", Arial, sans-serif;
+}
+
+/* ----------------------- GLOBAL STRUCTURE : HEADER ----------------------- */
+
+header {
+	color: var(--app-light-header-color);
+	background-color: var(--app-light-color-primary);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header .container {
+	max-width: 991px;
+	margin-inline: auto;
+}
+header h1 {
+	font-size: 2.4rem;
+	font-weight: 700;
+}
+
+header nav {
+	text-align: right;
+}
+
+header nav ul {
+	list-style-type: none;
+	font-size: 0;
+}
+
+header nav ul li {
+	display: inline;
+	line-height: 6.4rem;
+}
+
+header nav ul li a {
+	padding: 0 1.6rem;
+	font-size: 1rem;
+	font-weight: 600;
+	transition: all 0.2s ease-in-out;
+}
+
+header nav ul li a:hover {
+	text-shadow: 1 1 1px #00000025;
+	transition: all 0.2s ease-in-out;
+	background-color: var(--app-light-color-accent);
+}
+
+.nav-form {
+	position: relative;
+}
+.nav-form i {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	translate: 0 -50%;
+}
+.nav-form input {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	padding: 0 1.6rem;
+	height: 3rem;
+	border: none;
+	border-radius: 0.4rem;
+	outline: none;
+	background: var(--app-light-color-accent);
+}
+
+/* ------------------------ GLOBAL STRUCTURE : MAIN ------------------------ */
+
+main {
+	color: var(--app-light-text-color);
+	background-color: var(--app-light-background-color);
+	min-height: 100dvh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1.6rem 3.2rem;
+}
+
+/* .fa-facebook-f {
+    color: #2a4aff;
+}
+
+.fa-facebook-f:hover {
+    color: #2a4aff;
+    text-shadow: 2 2 2px #000;
+    background-color: #6381e4;
+}
+
+.fa-twitter {
+    color: #00acee;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+    text-shadow: 2 2 2px #000;
+    background-color: #6ecbff;
+}
+
+.fa-instagram {
+    color: #e4405f;
+}
+
+.fa-instagram:hover {
+    color: #e4405f;
+    text-shadow: 2 2 2px #000;
+    background-color: #ff97bb;
+}
+
+.fa-github {
+    color: #000;
+}
+
+.fa-github:hover {
+    color: #000;
+    text-shadow: 2 2 2px #000;
+    background-color: #b8b8b8;
+}
+
+footer a i .fa-facebook-f:hover {
+    color: var(--app-color-hover);
+    text-shadow: 1 1 1px #000;
+}
+
+footer i:hover {
+    color: var(--app-color-hover);
+    text-shadow: 1 1 1px #000;
+} */
+
+main .container {
+	margin-top: 5rem;
+}
+main .container img {
+	height: auto;
+	max-width: 100%;
+}
+.products-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 3rem 1.5rem;
+	margin-top: 5rem;
+}
+.product {
+	display: flex;
+	align-items: center;
+	gap: 1rem 2rem;
+}
+.product .product-container {
+	aspect-ratio: 16 / 11;
+	overflow: hidden;
+	border-radius: 3px;
+	width: 20rem;
+}
+.product .product-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

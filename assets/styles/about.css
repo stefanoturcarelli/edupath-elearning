@@ -1,0 +1,27 @@
+.text-container {
+	margin-top: 1rem;
+	line-height: 1.6;
+}
+section.container .team {
+	margin-top: 2rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 3rem;
+}
+section.container .team-member {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	row-gap: 1rem;
+	height: 100%;
+}
+.team-member h2 {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 90%;
+}
+.team-member .image-container {
+	border-radius: 5px;
+	overflow: hidden;
+}
