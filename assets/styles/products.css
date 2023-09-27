@@ -126,6 +126,26 @@ div button:hover {
     transition: all 0.3s ease;
 }
 
+h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    position: relative;
+}
+
+div h3 {
+    align-items: left;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0 1rem 1rem 1rem;
+    text-align: left;
+}
 
 .fa-star {
     color: var(--app-var-star-color);
