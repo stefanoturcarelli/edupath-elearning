@@ -21,7 +21,7 @@
 }
 
 
-.flex-container {
+.flex-container, .container--flex {
     display: flex;
     display: flex;
     flex-wrap: wrap;
