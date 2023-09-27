@@ -2,7 +2,6 @@
 	max-width: 600px;
 	width: 100%;
 	margin-inline: auto;
-	/* background-color: #F0F0F0; */
 	padding: 2.5rem;
 	border-radius: 4px;
 }
@@ -113,4 +112,9 @@ form button {
 
 main h1 {
 	font-size: 2rem;
+}
+
+h2 {
+    margin-top: 7rem;
+    margin-bottom: 4rem;
 }

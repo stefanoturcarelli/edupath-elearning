@@ -237,12 +237,14 @@ footer i {
     justify-content: center;
     color: var(--color-white);
     box-shadow: #000 1px 1px 1px 1px;
+    transition: all 0.3s ease-in-out;
 }
 
 footer i:hover {
     color: var(--color-black);
     text-shadow: 1 1 1px #000;
     background-color: var(--color-white);
+    transition: all 0.3s ease-in-out;
 }
 
 
