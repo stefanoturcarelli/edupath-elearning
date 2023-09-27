@@ -8,13 +8,20 @@ section.container .team {
 	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 	gap: 3rem;
 }
+
+.team-section {
+	margin-bottom: 10rem;
+}
+
 section.container .team-member {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	flex: 1;
 	row-gap: 1rem;
 	height: 100%;
 }
+
 .team-member h2 {
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -29,4 +36,20 @@ section.container .team-member {
 h2 {
     margin-top: 7rem;
     margin-bottom: 4rem;
+}
+
+.image-container img {
+	border: 1px solid #ccc;
+	transition: all 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+	border: 1px solid var(--app-color-tertiary);
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.text-container p {
+	margin-top: 1.6rem;
+	line-height: 1.6;
 }

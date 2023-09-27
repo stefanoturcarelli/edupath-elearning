@@ -430,7 +430,7 @@ section.review-grid {
 /* --------------------------------- MEDIA --------------------------------- */
 
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1050px) {
     .nav-bar {
         display: none;
     }
