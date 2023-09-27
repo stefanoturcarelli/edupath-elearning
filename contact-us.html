@@ -48,12 +48,89 @@
     </div>
   </header>
   <main>
-    <div class="container">
+    <div class="container contact-us-flex">
       <div class="row">
-          <div class="column one"></div>
-          <div class="column two"></div>
-          <div class="column three"></div>
+        <div class="column one">
+          <div>
+            <h3>Help & Support</h3>
+          </div>
+          <div>
+            <p>
+              For assistance with any technical issues or questions,
+              our dedicated help and support team is here to provide you with
+              expert guidance and solutions.
+            </p>
+          </div>
+          <div>
+            <button>
+              <a href="#">Get support</a>
+            </button>
+          </div>
+        </div>
+        <div class="column two">
+          <div>
+            <h3>Sales & Marketing</h3>
+          </div>
+          <div>
+            <p>
+              If you're interested in exploring partnership opportunities,
+              discussing sales inquiries, or collaborating on marketing
+              initiatives, our Sales and Marketing team is eager to connect
+              with you.
+            </p>
+          </div>
+          <div>
+            <button>
+              <a href="#">Get support</a>
+            </button>
+          </div>
+        </div>
+        <div class="column three">
+          <div>
+            <h3>Send us a message</h3>
+          </div>
+          <div>
+            <p>
+              Feel free to reach out to us by sending a message below, and
+              we'll get back to you promptly to address any inquiries,
+              feedback, or comments you may have.
+            </p>
+          </div>
+          <div>
+            <button>
+              <a href="#form-flex">Send us a message</a>
+            </button>
+          </div>
+        </div>
       </div>
+    </div>
+    <div id="contact-form" class="contact-form">
+      <div id="form-flex" class="form-flex">
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
     </div>
   </main>
   <footer>
