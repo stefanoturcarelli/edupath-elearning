@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="./assets/resets/reset.css" />
     <link rel="stylesheet" href="./assets/styles/global.css" />
+    <link rel="stylesheet" href="./assets/styles/login.css" />
     <title>EduPath Login/Sing up</title>
   </head>
   <body>
@@ -46,28 +47,137 @@
       </div>
     </header>
     <main>
-        <div class="container">
-            <form class="login-form">
-                <h1>Login</h1>
-                <input type="text" placeholder="Username" />
-                <input type="password" placeholder="Password" />
-                <input type="submit" value="Login" />
-                <a href="#">Forgot your password?</a>
-                <a href="#">Don't have an account?</a>
-                <p>Or Login with</p>
-                <i class="fab fa-google"><a href="#"></a></i>
-                <i class="fab fa-facebook-f"><a href="#"></a></i>
-                <i class="fab fa-twitter"><a href="#"></a></i>
-            </form>
-            <form class="register-form">
-                <h1>Register</h1>
-                <input type="text" placeholder="Username" />
-                <input type="password" placeholder="Password" />
-                <input type="password" placeholder="Confirm Password" />
-                <input type="submit" value="Register" />
-            </form>
+      <form class="container-login">
+        <div class="box">
+            <!------------------ Login Box --------------------->
+            <div class="box-login" id="login">
+                <div class="top-header">
+                    <h2>Hello, Again</h2>
+                    <small>We are happy to have you back.</small>
+                </div>
+                <div class="input-group">
+                    <div class="input-field">
+                        <input type="text" class="input-box" id="logEmail" required>
+                        <label for="logEmail">Email address</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="input-box" id="logPassword" required>
+                        <label for="logPassword">Password</label>
+                         <div class="eye-area">
+                                <div class="eye-box" onclick="myLogPassword()">
+                                    <i class="fa-regular fa-eye" id="eye"></i>
+                                    <i class="fa-regular fa-eye-slash" id="eye-slash"></i>
+                                </div>
+                         </div>
+                    </div>
+                    <div class="remember">
+                        <input type="checkbox" id="formCheck" class="check">
+                        <label for="formCheck"> Remember Me</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="submit" class="input-submit" value="Login">
+                    </div>
+                    <div class="forgot">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </div>
+            </div>
+         <!-------------------- Register --------------------------->
+          
+         <div class="box-register" id="register">
+            <div class="top-header">
+                <h2>Sign Up, Now</h2>
+                <small>We are happy to have you with us.</small>
+            </div>
+            <div class="input-group">
+                <div class="input-field">
+                    <input type="text" class="input-box" id="regUser" required>
+                    <label for="regUser">Username</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" class="input-box" id="regEmail" required>
+                    <label for="regEmail">Email address</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="input-box" id="regPassword" required>
+                    <label for="regPassword">Password</label>
+                     <div class="eye-area">
+                            <div class="eye-box" onclick="myRegPassword()">
+                                <i class="fa-regular fa-eye" id="eye-2"></i>
+                                <i class="fa-regular fa-eye-slash" id="eye-slash-2"></i>
+                            </div>
+                     </div>
+                </div>
+                <div class="remember">
+                    <input type="checkbox" id="formCheck-2" class="check">
+                    <label for="formCheck-2"> Remember Me</label>
+                </div>
+                <div class="input-field">
+                    <input type="submit" class="input-submit" value="Sign In">
+                </div>
+                
+            </div>
         </div>
-        </main>
+        <!------------------------ Switch -------------------------->
+          
+        <div class="switch">
+            <a href="#" class="login" onclick="login()">Login</a>
+            <a href="#" class="register" onclick="register()">Register</a>
+            <div class="btn-active" id="btn"></div>
+        </div>
+        </div>
+     </form>
+    <script>
+         var x = document.getElementById('login');
+         var y = document.getElementById('register');
+         var z = document.getElementById('btn');
+     
+         function login(){
+            x.style.left = "27px";
+            y.style.right = "-350px";
+            z.style.left = "0px";
+         }
+         function register(){
+            x.style.left = "-350px";
+            y.style.right = "25px";
+            z.style.left = "150px";
+         }
+
+       // view password codes
+       
+       
+       function myLogPassword(){
+        var a = document.getElementById('logPassword');
+        var b = document.getElementById('eye');
+        var c = document.getElementById('eye-slash');
+        if(a.type === "password"){
+            a.type = "text"
+            b.style.opacity = "0";
+            c.style.opacity = "1";
+        }else{    
+            a.type = "password"
+            b.style.opacity = "1";
+            c.style.opacity = "0";
+        }
+       }
+       
+       
+       function myRegPassword(){
+    var d = document.getElementById('regPassword');
+    var b = document.getElementById("eye-2");
+    var c = document.getElementById("eye-slash-2");
+    if(d.type === "password"){
+        d.type = "text"
+        b.style.opacity = "0";
+        c.style.opacity = "1";
+    }else{    
+        d.type = "password"
+        b.style.opacity = "1";
+        c.style.opacity = "0";
+    }
+    }
+    </script>
+    </main>
         <footer>
             <div class="container container--flex">
                 <div class="ft-links">
