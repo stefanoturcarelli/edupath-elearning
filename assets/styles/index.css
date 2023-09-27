@@ -63,3 +63,77 @@
     transition: all 0.3s ease-in-out;
     color: var(--app-color-secondary);
 }
+
+/* --------------------------------- MAIN --------------------------------- */
+
+.container {
+    /* border: 1px solid #182D4C; */
+}
+
+.section-4-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: 400px;
+    /* border: 1px solid #e02424; */
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    justify-content: space-evenly;
+}
+
+.item-1, .item-2, .item-3, .item-4 {
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    /* border: 1px solid #182D4C; */
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.item-1 > div {
+    /* border: 1px solid #000; */
+}
+
+.item-1 p, .item-2 p, .item-3 p, .item-4 p {
+    font-size: 80%;
+}
+
+.item-1 > div:nth-child(1) {
+    height: 60%;
+    width: 100%;
+    background: url(../img/index.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+.item-2 > div:nth-child(1) {
+    height: 60%;
+    width: 100%;
+    background: url(../img/about-us.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+.item-1 > div:nth-child(2), .item-2 > div:nth-child(2), .item-3 > div:nth-child(2), .item-4 > div:nth-child(2) {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.button {
+    font-size: 80%;
+    font-weight: 700;
+    border-radius: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50%;
+}
+
