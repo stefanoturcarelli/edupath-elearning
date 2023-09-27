@@ -23,3 +23,19 @@ html {
      -moz-text-size-adjust: none;
           text-size-adjust: none;
 }
+
+
+.container--flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
