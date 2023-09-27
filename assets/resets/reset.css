@@ -102,3 +102,10 @@ input[type=reset], button, a {
   justify-content: space-between;
   align-items: center;
 }
+
+.center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
