@@ -49,147 +49,170 @@
     <main>
       <form class="container-login">
         <div class="box">
-            <!------------------ Login Box --------------------->
-            <div class="box-login" id="login">
-                <div class="top-header">
-                    <h2>Hello, Again</h2>
-                    <small>We are happy to have you back.</small>
-                </div>
-                <div class="input-group">
-                    <div class="input-field">
-                        <input type="text" class="input-box" id="logEmail" required>
-                        <label for="logEmail">Email address</label>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" class="input-box" id="logPassword" required>
-                        <label for="logPassword">Password</label>
-                         <div class="eye-area">
-                                <div class="eye-box" onclick="myLogPassword()">
-                                    <i class="fa-regular fa-eye" id="eye"></i>
-                                    <i class="fa-regular fa-eye-slash" id="eye-slash"></i>
-                                </div>
-                         </div>
-                    </div>
-                    <div class="remember">
-                        <input type="checkbox" id="formCheck" class="check">
-                        <label for="formCheck"> Remember Me</label>
-                    </div>
-                    <div class="input-field">
-                        <input type="submit" class="input-submit" value="Login">
-                    </div>
-                    <div class="forgot">
-                        <a href="#">Forgot password?</a>
-                    </div>
-                </div>
-            </div>
-         <!-------------------- Register --------------------------->
-          
-         <div class="box-register" id="register">
+          <!------------------ Login Box --------------------->
+          <div class="box-login" id="login">
             <div class="top-header">
-                <h2>Sign Up, Now</h2>
-                <small>We are happy to have you with us.</small>
+              <h3>Hello, Again</h3>
+              <p>We are happy to have you back.</p>
             </div>
             <div class="input-group">
-                <div class="input-field">
-                    <input type="text" class="input-box" id="regUser" required>
-                    <label for="regUser">Username</label>
+              <div class="input-field">
+                <input type="text" class="input-box" id="logEmail" required />
+                <label for="logEmail">Email address</label>
+              </div>
+              <div class="input-field">
+                <input
+                  type="password"
+                  class="input-box"
+                  id="logPassword"
+                  required
+                />
+                <label for="logPassword">Password</label>
+                <div class="eye-area">
+                  <div class="eye-box" onclick="myLogPassword()">
+                    <i class="fa-regular fa-eye" id="eye"></i>
+                    <i class="fa-regular fa-eye-slash" id="eye-slash"></i>
+                  </div>
                 </div>
-                <div class="input-field">
-                    <input type="text" class="input-box" id="regEmail" required>
-                    <label for="regEmail">Email address</label>
+              </div>
+              <div class="remember">
+                <input type="checkbox" id="formCheck" class="check" />
+                <label for="formCheck"> Remember Me</label>
+                <div class="forgot">
+                  <a href="#">Forgot password ?</a>
                 </div>
-                <div class="input-field">
-                    <input type="password" class="input-box" id="regPassword" required>
-                    <label for="regPassword">Password</label>
-                     <div class="eye-area">
-                            <div class="eye-box" onclick="myRegPassword()">
-                                <i class="fa-regular fa-eye" id="eye-2"></i>
-                                <i class="fa-regular fa-eye-slash" id="eye-slash-2"></i>
-                            </div>
-                     </div>
-                </div>
-                <div class="remember">
-                    <input type="checkbox" id="formCheck-2" class="check">
-                    <label for="formCheck-2"> Remember Me</label>
-                </div>
-                <div class="input-field">
-                    <input type="submit" class="input-submit" value="Sign In">
-                </div>
-                
+              </div>
+              <div class="input-field">
+                <input type="submit" class="input-submit" value="Login" />
+              </div>
+              <p>Or Login in with</p>
+              <div class="sing-in-with">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-microsoft"></i></a>
+              </div>
             </div>
-        </div>
-        <!------------------------ Switch -------------------------->
-          
-        <div class="switch">
+          </div>
+          <!-------------------- Register --------------------------->
+
+          <div class="box-register" id="register">
+            <div class="top-header">
+              <h3>Sign Up, Now</h3>
+              <p>We are happy to have you with us.</p>
+            </div>
+            <div class="input-group">
+              <div class="input-field">
+                <input type="text" class="input-box" id="regUser" required />
+                <label for="regUser">Username</label>
+              </div>
+              <div class="input-field">
+                <input type="text" class="input-box" id="regEmail" required />
+                <label for="regEmail">Email address</label>
+              </div>
+              <div class="input-field">
+                <input
+                  type="password"
+                  class="input-box"
+                  id="regpassword"
+                  required
+                />
+                <label for="regPassword">Password</label>
+                <div class="eye-area">
+                  <div class="eye-box" onclick="myRegPassword()">
+                    <i class="fa-regular fa-eye" id="eye-2"></i>
+                    <i class="fa-regular fa-eye-slash" id="eye-slash-2"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="remember">
+                <input type="checkbox" id="formCheck-2" class="check" />
+                <label for="formCheck-2"> Remember Me</label>
+              </div>
+              <div class="input-field">
+                <input type="submit" class="input-submit" value="Sign In" />
+              </div>
+              <p>Or Sign in with</p>
+              <div class="sing-in-with">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-microsoft"></i></a>
+              </div>
+            </div>
+          </div>
+          <!------------------------ Switch -------------------------->
+
+          <div class="switch">
             <a href="#" class="login" onclick="login()">Login</a>
             <a href="#" class="register" onclick="register()">Register</a>
             <div class="btn-active" id="btn"></div>
+          </div>
         </div>
-        </div>
-     </form>
-    <script>
-         var x = document.getElementById('login');
-         var y = document.getElementById('register');
-         var z = document.getElementById('btn');
-     
-         function login(){
-            x.style.left = "27px";
-            y.style.right = "-350px";
-            z.style.left = "0px";
-         }
-         function register(){
-            x.style.left = "-350px";
-            y.style.right = "25px";
-            z.style.left = "150px";
-         }
+      </form>
+      <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
 
-       // view password codes
-       
-       
-       function myLogPassword(){
-        var a = document.getElementById('logPassword');
-        var b = document.getElementById('eye');
-        var c = document.getElementById('eye-slash');
-        if(a.type === "password"){
-            a.type = "text"
+        function login() {
+          x.style.left = "25px";
+          y.style.right = "-350px";
+          z.style.left = "0px";
+        }
+        function register() {
+          x.style.left = "-350px";
+          y.style.right = "25px";
+          z.style.left = "150px";
+        }
+
+        // view password codes
+
+        function myLogPassword() {
+          var a = document.getElementById("logPassword");
+          var b = document.getElementById("eye");
+          var c = document.getElementById("eye-slash");
+          if (a.type === "password") {
+            a.type = "text";
             b.style.opacity = "0";
             c.style.opacity = "1";
-        }else{    
-            a.type = "password"
+          } else {
+            a.type = "password";
             b.style.opacity = "1";
             c.style.opacity = "0";
+          }
         }
-       }
-       
-       
-       function myRegPassword(){
-    var d = document.getElementById('regPassword');
-    var b = document.getElementById("eye-2");
-    var c = document.getElementById("eye-slash-2");
-    if(d.type === "password"){
-        d.type = "text"
-        b.style.opacity = "0";
-        c.style.opacity = "1";
-    }else{    
-        d.type = "password"
-        b.style.opacity = "1";
-        c.style.opacity = "0";
-    }
-    }
-    </script>
+
+        function myRegPassword() {
+          var d = document.getElementById("regPassword");
+          var b = document.getElementById("eye-2");
+          var c = document.getElementById("eye-slash-2");
+          if (d.type === "password") {
+            d.type = "text";
+            b.style.opacity = "0";
+            c.style.opacity = "1";
+          } else {
+            d.type = "password";
+            b.style.opacity = "1";
+            c.style.opacity = "0";
+          }
+        }
+      </script>
     </main>
-        <footer>
-            <div class="container container--flex">
-                <div class="ft-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                </div>
-                <div class="ft-copyright">
-                    <p>© 2023 EduPath. All rights reserved.</p>
-                </div>
-            </div>
-        </footer>
+    <footer>
+      <div class="container container--flex">
+        <div class="ft-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="ft-copyright">
+          <p>© 2023 EduPath. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

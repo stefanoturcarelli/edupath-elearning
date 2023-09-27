@@ -1,15 +1,24 @@
 :root {
-    --app-background-color-login-sing-up: #1a4480b4;
+    --app-background-color-login-sing-up: #4372b3b4;
     --app-borders-colors: #ffffff33;
-    --app-background-color-btn-login-sing-in: #4E709D;
+    --app-background-color-btn-login-sing-in: #1e53a1;
     --app-background-color-btn-login-sing-in-hover: #0263f594;
-    --app-color-input-box-focus: #01ccff;
+    --app-color-input-box-focus: #000000;
+    --app-background-color-switch-login-register: #4d4d55;
+    --app-color-white: #fff;
 }
+
 /*design inspired by Ludiflex
 
 https://www.ludiflex.xyz/modern-login-and-register-form-made-with-html-css-and-javascript/
 
 */
+
+main {
+    background-image: url(../media/images/221429.webp);
+}
+
+/*LOGIN AND REGISTER*/
 
 .container-login {
     display: flex;
@@ -23,28 +32,28 @@ https://www.ludiflex.xyz/modern-login-and-register-form-made-with-html-css-and-j
     flex-direction: row;
     position: relative;
     padding: 30px 20px 30px 20px;
-    height: 620px;
+    height: 700px;
     width: 350px;
     background-color: var(--app-background-color-login-sing-up);
     border-radius: 30px;
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
-    border: 3px solid var(--app-borders-colors);
+    box-shadow: #000000 0px 0px 1px 0px;
     overflow: hidden;
 }
 
 .box-login {
     position: absolute;
     width: 85%;
-    left: 27px;
-    transition: .5s ease-in-out;
+    left: 25px;
+    transition: 0.5s ease-in-out;
 }
 
 .box-register {
     position: absolute;
     width: 85%;
     right: -350px;
-    transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .top-header {
@@ -52,16 +61,16 @@ https://www.ludiflex.xyz/modern-login-and-register-form-made-with-html-css-and-j
     margin: 30px 0;
 }
 
-.top-header h2 {
+.top-header h3 {
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 8px
 }
 
-small{
+form.container-login p {
     font-size: 16px;
     font-weight: 500;
-    color: #000;
+
 }
 
 .input-group {
@@ -91,7 +100,7 @@ small{
     left: 20px;
     top: 15px;
     font-size: 15px;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .input-box:focus~label,
@@ -99,8 +108,11 @@ small{
     top: 2px;
     font-size: 10px;
     color: var(--app-color-input-box-focus);
-    text-shadow: #000 1px 1px 1px;
     font-weight: 500;
+}
+
+.input-box:focus {
+    border: 1px solid var(--app-color-input-box-focus);
 }
 
 .eye-area {
@@ -135,8 +147,25 @@ form i {
 .remember {
     display: flex;
     font-size: 13px;
-    margin: 12px 0 30px 0;
-    color: #000;
+    font-weight: 500;
+}
+
+h3,
+p,
+.forgot a, .remember label {
+    color: var(--app-color-white);
+}
+
+h3,
+p,
+.forgot a {
+    text-shadow: #000000 0px 0px 1px;
+}
+
+div.remember label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .check {
@@ -151,11 +180,11 @@ form i {
     font-weight: 500;
     border: none;
     border-radius: 10px;
-    background: var(--app-background-color-login-sing-up);
+    background: var(--app-background-color-btn-login-sing-in);
     color: #fff;
     box-shadow: 0px 2px 5px rgba(62, 9, 9, 0.145);
     cursor: pointer;
-    transition: .4s;
+    transition: 0.4s;
 }
 
 .input-submit:hover {
@@ -165,15 +194,68 @@ form i {
 
 .forgot {
     text-align: center;
-    font-size: 13px;
+    font-size: 16px;
     font: 500;
-    margin-top: 40px;
+    margin-top: 5px;
+    margin-left: 50px;
 }
 
 .forgot a {
     text-decoration: none;
-    color: #000;
 }
+
+.forgot a:hover {
+    text-decoration: underline;
+}
+
+div.input-group:last-child p {
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    border-top: var(--app-color-white) 1px solid;
+    padding-top: 15px;
+}
+
+/*SING IN WITH - ICONS*/
+
+.sing-in-with {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0;
+    flex-direction: row;
+    font-size: 16px;
+}
+
+div.sing-in-with i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: var(--app-color-white);
+    text-shadow: #000000 0px 0px 1px;
+}
+
+div.sing-in-with i.fa-facebook-f:hover {
+    color: #3b5998;
+}
+
+div.sing-in-with i.fa-google:hover {
+    color: #db4a39;
+}
+
+div.sing-in-with i.fa-github:hover {
+    color: #211F1F;
+}
+
+div.sing-in-with i.fa-linkedin-in:hover {
+    color: #0077b5;
+}
+
+div.sing-in-with i.fa-microsoft:hover {
+    color: #00a4ef;
+}
+
+/*SWITCH*/
 
 .switch {
     display: flex;
@@ -183,7 +265,8 @@ form i {
     width: 85%;
     height: 50px;
     background: rgba(255, 255, 255, 0.16);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
     border-radius: 10px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -195,7 +278,8 @@ form i {
     align-items: center;
     font-size: 16px;
     font-weight: 500;
-    color: #000;
+    color: var(--app-color-white);
+    text-shadow: #000000 0px 0px 1px;
     text-decoration: none;
     width: 50%;
     border-radius: 10px;
@@ -208,8 +292,8 @@ form i {
     left: 0;
     width: 145px;
     height: 50px;
-    background: #cccccd;
+    background-color: var(--app-background-color-switch-login-register);
     border-radius: 10px;
     box-shadow: 2px 0px 12px rgba(0, 0, 0, 0.1);
-    transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
