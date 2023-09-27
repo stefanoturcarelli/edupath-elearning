@@ -47,12 +47,6 @@ img {
     box-shadow: #000 0px 0px 1px 0px;
 }
 
-h1 {
-    font-size: 5rem;
-    font-weight: 700;
-    position: relative;
-}
-
 div h3 {
     align-items: left;
     font-size: 2rem;
@@ -124,12 +118,6 @@ div button:hover {
     color: var(--app-var-background-color);
     text-shadow: 1px 1px 1px #000;
     transition: all 0.3s ease;
-}
-
-h1 {
-    font-size: 5rem;
-    font-weight: 700;
-    position: relative;
 }
 
 div h3 {
