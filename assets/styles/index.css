@@ -67,7 +67,17 @@
 /* --------------------------------- MAIN --------------------------------- */
 
 .container {
-    /* border: 1px solid #182D4C; */
+    border: 1px solid #182D4C;
+}
+
+.section-4-columns-heading {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: 1px solid #e02424;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    justify-content: space-evenly;
 }
 
 .section-4-columns {
@@ -75,7 +85,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     height: 400px;
-    /* border: 1px solid #e02424; */
+    border: 1px solid #e02424;
     margin-top: 10rem;
     margin-bottom: 10rem;
     justify-content: space-evenly;
