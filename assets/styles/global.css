@@ -20,9 +20,15 @@
     margin: 0 auto;
 }
 
+.center {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
 
 .flex-container, .container--flex {
-    display: flex;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -113,9 +119,9 @@ header {
     color: var(--color-white);
     padding-left: 4rem;
     background: url(../img/search.png) no-repeat scroll 1rem 1rem var(--app-color-tertiary);
-    background-size: 2rem;
+    /* background-size: 2rem; */
     border: 1px solid var(--app-color-tertiary);
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
 }
 
 .search-bar input[type="text"]:focus {
