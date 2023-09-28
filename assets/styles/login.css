@@ -1,299 +1,211 @@
 :root {
-    --app-background-color-login-sing-up: #4372b3b4;
-    --app-borders-colors: #ffffff33;
-    --app-background-color-btn-login-sing-in: #1e53a1;
-    --app-background-color-btn-login-sing-in-hover: #0263f594;
-    --app-color-input-box-focus: #000000;
-    --app-background-color-switch-login-register: #4d4d55;
     --app-color-white: #fff;
+    --app-color-black: #000;
+    --app-btn-background: #264470;
+    --app-btn-background-hover: #355f9c;
+    --app-background-login-icons-hover: #cecece88;
+
 }
 
-/*design inspired by Ludiflex
-
-https://www.ludiflex.xyz/modern-login-and-register-form-made-with-html-css-and-javascript/
-
-*/
-
-main {
-    background-image: url(../media/images/221429.webp);
-}
-
-/*LOGIN AND REGISTER*/
+main {}
 
 .container-login {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100dvh;
-}
-
-.box {
-    display: flex;
     flex-direction: row;
-    position: relative;
-    padding: 30px 20px 30px 20px;
-    height: 700px;
-    width: 350px;
-    background-color: var(--app-background-color-login-sing-up);
-    border-radius: 30px;
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
-    box-shadow: #000000 0px 0px 1px 0px;
-    overflow: hidden;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
 }
 
-.box-login {
-    position: absolute;
-    width: 85%;
-    left: 25px;
-    transition: 0.5s ease-in-out;
+.aside-box {
+    background: url(../img/login-aside-background.svg) var(--app-color-white);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70rem;
+    width: 50%;
 }
 
-.box-register {
-    position: absolute;
-    width: 85%;
-    right: -350px;
-    transition: 0.5s ease-in-out;
+.company-name h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--app-color-black);
+    margin-bottom: 47rem;
 }
 
-.top-header {
+.wel-text h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--app-color-black);
     text-align: center;
-    margin: 30px 0;
 }
 
-.top-header h3 {
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 8px
+.login-box {
+    background-color: var(--app-color-white);
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70rem;
+    width: 50%;
 }
 
-form.container-login p {
-    font-size: 16px;
-    font-weight: 500;
+.login-box h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--app-color-black);
+    margin-bottom: 2rem;
+}
+
+.login-box p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--app-color-black);
+    margin-bottom: 2rem;
+}
+
+div.login-box div.title-text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--app-color-black);
+    margin-bottom: 2rem;
+}
+
+div.login-box div.title-text p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--app-color-black);
+    margin-bottom: 2rem;
 }
 
 .input-group {
-    width: 100%;
+    width: 50%;
+    height: 5rem;
+    margin-bottom: 2rem;
 }
 
-.input-field {
-    margin: 12px 0;
-    position: relative;
-}
-
-.input-box {
+.input-group input {
     width: 100%;
-    height: 50px;
-    font-size: 15px;
-    color: #040404;
-    border: none;
-    border-radius: 10px;
-    padding: 7px 45px 0 20px;
-    background: rgba(224, 223, 223, 0.6);
-    backdrop-filter: blur(2px);
+    height: 100%;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--app-color-black);
+    border: 1px solid #e2e2e2;
+    border-radius: 0.5rem;
     outline: none;
+    transition: all 0.3s ease-in-out;
 }
 
-.input-field label {
-    position: absolute;
-    left: 20px;
-    top: 15px;
-    font-size: 15px;
-    transition: 0.3s ease-in-out;
+.input-group input:focus {
+    border: 1px solid var(--app-color-black);
+    transition: all 0.3s ease-in-out;
 }
 
-.input-box:focus~label,
-.input-box:valid~label {
-    top: 2px;
-    font-size: 10px;
-    color: var(--app-color-input-box-focus);
-    font-weight: 500;
+.input-group input::placeholder {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--app-color-black);
 }
 
-.input-box:focus {
-    border: 1px solid var(--app-color-input-box-focus);
-}
-
-.eye-area {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-}
-
-.eye-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-form i {
-    position: absolute;
-    color: #444444;
-    cursor: pointer;
-}
-
-#eye,
-#eye-2 {
-    opacity: 1;
-}
-
-#eye-slash,
-#eye-slash-2 {
-    opacity: 0;
-}
-
-.remember {
-    display: flex;
-    font-size: 13px;
-    font-weight: 500;
-}
-
-h3,
-p,
-.forgot a,
-.remember label {
-    color: var(--app-color-white);
-}
-
-h3,
-p,
-.forgot a {
-    text-shadow: #000000 0px 0px 1px;
-}
-
-div.remember label {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.check {
-    margin-right: 8px;
-    width: 14px;
-}
-
-.input-submit {
+div.input-group button {
     width: 100%;
-    height: 50px;
-    font-size: 15px;
-    font-weight: 500;
-    border: none;
-    border-radius: 10px;
-    background: var(--app-background-color-btn-login-sing-in);
-    color: #fff;
-    box-shadow: 0px 2px 5px rgba(62, 9, 9, 0.145);
-    cursor: pointer;
-    transition: 0.4s;
+    height: 100%;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--app-color-white);
+    background-color: var(--app-btn-background);
+    border: 1px solid #e2e2e2;
+    border-radius: 0.5rem;
+    outline: none;
+    transition: all 0.3s ease-in-out;
 }
 
-.input-submit:hover {
-    background: var(--app-background-color-btn-login-sing-in-hover);
-    box-shadow: 0px 2px 5px rgba(62, 9, 9, 0.32);
+div.input-group button:hover {
+    border: 1px solid var(--app-color-black);
+    transition: all 0.3s ease-in-out;
+    background-color: var(--app-btn-background-hover);
 }
 
-.forgot {
+div.small-text p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--app-color-black);
+    margin-bottom: 2rem;
     text-align: center;
-    font-size: 16px;
-    font: 500;
-    margin-top: 5px;
-    margin-left: 50px;
+    vertical-align: middle;
 }
 
-.forgot a {
+div.small-text p a:hover {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--app-btn-background-hover);
     text-decoration: none;
 }
 
-.forgot a:hover {
-    text-decoration: underline;
-}
-
-div.input-group:last-child p {
-    margin-top: 50px;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-    border-top: var(--app-color-white) 1px solid;
-    padding-top: 15px;
-}
-
-/*SING IN WITH - ICONS*/
-
-.sing-in-with {
+.social-icons {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin: 20px 0;
+    height: 5rem;
+    width: 60%;
+}
+
+.social-icons i {
+    height: 5rem;
+    width: 5rem;
+    display: flex;
     flex-direction: row;
-    font-size: 16px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: var(--app-btn-background);
+    border: 1px solid #e2e2e2;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
 }
 
-div.sing-in-with i {
-    font-size: 20px;
-    margin-right: 10px;
-    color: var(--app-color-white);
-    text-shadow: #000000 0px 0px 1px;
+.social-icons i:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: var(--app-background-login-icons-hover);
 }
 
-div.sing-in-with i.fa-facebook-f:hover {
-    color: #3b5998;
+.social-icons a i {
+    font-size: 2rem;
+    font-weight: 400;
 }
 
-div.sing-in-with i.fa-google:hover {
+.social-icons a i.fa-facebook-f:hover {
+    color: #5988ec;
+}
+
+.social-icons a i.fa-google:hover {
     color: #db4a39;
 }
 
-div.sing-in-with i.fa-github:hover {
-    color: #211F1F;
+
+.social-icons a i.fa-linkedin-in:hover {
+    color: #00a5f1;
 }
 
-div.sing-in-with i.fa-linkedin-in:hover {
-    color: #0077b5;
+.social-icons a i.fa-github:hover {
+    color: #333333;
 }
 
-div.sing-in-with i.fa-microsoft:hover {
+.social-icons a i.fa-microsoft:hover {
     color: #00a4ef;
-}
-
-/*SWITCH*/
-
-.switch {
-    display: flex;
-    position: absolute;
-    bottom: 50px;
-    left: 25px;
-    width: 85%;
-    height: 50px;
-    background: rgba(255, 255, 255, 0.16);
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.switch a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--app-color-white);
-    text-shadow: #000000 0px 0px 1px;
-    text-decoration: none;
-    width: 50%;
-    border-radius: 10px;
-    z-index: 10;
-}
-
-#btn {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 145px;
-    height: 50px;
-    background-color: var(--app-background-color-switch-login-register);
-    border-radius: 10px;
-    box-shadow: 2px 0px 12px rgba(0, 0, 0, 0.1);
-    transition: 0.5s ease-in-out;
 }

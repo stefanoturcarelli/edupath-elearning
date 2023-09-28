@@ -24,7 +24,7 @@
   </head>
   <body>
     <header>
-      <div class="container ">
+      <div class="container">
         <div class="flex-container-header">
           <div class="logo">
             <a href="./index.html">
@@ -39,7 +39,7 @@
               <li><a href="contact-us.html">Contact</a></li>
               <li><a href="login.html">Login</a></li>
               <li class="search-bar">
-                <input class="search" type="text" placeholder="Search">
+                <input class="search" type="text" placeholder="Search" />
               </li>
             </ul>
           </div>
@@ -50,151 +50,68 @@
       </div>
     </header>
     <main>
-      <form class="container-login">
-        <div class="box">
-            <!------------------ Login Box --------------------->
-            <div class="box-login" id="login">
-                <div class="top-header">
-                    <h2>Hello, Again</h2>
-                    <small>We are happy to have you back.</small>
-                </div>
-                <div class="input-group">
-                    <div class="input-field">
-                        <input type="text" class="input-box" id="logEmail" required>
-                        <label for="logEmail">Email address</label>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" class="input-box" id="logPassword" required>
-                        <label for="logPassword">Password</label>
-                         <div class="eye-area">
-                                <div class="eye-box" onclick="myLogPassword()">
-                                    <i class="fa-regular fa-eye" id="eye"></i>
-                                    <i class="fa-regular fa-eye-slash" id="eye-slash"></i>
-                                </div>
-                         </div>
-                    </div>
-                    <div class="remember">
-                        <input type="checkbox" id="formCheck" class="check">
-                        <label for="formCheck"> Remember Me</label>
-                    </div>
-                    <div class="input-field">
-                        <input type="submit" class="input-submit" value="Login">
-                    </div>
-                    <div class="forgot">
-                        <a href="#">Forgot password?</a>
-                    </div>
-                </div>
-            </div>
-         <!-------------------- Register --------------------------->
-          
-         <div class="box-register" id="register">
-            <div class="top-header">
-                <h2>Sign Up, Now</h2>
-                <small>We are happy to have you with us.</small>
-            </div>
-            <div class="input-group">
-                <div class="input-field">
-                    <input type="text" class="input-box" id="regUser" required>
-                    <label for="regUser">Username</label>
-                </div>
-                <div class="input-field">
-                    <input type="text" class="input-box" id="regEmail" required>
-                    <label for="regEmail">Email address</label>
-                </div>
-                <div class="input-field">
-                    <input type="password" class="input-box" id="regPassword" required>
-                    <label for="regPassword">Password</label>
-                     <div class="eye-area">
-                            <div class="eye-box" onclick="myRegPassword()">
-                                <i class="fa-regular fa-eye" id="eye-2"></i>
-                                <i class="fa-regular fa-eye-slash" id="eye-slash-2"></i>
-                            </div>
-                     </div>
-                </div>
-                <div class="remember">
-                    <input type="checkbox" id="formCheck-2" class="check">
-                    <label for="formCheck-2"> Remember Me</label>
-                </div>
-                <div class="input-field">
-                    <input type="submit" class="input-submit" value="Sign In">
-                </div>
-                
-            </div>
-        </div>
-        <!------------------------ Switch -------------------------->
-          
-        <div class="switch">
-            <a href="#" class="login" onclick="login()">Login</a>
-            <a href="#" class="register" onclick="register()">Register</a>
-            <div class="btn-active" id="btn"></div>
-        </div>
-        </div>
-     </form>
-    <script>
-         var x = document.getElementById('login');
-         var y = document.getElementById('register');
-         var z = document.getElementById('btn');
-     
-         function login(){
-            x.style.left = "27px";
-            y.style.right = "-350px";
-            z.style.left = "0px";
-         }
-         function register(){
-            x.style.left = "-350px";
-            y.style.right = "25px";
-            z.style.left = "150px";
-         }
-
-       // view password codes
-       
-       
-       function myLogPassword(){
-        var a = document.getElementById('logPassword');
-        var b = document.getElementById('eye');
-        var c = document.getElementById('eye-slash');
-        if(a.type === "password"){
-            a.type = "text"
-            b.style.opacity = "0";
-            c.style.opacity = "1";
-        }else{    
-            a.type = "password"
-            b.style.opacity = "1";
-            c.style.opacity = "0";
-        }
-       }
-       
-       
-       function myRegPassword(){
-    var d = document.getElementById('regPassword');
-    var b = document.getElementById("eye-2");
-    var c = document.getElementById("eye-slash-2");
-    if(d.type === "password"){
-        d.type = "text"
-        b.style.opacity = "0";
-        c.style.opacity = "1";
-    }else{    
-        d.type = "password"
-        b.style.opacity = "1";
-        c.style.opacity = "0";
-    }
-    }
-    </script>
-    </main>
-        <footer>
-          <div class="container">
-            <div class="flex-container">
-              <div>
-                <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-              </div>
-              <div>
-                <p>&copy; 2023 EduPath</p>
-              </div>
-            </div>
+      <div class="container container-login">
+        <div class="aside-box">
+          <div class="company-name">
+            <h2>Welcome back!</h2>
           </div>
-        </footer>
+          <div class="wel-text">
+            <h3>Sing up</h3>
+            <p>
+              To keep connected with us please login with your personal info
+            </p>
+          </div>
+        </div>
+        <div class="login-box">
+          <div class="title-text">
+            <h2>Login</h2>
+          </div>
+          <div class="input-group">
+            <input type="email" placeholder="Email" required />
+          </div>
+          <div class="input-group">
+            <input type="password" placeholder="Password" required />
+          </div>
+          <div class="input-check">
+            <input type="checkbox" id="check" />
+            <label for="check">Remember me</label>
+          </div>
+          <div class="input-group">
+            <button type="submit">Login</button>
+          </div>
+          <div class="small-text">
+            <p>Or login with</p>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+            <a href="#"><i class="fab fa-microsoft"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+          <div class="small-text">
+            <p>
+              Don't have an account?
+              <a href="#">Sign Up</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="flex-container">
+          <div>
+            <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+          <div>
+            <p>&copy; 2023 EduPath</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
