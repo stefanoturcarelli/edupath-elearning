@@ -4,10 +4,9 @@
     --app-btn-background: #264470;
     --app-btn-background-hover: #355f9c;
     --app-background-login-icons-hover: #cecece88;
+    --app-text-colors-h: #264470;
 
 }
-
-main {}
 
 .container-login {
     display: flex;
@@ -36,15 +35,23 @@ main {}
 .company-name h2 {
     font-size: 3rem;
     font-weight: 700;
-    color: var(--app-color-black);
-    margin-bottom: 47rem;
+    color: var(--app-text-colors-h);
+    margin-bottom: 49rem;
 }
 
 .wel-text h3 {
     font-size: 3rem;
     font-weight: 700;
+    color: var(--app-text-colors-h);
+    text-align: center;
+}
+
+.wel-text p {
+    font-size: 1.5rem;
+    font-weight: 400;
     color: var(--app-color-black);
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .login-box {
@@ -62,28 +69,14 @@ main {}
     width: 50%;
 }
 
-.login-box h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--app-color-black);
-    margin-bottom: 2rem;
-}
-
-.login-box p {
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: var(--app-color-black);
-    margin-bottom: 2rem;
-}
-
 div.login-box div.title-text h2 {
     font-size: 3rem;
     font-weight: 700;
-    color: var(--app-color-black);
+    color: var(--app-text-colors-h);
     margin-bottom: 2rem;
 }
 
-div.login-box div.title-text p {
+div.login-box div.small-text p {
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--app-color-black);
@@ -208,4 +201,111 @@ div.small-text p a:hover {
 
 .social-icons a i.fa-microsoft:hover {
     color: #00a4ef;
+}
+
+/*MEDIA QUERIES*/
+
+/* Media query for desktop */
+@media only screen and (min-width: 768px) {
+    .container-login {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .aside-box {
+        height: calc(100vh - 20rem);
+        width: calc(100dvw - 20rem);
+        border-bottom-left-radius: 1rem;
+        border-top-left-radius: 1rem;
+    }
+
+    .login-box {
+        height: calc(100vh - 20rem);
+        width: calc(100dvw - 20rem);
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    .company-name h2 {
+        margin-bottom: 15rem;
+    }
+
+    .wel-text h3 {
+        margin-top: 20rem;
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--app-text-colors-h);
+        text-align: center;
+    }
+
+    .wel-text p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: var(--app-color-black);
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .input-group {
+        width: 50%;
+    }
+
+    .social-icons {
+        width: 60%;
+    }
+}
+
+/* Media query for mobile */
+@media only screen and (max-width: 767px) {
+    .container-login {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aside-box {
+        height: calc(100vh - 10rem);
+        height: 35rem;
+        width: calc(100dvw - 10rem);
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 1rem;
+    }
+
+    .company-name h2 {
+        margin-bottom: 5rem;
+        margin-top: 2rem;
+    }
+
+    .wel-text h3 {
+        margin-top: 20rem;
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--app-text-colors-h);
+        text-align: center;
+    }
+
+    .wel-text p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--app-color-black);
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .login-box {
+        height: calc(100vh - 10rem);
+        height: 35rem;
+        width: calc(100dvw - 10rem);
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1rem;
+    }
+
+    .input-group {
+        width: 80%;
+    }
+
+    .social-icons {
+        width: 80%;
+    }
 }
