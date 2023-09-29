@@ -28,7 +28,8 @@
 }
 
 
-.flex-container, .container--flex {
+.flex-container,
+.container--flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -36,7 +37,7 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
@@ -131,6 +132,13 @@ header {
 
 .hamburger {
     display: none;
+}
+
+.fa-bars {
+    font-size: 2.4rem;
+    color: var(--color-white);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 /* ------------------------------ HERO BANNER ------------------------------ */
@@ -436,7 +444,7 @@ section.review-grid {
 /* --------------------------------- MEDIA --------------------------------- */
 
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 800px) {
     .nav-bar {
         display: none;
     }
