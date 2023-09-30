@@ -206,6 +206,7 @@ div.small-text p a:hover {
 /*MEDIA QUERIES*/
 
 /* Media query for desktop */
+
 @media only screen and (min-width: 768px) {
     .container-login {
         flex-direction: row;
@@ -257,6 +258,7 @@ div.small-text p a:hover {
 }
 
 /* Media query for mobile */
+
 @media only screen and (max-width: 767px) {
     .container-login {
         flex-direction: column;

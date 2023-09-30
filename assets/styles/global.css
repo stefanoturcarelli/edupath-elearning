@@ -16,7 +16,7 @@
 /* -------------------------------- GLOBAL -------------------------------- */
 
 .container {
-    width: min(100% - 30px, 1080px);
+    width: min(100% - 3rem, 108rem);
     margin: 0 auto;
 }
 
@@ -53,18 +53,10 @@ section {
 /* -------------------------------- HEADER -------------------------------- */
 
 header {
+    padding: 1.6rem 3.2rem;
     background-color: var(--app-color-secondary);
     color: var(--color-white);
     overflow: hidden;
-    /* height: calc(100vh - 6.4rem); */
-}
-
-.flex-container-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.6rem 3.2rem;
 }
 
 .logo {
@@ -87,10 +79,8 @@ header {
 .nav-bar ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 2.4rem;
+    justify-content: space-between;
     align-items: center;
-    list-style: none;
 }
 
 .nav-bar ul li a {
@@ -107,27 +97,6 @@ header {
     flex: 1;
     text-align: right;
     margin-left: 2.4rem;
-}
-
-.search-bar input[type="text"] {
-    padding: 0.8rem 1.6rem;
-    border-radius: 0.7rem;
-    border: none;
-    outline: none;
-    font-size: 1.6rem;
-    font-weight: 500;
-    width: 100%;
-    color: var(--color-white);
-    padding-left: 4rem;
-    background: url(../img/search.png) no-repeat scroll 1rem 1rem var(--app-color-tertiary);
-    background-size: 2rem;
-    border: 1px solid var(--app-color-tertiary);
-    transition: all 0.3s ease-in-out;
-}
-
-.search-bar input[type="text"]:focus {
-    border: 1px solid var(--app-color-hover);
-    transition: all 0.3s ease-in-out;
 }
 
 .hamburger {
@@ -250,151 +219,15 @@ footer i {
     align-items: center;
     justify-content: center;
     color: var(--color-white);
-    box-shadow: #000 1px 1px 1px 1px;
     transition: all 0.3s ease-in-out;
 }
 
 footer i:hover {
     color: var(--color-black);
-    text-shadow: 1 1 1px #000;
-    background-color: var(--color-white);
+    text-shadow: 0.1rem 0.1rem 0.1rem #000;
+    background-color: var(--app-color-hover);
     transition: all 0.3s ease-in-out;
 }
-
-
-/* .fa-facebook-f {
-    color: #2a4aff;
-}
-
-.fa-facebook-f:hover {
-    color: #2a4aff;
-    text-shadow: 2 2 2px #000;
-    background-color: #6381e4;
-}
-
-.fa-twitter {
-    color: #00acee;
-}
-
-.fa-twitter:hover {
-    color: #00acee;
-    text-shadow: 2 2 2px #000;
-    background-color: #6ecbff;
-}
-
-.fa-instagram {
-    color: #e4405f;
-}
-
-.fa-instagram:hover {
-    color: #e4405f;
-    text-shadow: 2 2 2px #000;
-    background-color: #ff97bb;
-}
-
-.fa-github {
-    color: #000;
-}
-
-.fa-github:hover {
-    color: #000;
-    text-shadow: 2 2 2px #000;
-    background-color: #b8b8b8;
-}
-
-footer a i .fa-facebook-f:hover {
-    color: var(--app-color-hover);
-    text-shadow: 1 1 1px #000;
-}
-
-footer i:hover {
-    color: var(--app-color-hover);
-    text-shadow: 1 1 1px #000;
-} */
-
-h1,
-h2,
-h3,
-h4 {
-    text-wrap: balance;
-}
-
-p,
-h1,
-h2,
-h3,
-h4 {
-    overflow-wrap: break-word;
-}
-
-ul[role=list],
-ol[role=list] {
-    list-style: none;
-}
-
-a,
-i,
-figure,
-img,
-button,
-input[type=button],
-input[type=submit] {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-}
-
-a:visited {
-    color: inherit;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-}
-
-input,
-textarea,
-button,
-select {
-    font: inherit;
-    border-style: none;
-    outline-style: none;
-}
-
-input[type=button],
-input[type=submit],
-input[type=reset],
-button,
-a {
-    cursor: pointer;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-        scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-}
-
 
 /* ----------------------------- INDEX.html ----------------------------- */
 
