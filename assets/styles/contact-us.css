@@ -72,7 +72,61 @@ section {
 
 /* ------------------------------ HERO BANNER ------------------------------ */
 
-/* -------------------------- Contact Form Section -------------------------- */
+.hero-banner-contact-us {
+  background: url(/assets/img/contact-us.jpg) no-repeat;
+  height: 70rem;
+  color: var(--app-var-background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.hero-banner-contact-us::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.title-slogan {
+  z-index: 2;
+}
+
+.hero-banner-contact-us h1 {
+  font-size: 7rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.hero-banner-contact-us p {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .hero-banner-contact-us {
+    height: 50rem;
+  }
+
+  .hero-banner-contact-us h1 {
+    font-size: 5rem;
+  }
+
+  .hero-banner-contact-us p {
+    font-size: 2rem;
+  }
+}
+
+
+/* -------------------------- Contact Form Section ------------------------- */
 
 .contact-form-container {
   display: flex;
@@ -377,20 +431,18 @@ form textarea {
     flex-direction: column;
   }
 
-
   .social-grid {
     gap: 1rem;
     padding: 2rem;
     margin-bottom: 15rem;
   }
-  
+
   .social-img-container {
     width: 100%;
     height: 30rem;
     background-size: 100%;
     background-position: 45% 20%;
   }
-  
 }
 
 @media (max-width: 450px) {
@@ -399,3 +451,85 @@ form textarea {
     height: 10rem;
   }
 }
+
+/* ------------------------- Link to About Us ------------------------- */
+
+.link-to-about-us-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.link-to-about-us-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  width: 100%;
+  max-width: 50rem;
+  height: 50rem;
+  padding: 4.5rem;
+  border-radius: 0.4rem;
+  flex: 1;
+}
+
+.link-to-about-us-header h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--app-var-primary-color);
+  line-height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.link-to-about-us-header p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #5d5d5d;
+  text-align: left;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  line-height: 2.5rem;
+}
+
+.link-to-about-us-header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-us-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/assets/img/our-team.jpg) no-repeat;
+  background-size: 100%;
+  background-position: 45% 40%;
+  width: 100%;
+  height: 40rem;
+  border-radius: 0.4rem;
+  flex: 2;
+}
+
+@media (max-width: 800px) {
+  .link-to-about-us-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 80rem;
+  }
+
+  .link-to-about-us-header {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .link-to-about-us-header p {
+    text-align: center;
+  }
+}
+
