@@ -128,8 +128,7 @@ form textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: url(/assets/img/map.png); */
-  background-color: lightpink;
+  background: url(/assets/img/map.png);
   background-size: 250%;
   background-position: 45% 40%;
   width: 100%;
