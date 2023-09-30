@@ -68,10 +68,6 @@ div button:hover {
 
 /* -------------------------- Contact Form Section -------------------------- */
 
-* {
-  /* outline: auto; */
-}
-
 .contact-form-container {
   display: flex;
   justify-content: center;
@@ -132,7 +128,8 @@ form textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/assets/img/map.png);
+  /* background: url(/assets/img/map.png); */
+  background-color: lightpink;
   background-size: 250%;
   background-position: 45% 40%;
   width: 100%;
@@ -140,7 +137,7 @@ form textarea {
   border-radius: 0.4rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .contact-form-container {
     flex-direction: column;
     gap: 2rem;
