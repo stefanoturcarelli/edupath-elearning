@@ -85,7 +85,10 @@
     justify-content: space-evenly;
 }
 
-.item-1, .item-2, .item-3, .item-4 {
+.item-1,
+.item-2,
+.item-3,
+.item-4 {
     width: 200px;
     height: 300px;
     margin: auto;
@@ -95,11 +98,14 @@
     justify-content: space-evenly;
 }
 
-.item-1 p, .item-2 p, .item-3 p, .item-4 p {
+.item-1 p,
+.item-2 p,
+.item-3 p,
+.item-4 p {
     font-size: 80%;
 }
 
-.item-1 > div:nth-child(1) {
+.item-1>div:nth-child(1) {
     height: 60%;
     width: 100%;
     background: url(../img/programming.jpg);
@@ -109,7 +115,7 @@
     border-radius: 4px;
 }
 
-.item-2 > div:nth-child(1) {
+.item-2>div:nth-child(1) {
     height: 60%;
     width: 100%;
     background: url(../img/visuals.jpg);
@@ -119,7 +125,7 @@
     border-radius: 4px;
 }
 
-.item-3 > div:nth-child(1) {
+.item-3>div:nth-child(1) {
     height: 60%;
     width: 100%;
     background: url(../img/writing.jpg);
@@ -129,7 +135,7 @@
     border-radius: 4px;
 }
 
-.item-4 > div:nth-child(1) {
+.item-4>div:nth-child(1) {
     height: 60%;
     width: 100%;
     background: url(../img/health.jpg);
@@ -139,10 +145,10 @@
     border-radius: 4px;
 }
 
-.item-1 > div:nth-child(2), 
-.item-2 > div:nth-child(2), 
-.item-3 > div:nth-child(2), 
-.item-4 > div:nth-child(2) {
+.item-1>div:nth-child(2),
+.item-2>div:nth-child(2),
+.item-3>div:nth-child(2),
+.item-4>div:nth-child(2) {
     margin-top: 5px;
     margin-bottom: 10px;
     font-weight: 700;
@@ -158,4 +164,3 @@
     margin-bottom: 5%;
     width: 50%;
 }
-
