@@ -64,6 +64,12 @@ div button:hover {
   transition: all 0.3s ease;
 }
 
+/* ------------------------------- Sections ------------------------------- */
+
+section {
+  margin: 30rem 0;
+}
+
 /* ------------------------------ HERO BANNER ------------------------------ */
 
 /* -------------------------- Contact Form Section -------------------------- */
@@ -80,7 +86,7 @@ div button:hover {
   width: 100%;
   max-width: 50rem;
   height: 50rem;
-  padding: 2rem;
+  padding: 4.5rem;
   background: var(--app-var-background-color);
   border-radius: 0.4rem;
   box-shadow: #000 0 0 0.1rem 0;
@@ -91,6 +97,15 @@ div button:hover {
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
+}
+
+.contact-form h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--app-var-primary-color);
+  text-align: center;
+  line-height: 3rem;
+  margin-bottom: 1rem;
 }
 
 form input {
@@ -124,7 +139,7 @@ form textarea {
   margin-bottom: 1rem;
 }
 
-.img-container {
+.map-img-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,10 +162,240 @@ form textarea {
     height: auto;
   }
 
-  .img-container {
+  .map-img-container {
     width: 100%;
     height: 30rem;
     background-size: 400%;
     background-position: 45% 50%;
+  }
+}
+
+/* ----------- Company’s email and links for its social networks ----------- */
+
+.email-and-social-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.email-and-social-container h3,
+.email-and-social-container i {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.email-and-social-container i {
+  margin-bottom: 2rem;
+}
+
+.email-container,
+.card-2,
+.card-3 {
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: var(--app-var-hover-product-bg-color);
+  color: var(--app-var-primary-color);
+  text-align: center;
+  padding: 5rem;
+  border-radius: 0.4rem;
+  box-shadow: #000 0 0 0.1rem 0;
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.4rem;
+}
+
+.email-container:hover,
+.card-2:hover,
+.card-3:hover {
+  background-color: var(--app-var-primary-color);
+  color: var(--app-var-background-color);
+  text-shadow: #000 0.1rem 0.1rem 0.1rem;
+  transition: all 0.3s ease;
+}
+
+.three-cards-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 10rem;
+  text-align: center;
+}
+
+.three-cards-header h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--app-var-primary-color);
+  text-align: center;
+  line-height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.three-cards-header p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #5d5d5d;
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  line-height: 2.5rem;
+}
+
+@media screen and (max-width: 1040px) {
+  .email-and-social-container {
+    justify-content: center;
+  }
+}
+
+/* ------------ SOCIAL NETWORKS SECTION ------------ */
+
+.social-networks-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 10rem;
+  text-align: center;
+}
+
+.social-networks-header h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--app-var-primary-color);
+  text-align: center;
+  line-height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.social-networks-header p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #5d5d5d;
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  line-height: 2.5rem;
+}
+
+.social-networks-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
+}
+
+.social-grid {
+  width: 100%;
+  max-width: 50rem;
+  height: 50rem;
+  padding: 4.5rem;
+  background: var(--app-var-background-color);
+  border-radius: 0.4rem;
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5rem;
+}
+
+.social-grid h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--app-var-primary-color);
+  text-align: left;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.social-grid p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #5d5d5d;
+  text-align: left;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hover-effect {
+  background-color: var(--app-var-btn-background-hover);
+  color: var(--app-var-background-color);
+  text-align: center;
+  border-radius: 0.4rem;
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.hover-effect:hover {
+  background-color: var(--app-var-hover-product-bg-color);
+  color: var(--app-var-primary-color);
+  text-shadow: #000 0.1rem 0.1rem 0.1rem;
+  transition: all 0.3s ease;
+}
+
+.social-grid i {
+  padding: 2rem;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.social-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/assets/img/social.jpg) no-repeat;
+  background-size: 100%;
+  background-position: 45% 20%;
+  width: 100%;
+  height: 50rem;
+  border-radius: 0.4rem;
+}
+
+@media (max-width: 976px) {
+  .social-networks-container {
+    flex-direction: column;
+  }
+
+
+  .social-grid {
+    gap: 1rem;
+    padding: 2rem;
+    margin-bottom: 15rem;
+  }
+  
+  .social-img-container {
+    width: 100%;
+    height: 30rem;
+    background-size: 100%;
+    background-position: 45% 20%;
+  }
+  
+}
+
+@media (max-width: 450px) {
+  .hover-effect {
+    width: 15rem;
+    height: 10rem;
   }
 }
