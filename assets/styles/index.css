@@ -72,7 +72,7 @@ section {
 
 /* ------------------------------ HERO BANNER ------------------------------ */
 
-.hero-banner-contact-us {
+.hero-banner-index {
   background-image: url(https://images.pexels.com/photos/4144221/pexels-photo-4144221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
   background-repeat: no-repeat;
   background-position: 0%;
@@ -87,7 +87,7 @@ section {
   position: relative;
 }
 
-.hero-banner-contact-us::after {
+.hero-banner-index::after {
   content: "";
   position: absolute;
   top: 0;
@@ -102,31 +102,33 @@ section {
   z-index: 2;
 }
 
-.hero-banner-contact-us h1 {
+.hero-banner-index h1 {
   font-size: 7rem;
   font-weight: 700;
   text-align: center;
 }
 
-.hero-banner-contact-us p {
+.hero-banner-index p {
   font-size: 3rem;
   font-weight: 400;
   text-align: center;
 }
 
 @media (max-width: 800px) {
-  .hero-banner-contact-us {
+  .hero-banner-index {
     height: 50rem;
   }
 
-  .hero-banner-contact-us h1 {
+  .hero-banner-index h1 {
     font-size: 5rem;
   }
 
-  .hero-banner-contact-us p {
+  .hero-banner-index p {
     font-size: 2rem;
   }
 }
+
+/* ------------------------- FOUR COLUMNS SECTION ------------------------- */
 
 /* -------------------------- Contact Form Section ------------------------- */
 
