@@ -73,7 +73,7 @@ section {
 /* ------------------------------ HERO BANNER ------------------------------ */
 
 .hero-banner-contact-us {
-  background: url(/assets/img/contact-us.jpg) no-repeat;
+  background: URL("/assets/img/contact-us.jpg") no-repeat;
   height: 70rem;
   color: var(--app-var-background-color);
   display: flex;
