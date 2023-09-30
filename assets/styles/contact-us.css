@@ -198,7 +198,7 @@ form textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/assets/img/map.png);
+  background: url(https://raw.githubusercontent.com/stefanoturcarelli/intro-to-web-development-final-project/main/assets/img/map.png);
   background-size: 250%;
   background-position: 45% 40%;
   width: 100%;
