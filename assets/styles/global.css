@@ -21,19 +21,21 @@
 }
 
 .center {
-    text-align: center;
     justify-content: center;
     align-items: center;
-    vertical-align: middle;
 }
 
+.flex {
+    display: flex;
+}
 
-.flex-container,
-.container--flex {
+.flex-container-header,
+.flex-container-footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 1.6rem 3.2rem;
 }
 
 body {
@@ -80,7 +82,11 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
+    gap: 2.4rem;
+}
+main
+    
 }
 
 .nav-bar ul li a {
@@ -179,6 +185,7 @@ header {
 /* --------------------------------- MAIN --------------------------------- */
 
 main {
+    display: flex;
     min-height: 100dvh;
     width: 100%;
     /* padding: 1.6rem 3.2rem; */
@@ -186,12 +193,9 @@ main {
     color: var(--app-color-secondary);
 }
 
-
-
 /* -------------------------------- FOOTER -------------------------------- */
 
 footer {
-    padding: 1.6rem 3.2rem;
     background-color: var(--app-color-tertiary);
     color: var(--color-white);
 }
@@ -202,7 +206,7 @@ footer p {
 }
 
 footer a {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--color-white);
 }
@@ -210,14 +214,11 @@ footer a {
 footer i {
     margin-right: 1.6rem;
     border-radius: 50%;
-    padding: 0.9rem;
+    padding: 0.8rem;
     height: 3.5rem;
     width: 3.5rem;
     line-height: 3.5rem;
-    vertical-align: center;
     text-align: center;
-    align-items: center;
-    justify-content: center;
     color: var(--color-white);
     transition: all 0.3s ease-in-out;
 }
@@ -228,6 +229,7 @@ footer i:hover {
     background-color: var(--app-color-hover);
     transition: all 0.3s ease-in-out;
 }
+
 
 @media (max-width: 800px) {
 
@@ -243,48 +245,6 @@ footer i:hover {
 
 /* ----------------------------- INDEX.html ----------------------------- */
 
-
-/*Products*/
-
-section.products-grid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 2rem;
-    justify-items: center;
-    align-items: center;
-    padding: 4rem 0;
-}
-
-.products {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem 0;
-}
-
-/*review*/
-
-section.review-grid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 2rem;
-    justify-items: center;
-    align-items: center;
-    padding: 4rem 0;
-}
-
-.review {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem 0;
-}
 
 /* --------------------------------- MEDIA --------------------------------- */
 

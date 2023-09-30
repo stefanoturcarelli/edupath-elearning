@@ -207,7 +207,7 @@ form textarea {
   border-radius: 0.4rem;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .contact-form-container {
     flex-direction: column;
     gap: 2rem;
@@ -308,7 +308,7 @@ form textarea {
   line-height: 2.5rem;
 }
 
-@media screen and (max-width: 1040px) {
+@media (max-width: 1040px) {
   .email-and-social-container {
     justify-content: center;
   }

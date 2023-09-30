@@ -3,50 +3,50 @@
     --app-color-black: #000;
     --app-btn-background: #264470;
     --app-btn-background-hover: #355f9c;
-    --app-background-login-icons-hover: #cecece88;
+    --app-background-login-icons-hover: #ececec88;
     --app-text-colors-h: #264470;
 
 }
 
-.container-login {
+.flex-container-login {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.aside-box,
+.login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    height: 60rem;
+    width: 40rem;
+    box-shadow: #0000001a 0 0.5rem 1rem;
 }
 
 .aside-box {
-    background: url(../img/login-aside-background.svg) var(--app-color-white);
+    background: url(../img/login-aside-background.svg) var(--app-color-white) no-repeat center center;
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     border-bottom-left-radius: 1rem;
     border-top-left-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 70rem;
-    width: 50%;
+    padding: 5rem;
 }
 
-.company-name h2 {
+.wel-text h2 {
     font-size: 3rem;
     font-weight: 700;
     color: var(--app-text-colors-h);
-    margin-bottom: 49rem;
 }
 
-.wel-text h3 {
+.sing-up-text h2 {
     font-size: 3rem;
     font-weight: 700;
     color: var(--app-text-colors-h);
     text-align: center;
 }
 
-.wel-text p {
+.sing-up-text p {
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--app-color-black);
@@ -56,37 +56,20 @@
 
 .login-box {
     background-color: var(--app-color-white);
-    backdrop-filter: blur(1rem);
-    -webkit-backdrop-filter: blur(1rem);
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 70rem;
-    width: 50%;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 5rem;
 }
 
-div.login-box div.title-text h2 {
+.title-text h2 {
     font-size: 3rem;
     font-weight: 700;
     color: var(--app-text-colors-h);
-    margin-bottom: 2rem;
-}
-
-div.login-box div.small-text p {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: var(--app-color-black);
-    margin-bottom: 2rem;
 }
 
 .input-group {
-    width: 50%;
+    width: 100%;
     height: 5rem;
-    margin-bottom: 2rem;
 }
 
 .input-group input {
@@ -96,24 +79,28 @@ div.login-box div.small-text p {
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--app-color-black);
-    border: 1px solid #e2e2e2;
+    border: 0.1rem solid #e2e2e2;
     border-radius: 0.5rem;
     outline: none;
     transition: all 0.3s ease-in-out;
 }
 
 .input-group input:focus {
-    border: 1px solid var(--app-color-black);
+    border: 0.1rem solid var(--app-color-black);
     transition: all 0.3s ease-in-out;
 }
 
 .input-group input::placeholder {
     font-size: 1.5rem;
     font-weight: 400;
-    color: var(--app-color-black);
 }
 
-div.input-group button {
+.input-check {
+    width: 100%;
+    height: 5rem;
+}
+
+.input-group button[type="submit"] {
     width: 100%;
     height: 100%;
     padding: 0 1rem;
@@ -121,19 +108,19 @@ div.input-group button {
     font-weight: 400;
     color: var(--app-color-white);
     background-color: var(--app-btn-background);
-    border: 1px solid #e2e2e2;
+    border: 0.1rem solid #e2e2e2;
     border-radius: 0.5rem;
     outline: none;
     transition: all 0.3s ease-in-out;
 }
 
-div.input-group button:hover {
-    border: 1px solid var(--app-color-black);
+.input-group button[type="submit"]:hover {
+    border: 0.1rem solid var(--app-color-black);
     transition: all 0.3s ease-in-out;
     background-color: var(--app-btn-background-hover);
 }
 
-div.small-text p {
+.small-text p {
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--app-color-black);
@@ -142,11 +129,15 @@ div.small-text p {
     vertical-align: middle;
 }
 
-div.small-text p a:hover {
+.small-text p a {
+    color: var(--app-btn-background);
+}
+
+.small-text p a:hover {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--app-btn-background-hover);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .social-icons {
@@ -155,7 +146,7 @@ div.small-text p a:hover {
     justify-content: space-evenly;
     align-items: center;
     height: 5rem;
-    width: 60%;
+    width: 100%;
 }
 
 .social-icons i {
@@ -167,7 +158,7 @@ div.small-text p a:hover {
     align-items: center;
     text-decoration: none;
     color: var(--app-btn-background);
-    border: 1px solid #e2e2e2;
+    border: 0.1rem solid #e2e2e2;
     border-radius: 50%;
     transition: all 0.3s ease-in-out;
 }
@@ -190,7 +181,6 @@ div.small-text p a:hover {
     color: #db4a39;
 }
 
-
 .social-icons a i.fa-linkedin-in:hover {
     color: #00a5f1;
 }
@@ -203,8 +193,11 @@ div.small-text p a:hover {
     color: #00a4ef;
 }
 
-/*MEDIA QUERIES*/
+/* Media query for mobile */
 
+@media only screen and (max-width: 800px) {
+    .flex-container-login {
+        flex-direction: column;
 /* Media query for desktop */
 
 @media only screen and (min-width: 768px) {
@@ -215,32 +208,28 @@ div.small-text p a:hover {
     }
 
     .aside-box {
-        height: calc(100vh - 20rem);
-        width: calc(100dvw - 20rem);
+        max-height: 30vh;
+        min-width: 100%;
         border-bottom-left-radius: 1rem;
-        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
     }
 
     .login-box {
-        height: calc(100vh - 20rem);
-        width: calc(100dvw - 20rem);
+        max-height: 50vh;
+        width: 100%;
         border-top-right-radius: 1rem;
-        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
     }
 
-    .company-name h2 {
-        margin-bottom: 15rem;
+    .wel-text h2 {
+        font-size: 2.4rem;
     }
 
-    .wel-text h3 {
-        margin-top: 20rem;
-        font-size: 3rem;
-        font-weight: 700;
-        color: var(--app-text-colors-h);
-        text-align: center;
+    .sing-up-text h2 {
+        font-size: 2.4rem;
     }
 
-    .wel-text p {
+    .sing-up-text p {
         font-size: 1.5rem;
         font-weight: 400;
         color: var(--app-color-black);
@@ -303,11 +292,11 @@ div.small-text p a:hover {
         border-bottom-left-radius: 1rem;
     }
 
-    .input-group {
-        width: 80%;
+    .title-text h2 {
+        font-size: 2.4rem;
     }
 
     .social-icons {
-        width: 80%;
+        width: 100%;
     }
 }
