@@ -305,7 +305,7 @@ form textarea {
   line-height: 2.5rem;
 }
 
-@media screen and (max-width: 1040px) {
+@media (max-width: 1040px) {
   .email-and-social-container {
     justify-content: center;
   }
@@ -417,7 +417,8 @@ form textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/assets/img/social.jpg) no-repeat;
+  background: url(https://images.pexels.com/photos/4350099/pexels-photo-4350099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
+    no-repeat;
   background-size: 100%;
   background-position: 45% 20%;
   width: 100%;
