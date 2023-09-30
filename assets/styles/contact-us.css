@@ -67,7 +67,7 @@ div button:hover {
 /* ------------------------------- Sections ------------------------------- */
 
 section {
-  margin: 30rem 0;
+  margin: 20rem 0;
 }
 
 /* ------------------------------ HERO BANNER ------------------------------ */
@@ -124,7 +124,6 @@ section {
     font-size: 2rem;
   }
 }
-
 
 /* -------------------------- Contact Form Section ------------------------- */
 
@@ -532,4 +531,3 @@ form textarea {
     text-align: center;
   }
 }
-
