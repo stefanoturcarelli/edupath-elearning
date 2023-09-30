@@ -67,13 +67,13 @@ div button:hover {
 /* ------------------------------- Sections ------------------------------- */
 
 section {
-  margin: 30rem 0;
+  margin: 20rem 0;
 }
 
 /* ------------------------------ HERO BANNER ------------------------------ */
 
 .hero-banner-contact-us {
-  background-image: url(https://images.pexels.com/photos/4492129/pexels-photo-4492129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-image: url(https://images.pexels.com/photos/4144221/pexels-photo-4144221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
   background-repeat: no-repeat;
   background-position: 0%;
   background-size: cover;
@@ -94,7 +94,7 @@ section {
   left: 0;
   width: 100%;
   height: inherit;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.668);
   z-index: 1;
 }
 
@@ -127,7 +127,6 @@ section {
     font-size: 2rem;
   }
 }
-
 
 /* -------------------------- Contact Form Section ------------------------- */
 
@@ -535,4 +534,3 @@ form textarea {
     text-align: center;
   }
 }
-
