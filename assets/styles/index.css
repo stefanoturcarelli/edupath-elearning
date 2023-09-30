@@ -1,161 +1,70 @@
-/* ------------------------------ HERO BANNER ------------------------------ */
+:root {
+    --app-var-background-color: #fff;
+    --app-var-primary-color: #264470;
+    --app-var-btn-background: #264470;
+    --app-var-btn-background-hover: #355f9c;
+    --app-var-btn-hover: #3d3a9c;
+    --app-var-star-color: #f1c40f;
+    --app-var-hover-product-bg-color: #f5f5f5;
+    --app-var-title-products-color: #264470;
+    --app-var-text-products-color: #000;
+    --app-var-category-icons-color: #067894;
+  }
 
-.hero-banner {
-    background-color: var(--app-color-secondary);
-    background-image: url(../img/index.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  .page-title-text {
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    padding: 20rem 0;
-    position: relative;
-    height: 100%;
-}
-
-.hero-banner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.575);
-    z-index: 1;
-}
-
-.hero-banner h1 {
-    font-size: 4.8rem;
+    margin: 4rem 0;
+  }
+  
+  .page-title-text h2 {
+    font-size: 4rem;
     font-weight: 700;
+    color: var(--app-var-primary-color);
     text-align: center;
-    margin-bottom: 1.6rem;
-    color: #fff;
-    z-index: 2;
-}
-
-.hero-banner p {
-    font-size: 2.4rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .page-title-text p {
+    font-size: 2rem;
     font-weight: 400;
+    color: var(--app-var-text-products-color);
     text-align: center;
-    color: #fff;
-    z-index: 2;
-    margin-bottom: 1.6rem;
-}
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
 
-.hero-banner a {
+  div button {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 3.2rem;
+    border: none;
+    border-radius: 0.4rem;
+    outline: none;
+    background: var(--app-var-btn-background);
+    color: var(--app-var-background-color);
+    box-shadow: #000 0 0 0.1rem 0;
     font-size: 1.6rem;
     font-weight: 700;
     text-align: center;
-    margin-top: 1.6rem;
-    color: #fff;
-    z-index: 2;
-    background-color: #182D4C;
-    padding: 1rem 3.2rem;
-    border-radius: 0.7rem;
-    transition: all 0.3s ease-in-out;
-}
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  div button:hover {
+    background: var(--app-var-btn-background-hover);
+    color: var(--app-var-background-color);
+    text-shadow: #000 0.1rem 0.1rem 0.1rem;
+    transition: all 0.3s ease;
+  
 
-.hero-banner a:hover {
-    background-color: var(--app-color-hover);
-    transition: all 0.3s ease-in-out;
-    color: var(--app-color-secondary);
-}
+
+/* ------------------------------ HERO BANNER ------------------------------ */
 
 /* --------------------------------- MAIN --------------------------------- */
-
-.section-4-columns-heading {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-    justify-content: space-evenly;
-}
-
-.section-4-columns {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    height: 400px;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-    justify-content: space-evenly;
-}
-
-.item-1, .item-2, .item-3, .item-4 {
-    width: 200px;
-    height: 300px;
-    margin: auto;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.item-1 p, .item-2 p, .item-3 p, .item-4 p {
-    font-size: 80%;
-}
-
-.item-1 > div:nth-child(1) {
-    height: 60%;
-    width: 100%;
-    background: url(../img/programming.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 4px;
-}
-
-.item-2 > div:nth-child(1) {
-    height: 60%;
-    width: 100%;
-    background: url(../img/visuals.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 4px;
-}
-
-.item-3 > div:nth-child(1) {
-    height: 60%;
-    width: 100%;
-    background: url(../img/writing.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 4px;
-}
-
-.item-4 > div:nth-child(1) {
-    height: 60%;
-    width: 100%;
-    background: url(../img/health.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 4px;
-}
-
-.item-1 > div:nth-child(2), 
-.item-2 > div:nth-child(2), 
-.item-3 > div:nth-child(2), 
-.item-4 > div:nth-child(2) {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-weight: 700;
-}
-
-.button {
-    font-size: 80%;
-    font-weight: 700;
-    border-radius: 4px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    width: 50%;
-}
-

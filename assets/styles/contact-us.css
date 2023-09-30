@@ -1,196 +1,67 @@
-/* ------------------------------ HERO BANNER ------------------------------ */
+:root {
+    --app-var-background-color: #fff;
+    --app-var-primary-color: #264470;
+    --app-var-btn-background: #264470;
+    --app-var-btn-background-hover: #355f9c;
+    --app-var-btn-hover: #3d3a9c;
+    --app-var-star-color: #f1c40f;
+    --app-var-hover-product-bg-color: #f5f5f5;
+    --app-var-title-products-color: #264470;
+    --app-var-text-products-color: #000;
+    --app-var-category-icons-color: #067894;
+  }
 
-.hero-banner {
-    background-color: var(--app-color-secondary);
-    background-image: url(../img/contact-us.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
+  .page-title-text {
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    padding: 20rem 0;
-    position: relative;
-    height: 100%;
-}
-
-.hero-banner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.575);
-    z-index: 1;
-}
-
-.hero-banner h1 {
-    font-size: 4.8rem;
+    margin: 4rem 0;
+  }
+  
+  .page-title-text h2 {
+    font-size: 4rem;
     font-weight: 700;
+    color: var(--app-var-primary-color);
     text-align: center;
-    margin-bottom: 1.6rem;
-    color: #fff;
-    z-index: 2;
-}
-
-.hero-banner p {
-    font-size: 2.4rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .page-title-text p {
+    font-size: 2rem;
     font-weight: 400;
+    color: var(--app-var-text-products-color);
     text-align: center;
-    color: #fff;
-    z-index: 2;
-    margin-bottom: 1.6rem;
-}
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
 
-.hero-banner a {
+  div button {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 3.2rem;
+    border: none;
+    border-radius: 0.4rem;
+    outline: none;
+    background: var(--app-var-btn-background);
+    color: var(--app-var-background-color);
+    box-shadow: #000 0 0 0.1rem 0;
     font-size: 1.6rem;
     font-weight: 700;
     text-align: center;
-    margin-top: 1.6rem;
-    color: #fff;
-    z-index: 2;
-    background-color: #182D4C;
-    padding: 1rem 3.2rem;
-    border-radius: 0.7rem;
-    transition: all 0.3s ease-in-out;
-}
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  div button:hover {
+    background: var(--app-var-btn-background-hover);
+    color: var(--app-var-background-color);
+    text-shadow: #000 0.1rem 0.1rem 0.1rem;
+    transition: all 0.3s ease;
+  
 
-.hero-banner a:hover {
-    background-color: var(--app-color-hover);
-    transition: all 0.3s ease-in-out;
-    color: var(--app-color-secondary);
-}
-
-/* ------------------------------------------------------------------------ */
-
-.contact-form {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 100px 0;
-}
-
-.contact-us-flex {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100dvh;
-}
-
-.form-flex {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 20px;
-	min-height: 100dvh;
-	padding: 100px;
-}
-
-.form-flex form {
-	background-color: var(--app-color-tertiary);
-	max-width: 400px;
-	margin: 0 auto;
-	padding: 40px;
-	border-radius: 5px;
-}
-
-label {
-	display: block;
-	margin-bottom: 10px;
-	color: var(--app-color-primary);
-}
-
-textarea {
-	display: block;
-	width: 300px;
-	height: 100px;
-	margin-top: 5px;
-	margin-bottom: 50px;
-	resize: none;
-}
-
-input {
-	display: block;
-	width: 100%;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	border-radius: 5px;
-	padding: 10px;
-}
-
-input[type="submit"] {
-    padding: 10px 20px; 
-	background-color: var(--app-color-secondary);
-	color: var(--app-color-primary);
-	transition: all 0.3s ease-in-out;
-}
-
-input[type="submit"]:hover {
-	background-color: var(--app-color-hover);
-	color: var(--app-color-secondary);
-	transition: all 0.3s ease-in-out;
-}
-
-#message {
-	border-radius: 5px;
-	padding: 10px;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.column {
-    flex: 0 0 auto;
-    width: calc(33.33333333% - 13.33333333px);
-    border-radius: 5px;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.one, .two, .three {
-    background-color: #ddd;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: start;
-	padding: 40px;
-}
-
-.row button {
-	margin-top: 20px;
-	background-color: var(--app-color-secondary);
-	color: var(--app-color-primary);
-	border: none;
-	padding: 10px 20px;
-	border-radius: 5px;
-	font-size: 1.6rem;
-	font-weight: 700;
-}
-
-.row h3 {
-	font-size: 2.4rem;
-	font-weight: 700;
-	margin-bottom: 10px;
-    background-size: 2rem;
-}
-
-/* --------------------------------- MEDIA --------------------------------- */
-
-@media screen and (max-width: 768px) {
-    .one, .two, .three {
-        width: calc((100% / 2) - (20px / 2))
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .one, .two, .three {
-        width: 100%;
-    }
-}
+/* ------------------------------ HERO BANNER ------------------------------ */
