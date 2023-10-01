@@ -201,7 +201,7 @@ form textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/assets/img/map.png);
+  background: url(https://raw.githubusercontent.com/stefanoturcarelli/intro-to-web-development-final-project/main/assets/img/map.png);
   background-size: 250%;
   background-position: 45% 40%;
   width: 100%;
@@ -422,7 +422,7 @@ form textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/assets/img/social.jpg) no-repeat;
+  background: url(https://images.pexels.com/photos/4350099/pexels-photo-4350099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) no-repeat;
   background-size: 100%;
   background-position: 45% 20%;
   width: 100%;
@@ -508,7 +508,7 @@ form textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/assets/img/our-team.jpg) no-repeat;
+  background: url(https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) no-repeat;
   background-size: 100%;
   background-position: 45% 40%;
   width: 100%;
