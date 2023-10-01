@@ -1,224 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Marcelo Lopes, Stefano Turcarelli" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/resets/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/global.css" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <!-- OMG Information -->
+    <meta
+      name="description"
+      content="EduPath is a platform that provides a wide range of educational resources for students, teachers, and parents."
+    />
+    <meta
+      name="keywords"
+      content="EduPath, education, resources, students, teachers, parents, learning, teaching, school, university, college, online, platform, courses, lessons"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Marcelo Lopes, Stefano Turcarelli">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="stylesheet" href="./assets/resets/reset.css">
-  <link rel="stylesheet" href="./assets/styles/global.css">
-  <link rel="stylesheet" href="./assets/styles/index.css">
-  <!-- OMG Information -->
-  <meta name="description"
-    content="EduPath is a platform that provides a wide range of educational resources for students, teachers, and parents.">
-  <meta name="keywords"
-    content="EduPath, education, resources, students, teachers, parents, learning, teaching, school, university, college, online, platform, courses, lessons">
+    <!-- Facebook Sharing -->
+    <meta property="og:title" content="EduPath" />
+    <meta
+      property="og:description"
+      content="EduPath is a platform that provides a wide range of educational resources for students, teachers, and parents."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/stefanoturcarelli/intro-to-web-development-final-project/main/assets/img/favicon.png"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="EduPath" />
+    <meta property="og:locale" content="en_US" />
 
-  <!-- Facebook Sharing -->
-  <meta property="og:title" content="EduPath">
-  <meta property="og:description"
-    content="EduPath is a platform that provides a wide range of educational resources for students, teachers, and parents.">
-  <meta property="og:image"
-    content="https://raw.githubusercontent.com/stefanoturcarelli/intro-to-web-development-final-project/main/assets/img/favicon.png">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="EduPath">
-  <meta property="og:locale" content="en_US">
+    <!-- Link to icon -->
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/stefanoturcarelli/intro-to-web-development-final-project/main/assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Home - EduPath</title>
+  </head>
 
-  <!-- Link to icon -->
-  <link rel="icon"
-    href="https://raw.githubusercontent.com/stefanoturcarelli/intro-to-web-development-final-project/main/assets/img/favicon.png"
-    type="image/x-icon">
-  <title>Home - EduPath</title>
-</head>
-
-<body>
-  <header>
-    <div class="container">
-      <div class="flex-container-header">
-        <div class="logo">
-          <a href="./index.html">
-            <h1>EduPath</h1>
-          </a>
-        </div>
-        <div class="nav-bar">
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./products.html">Courses</a></li>
-            <li><a href="./about-us.html">About</a></li>
-            <li><a href="./contact-us.html">Contact</a></li>
-            <li><a href="./login.html">Login</a></li>
-          </ul>
-        </div>
-        <div class="hamburger">
-          <i class="fas fa-bars"></i>
+  <body>
+    <header>
+      <div class="container">
+        <div class="flex-container-header">
+          <div class="logo">
+            <a href="./index.html">
+              <h1>EduPath</h1>
+            </a>
+          </div>
+          <div class="nav-bar">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./products.html">Courses</a></li>
+              <li><a href="./about-us.html">About</a></li>
+              <li><a href="./contact-us.html">Contact</a></li>
+              <li><a href="./login.html">Login</a></li>
+            </ul>
+          </div>
+          <div class="hamburger">
+            <i class="fas fa-bars"></i>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  <main>
-    <!-- Hero Banner -->
+    </header>
+    <main>
+      <!-- Hero Banner -->
       <div class="hero-banner-index">
         <div class="title-slogan">
           <h1>EduPath</h1>
           <div>
-            <p>
-              Dive into a world of limitless learning opportunities.
-            </p>
-            <p>
-              Your Gateway to Knowledge and Success!
-            </p>
+            <p>Dive into a world of limitless learning opportunities.</p>
+            <p>Your Gateway to Knowledge and Success!</p>
           </div>
         </div>
       </div>
-    <!-- Contact Us Form -->
-    <div class="container">
-      <section>
-        <div class="three-cards-header">
-          <h2>We're here to help!</h2>
-        </div>
-        <div class="contact-form-container">
-          <div class="contact-form">
-            <h2>Contact us</h2>
-            <form action="submit">
-              <div class="input-container">
-                <input type="text" id="name" placeholder="John Doe">
-              </div>
-              <div class="input-container">
-                <input type="email" id="email" placeholder="johndoe@email.com">
-              </div>
-              <div class="input-container">
-                <textarea name="message" id="message" cols="30" rows="10"
-                  placeholder="Write your message here..."></textarea>
-              </div>
-              <button>Send</button>
-            </form>
+      <!--Products section-->
+      <section class="products-layout">
+        <div class="product-small-cards">
+          <div class="card-images">
+            <img src="./assets/media/images/C++.jpeg" alt="C++ course" />
           </div>
-          <div class="map-img-container"></div>
-        </div>
-      </section>
-      <!-- Three cards -->
-      <section>
-        <div class="three-cards-header">
-          <h2>We Are Here For You</h2>
-          <p>
-            Got questions or feedback? We're here to help! Feel free to reach
-            out to our dedicated team. Whether you
-            need assistance, want to collaborate, or just want to say hello,
-            we're just a message away. We'll get back to you as soon as possible.
-            Your input matters to us, and we look forward
-            to connecting with you.
-          </p>
-        </div>
-        <div class="email-and-social-container">
-          <a href="edupath@sgtr.dev">
-            <div class="email-container">
-              <i class="fas fa-envelope"></i>
-              <h3>Email</h3>
-              <p>edupath@email.com</p>
+          <div class="card-title"><p>Product name and ico</p></div>
+          <div class="card-text"><p>Text for the product</p></div>
+          <div class="card-price-rating">
+            <div class="card-rating">product rating</div>
+            <div class="card-price">
+              <p>$$$$</p>
+              <i class="fa fas-star"></i>
             </div>
-          </a>
-          <a href="#">
-            <div class="card-2">
-              <i class="fas fa-map-marker-alt"></i>
-              <h3>Address</h3>
-              <p>
-                130 Henlow Bay, Winnipeg, MB R3Y 1G4
-              </p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="card-3">
-              <i class="fas fa-clock"></i>
-              <h3>Hours</h3>
-              <p>
-                Monday - Friday: 9:00 AM - 5:00 PM
-              </p>
-            </div>
-          </a>
-        </div>
-      </section>
-      <!-- Social networks -->
-      <section>
-        <div class="social-networks-header">
-          <h2>Connect with Us on Social Media</h2>
-          <p>
-            Stay in the loop on social media! Follow us on Facebook, Twitter,
-            Instagram, and GitHub for updates,
-            promotions, and lively conversations. We value your engagement and
-            can't wait to connect with you there!
-          </p>
-        </div>
-        <div class="social-networks-container">
-          <div class="social-grid">
-            <a class="hover-effect" href="#">
-              <div class="facebook">
-                <i class="fab fa-facebook-f"></i>
-              </div>
-            </a>
-            <a class="hover-effect" href="#">
-              <div class="instagram">
-                <i class="fab fa-instagram"></i>
-              </div>
-            </a>
-            <a class="hover-effect" href="#">
-              <div class="twitter">
-                <i class="fab fa-twitter"></i>
-              </div>
-            </a>
-            <a class="hover-effect" href="#">
-              <div class="github">
-                <i class="fab fa-github"></i>
-              </div>
-            </a>
           </div>
-          <div class="social-img-container"></div>
+          <div class="card-product-link"><a href="#">Know more about</a></div>
+          <div class="card-button"><button>Buy now</button></div>
+        </div>
+        <div class="product-small-cards">
+          <div class="card-images">
+            <img
+              src="./assets/media/images/javascript.jpeg"
+              alt="javascript course"
+            />
+          </div>
+          <div class="card-title"><p>Product name and ico</p></div>
+          <div class="card-text"><p>Text for the product</p></div>
+          <div class="card-price-rating">
+            <div class="card-rating">product rating</div>
+            <div class="card-price">
+              <p>$$$$</p>
+              <i class="fa fas-star"></i>
+            </div>
+          </div>
+          <div class="card-product-link"><a href="#">Know more about</a></div>
+          <div class="card-button"><button>Buy now</button></div>
+        </div>
+        <div class="product-small-cards">
+          <div class="card-images">
+            <img src="./assets/media/images/cinema.jpeg" alt="" />
+          </div>
+          <div class="card-title"><p>Product name and ico</p></div>
+          <div class="card-text"><p>Text for the product</p></div>
+          <div class="card-price-rating">
+            <div class="card-rating">product rating</div>
+            <div class="card-price">
+              <p>$$$$</p>
+              <i class="fa fas-star"></i>
+            </div>
+          </div>
+          <div class="card-product-link"><a href="#">Know more about</a></div>
+          <div class="card-button"><button>Buy now</button></div>
+        </div>
+        <div class="product-small-cards">
+          <div class="card-images">
+            <img src="" alt="" />
+          </div>
+          <div class="card-title"><p>Product name and ico</p></div>
+          <div class="card-text"><p>Text for the product</p></div>
+          <div class="card-price-rating">
+            <div class="card-rating">product rating</div>
+            <div class="card-price">
+              <p>$$$$</p>
+              <i class="fa fas-star"></i>
+            </div>
+          </div>
+          <div class="card-product-link"><a href="#">Know more about</a></div>
+          <div class="card-button"><button>Buy now</button></div>
+        </div>
+        <div class="product-small-cards">
+          <div class="card-images">
+            <img src="" alt="" />
+          </div>
+          <div class="card-title"><p>Product name and icon</p></div>
+          <div class="card-text"><p>Text for the product</p></div>
+          <div class="card-price-rating">
+            <div class="card-rating">product rating</div>
+            <div class="card-price">
+              <p>$$$$</p>
+              <i class="fa fas-star"></i>
+            </div>
+          </div>
+          <div class="card-product-link"><a href="#">Know more about</a></div>
+          <div class="card-button"><button>Buy now</button></div>
+        </div>
+        <div class="product-small-cards">
+          <div class="card-images">
+            <img src="" alt="" />
+          </div>
+          <div class="card-title"><p>Product name and icon</p></div>
+          <div class="card-text"><p>Text for the product</p></div>
+          <div class="card-price-rating">
+            <div class="card-rating">product rating</div>
+            <div class="card-price">
+              <p>$$$$</p>
+              <i class="fa fas-star"></i>
+            </div>
+          </div>
+          <div class="card-product-link"><a href="#">Know more about</a></div>
+          <div class="card-button"><button>Buy now</button></div>
+        </div>
+        <div class="product-small-cards">
+          <div class="card-images">
+            <img src="" alt="" />
+          </div>
+          <div class="card-title"><p>Product name and icon</p></div>
+          <div class="card-text"><p>Text for the product</p></div>
+          <div class="card-price-rating">
+            <div class="card-rating">product rating</div>
+            <div class="card-price">
+              <p>$$$$</p>
+              <i class="fa fas-star"></i>
+            </div>
+          </div>
+          <div class="card-product-link"><a href="#">Know more about</a></div>
+          <div class="card-button"><button>Buy now</button></div>
+        </div>
+        <div class="product-small-cards">
+          <div class="card-images">
+            <img src="" alt="" />
+          </div>
+          <div class="card-title"><p>Product name and icon</p></div>
+          <div class="card-text"><p>Text for the product</p></div>
+          <div class="card-price-rating">
+            <div class="card-rating">product rating</div>
+            <div class="card-price">
+              <p>$$$$</p>
+              <i class="fa fas-star"></i>
+            </div>
+          </div>
+          <div class="card-product-link"><a href="#">Know more about</a></div>
+          <div class="card-button"><button>Buy now</button></div>
         </div>
       </section>
-      <!-- Link to About us section -->
-      <section>
-        <div class="link-to-about-us-container">
-          <div class="link-to-about-us-header">
-            <h2>Meet Our Team</h2>
+      <!-- Contact Us Form -->
+      <div class="container">
+        <section>
+          <div class="three-cards-header">
+            <h2>We're here to help!</h2>
+          </div>
+          <div class="contact-form-container">
+            <div class="contact-form">
+              <h2>Contact us</h2>
+              <form action="submit">
+                <div class="input-container">
+                  <input type="text" id="name" placeholder="John Doe" />
+                </div>
+                <div class="input-container">
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="johndoe@email.com"
+                  />
+                </div>
+                <div class="input-container">
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Write your message here..."
+                  ></textarea>
+                </div>
+                <button>Send</button>
+              </form>
+            </div>
+            <div class="map-img-container"></div>
+          </div>
+        </section>
+        <!-- Three cards -->
+        <section>
+          <div class="three-cards-header">
+            <h2>We Are Here For You</h2>
             <p>
-              Curious to know more about the faces behind our brand? We invite
-              you to get to know the talented individuals who drive our
-              mission forward. Join us in celebrating the people who
-              make it all happen!
+              Got questions or feedback? We're here to help! Feel free to reach
+              out to our dedicated team. Whether you need assistance, want to
+              collaborate, or just want to say hello, we're just a message away.
+              We'll get back to you as soon as possible. Your input matters to
+              us, and we look forward to connecting with you.
             </p>
-            <div>
-              <button>
-                <a href="#">Know more</a>
-              </button>
-            </div>
           </div>
-          <div class="about-us-img-container"></div>
-        </div>
-      </section>
-    </div>
-  </main>
-  <footer>
-    <div class="container">
-      <div class="flex-container-footer">
-        <div>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-github"></i></a>
-        </div>
-        <div>
-          <p>&copy; 2023 EduPath</p>
+          <div class="email-and-social-container">
+            <a href="edupath@sgtr.dev">
+              <div class="email-container">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>edupath@email.com</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="card-2">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Address</h3>
+                <p>130 Henlow Bay, Winnipeg, MB R3Y 1G4</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="card-3">
+                <i class="fas fa-clock"></i>
+                <h3>Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+              </div>
+            </a>
+          </div>
+        </section>
+        <!-- Social networks -->
+        <section>
+          <div class="social-networks-header">
+            <h2>Connect with Us on Social Media</h2>
+            <p>
+              Stay in the loop on social media! Follow us on Facebook, Twitter,
+              Instagram, and GitHub for updates, promotions, and lively
+              conversations. We value your engagement and can't wait to connect
+              with you there!
+            </p>
+          </div>
+          <div class="social-networks-container">
+            <div class="social-grid">
+              <a class="hover-effect" href="#">
+                <div class="facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+              </a>
+              <a class="hover-effect" href="#">
+                <div class="instagram">
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </a>
+              <a class="hover-effect" href="#">
+                <div class="twitter">
+                  <i class="fab fa-twitter"></i>
+                </div>
+              </a>
+              <a class="hover-effect" href="#">
+                <div class="github">
+                  <i class="fab fa-github"></i>
+                </div>
+              </a>
+            </div>
+            <div class="social-img-container"></div>
+          </div>
+        </section>
+        <!-- Link to About us section -->
+        <section>
+          <div class="link-to-about-us-container">
+            <div class="link-to-about-us-header">
+              <h2>Meet Our Team</h2>
+              <p>
+                Curious to know more about the faces behind our brand? We invite
+                you to get to know the talented individuals who drive our
+                mission forward. Join us in celebrating the people who make it
+                all happen!
+              </p>
+              <div>
+                <button>
+                  <a href="#">Know more</a>
+                </button>
+              </div>
+            </div>
+            <div class="about-us-img-container"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="flex-container-footer">
+          <div>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+          <div>
+            <p>&copy; 2023 EduPath</p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
