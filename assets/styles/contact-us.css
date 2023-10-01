@@ -359,10 +359,10 @@ form textarea {
   height: 50rem;
   padding: 4.5rem;
   background: var(--app-var-background-color);
-  border-radius: 0.4rem;
-  backdrop-filter: blur(1rem);
-  -webkit-backdrop-filter: blur(1rem);
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem);
+  border-radius: 0.4rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
