@@ -1,227 +1,354 @@
 :root {
-  --app-var-background-color: #fff;
-  --app-var-primary-color: #264470;
-  --app-var-btn-background: #264470;
-  --app-var-btn-background-hover: #355f9c;
-  --app-var-btn-hover: #3d3a9c;
-  --app-var-star-color: #f1c40f;
-  --app-var-hover-product-bg-color: #f5f5f5;
-  --app-var-title-products-color: #264470;
-  --app-var-text-products-color: #000;
-  --app-var-category-icons-color: #067894;
+	--app-var-background-color: #fff;
+	--app-var-primary-color: #2e435e;
+	--app-var-secondary-color: #433bff;
+	--app-var-dark-color-primary: #4F709C;
+	--app-var-dark-color-secondary: #fbfbfe;
+	--app-var-light-background-color: #f5f5f5;
+	--app-var-white: #fff;
+	--app-var-black: #000;
+	--app-var-gray: #ccc;
+	--app-var-gray-2: #f5f5f5;
+	--app-var-gray-3: #e5e5e5;
 }
 
-.page-title-text {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 4rem 0;
+/* 
+    URL with the colors
+    https://www.realtimecolors.com/?colors=050315-fbfbfe-2f27ce-dedcff-433bff
+*/
+
+/*------MAIN STYLES------*/
+main .content-inner {
+	padding: 1rem;
 }
 
-.page-title-text h2 {
-  font-size: 4rem;
-  font-weight: 700;
-  color: var(--app-var-primary-color);
-  text-align: center;
-  line-height: 4rem;
-  margin-bottom: 1rem;
+main .container {
+	max-width: 991px;
+	margin-inline: auto;
+	background-color: var(--app-var-background-color);
+	margin-block: 3rem 5rem;
 }
 
-.page-title-text p {
-  font-size: 2rem;
-  font-weight: 400;
-  color: var(--app-var-text-products-color);
-  text-align: center;
-  line-height: 2rem;
-  margin-bottom: 1rem;
+main h1 {
+	font-size: 2rem;
 }
 
-div button {
-  width: 100%;
-  margin: 0 auto;
-  padding: 1rem 3.2rem;
-  border: none;
-  border-radius: 0.4rem;
-  outline: none;
-  background: var(--app-var-btn-background);
-  color: var(--app-var-background-color);
-  box-shadow: #000 0 0 0.1rem 0;
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  text-transform: uppercase;
+.content-inner {
+	max-width: 991px;
+	margin-inline: auto;
+	padding-block: 2rem;
 }
 
-div button:hover {
-  background: var(--app-var-btn-background-hover);
-  color: var(--app-var-background-color);
-  text-shadow: #000 0.1rem 0.1rem 0.1rem;
-  transition: all 0.3s ease;
+.content-inner section:not(.products-grid) {
+	padding-block: 3rem 5rem;
 }
 
-/* ------------------------------- Sections ------------------------------- */
+/*------HERO BANNER------*/
+
+.banner .subcontent {
+	margin-top: 1rem;
+}
 
 section {
-  margin: 20rem 0;
+	position: relative;
 }
 
-/* ------------------------------ HERO BANNER ------------------------------ */
-
-.hero-banner-index {
-  background-image: url(https://images.pexels.com/photos/4144221/pexels-photo-4144221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-  background-repeat: no-repeat;
-  background-position: 0%;
-  background-size: cover;
-  height: 100dvh;
-  color: var(--app-var-background-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  position: relative;
+section.hero {
+	height: 500px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.hero-banner-index::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: inherit;
-  background: rgba(0, 0, 0, 0.668);
-  z-index: 1;
+section.hero::before {
+	position: absolute;
+	inset: 0;
+	content: "";
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0 0 0 / 0.7);
+	z-index: 0;
 }
 
-.title-slogan {
-  z-index: 2;
+section .bg-layer-image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
 }
 
-.hero-banner-index h1 {
-  font-size: 7rem;
-  font-weight: 700;
-  text-align: center;
+section .bg-layer-image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: bottom;
 }
 
-.hero-banner-index p {
-  font-size: 3rem;
-  font-weight: 400;
-  text-align: center;
+section .hero-content {
+	position: relative;
+	width: 85%;
+	text-align: center;
+	color: var(--white);
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
 }
 
-@media (max-width: 800px) {
-  .hero-banner-index {
-    height: 50rem;
-  }
-
-  .hero-banner-index h1 {
-    font-size: 5rem;
-  }
-
-  .hero-banner-index p {
-    font-size: 2rem;
-  }
+section .hero-content .title {
+	font-size: 2.3rem;
 }
 
-/* --------------------- BUTTONS --------------------- */
+/*------LINK BUTTONS------*/
 
-div button {
-  width: 100%;
-  margin: 0 auto;
-  padding: 1rem 3.2rem;
-  border: none;
-  border-radius: 0.4rem;
-  outline: none;
-  background: var(--app-var-btn-background);
-  color: var(--app-var-background-color);
-  box-shadow: #000 0 0 0.1rem 0;
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  text-transform: uppercase;
+a.links {
+	background-color: var(--app-var-dark-color-primary);
+	font-size: 0.85rem;
+	font-weight: 500;
+	padding: 0.7rem 1.3rem;
+	color: var(--white);
+	border-radius: 4px;
 }
 
-div button:hover {
-  background: var(--app-var-btn-background-hover);
-  color: var(--app-var-background-color);
-  text-shadow: #000 0.1rem 0.1rem 0.1rem;
-  transition: all 0.3s ease;
+.links-container {
+	margin-top: 2rem;
 }
 
-/* ------------------------- FOUR COLUMNS SECTION ------------------------- */
-
-.card-course-category {
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: blur(1rem);
-  backdrop-filter: blur(1rem);
-  border-radius: 0.4rem;
-  padding: 3rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  justify-content: space-between;
-  align-items: center;
+.links-container a {
+	background-color: var(--app-var-dark-color-primary);
+	padding: 0.7rem 1.5rem;
+	border-radius: 5px;
 }
 
-.card-course-category h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--app-var-title-products-color);
+div a.links:hover {
+	background-color: var(--app-var-primary-color);
 }
 
-.card-course-category p {
-  color: #5d5d5d;
+/* ------MAIN CONTENTS------ */
+
+/*------description section------*/
+.description {
+	display: flex;
+	flex-direction: column;
+	row-gap: 2rem;
+	align-items: center;
+	text-align: center;
 }
 
-.flex-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
+.description .content {
+	display: flex;
+	flex-direction: column;
+	row-gap: 2rem;
 }
 
-@media (min-width: 530px) {
-  .flex-wrap {
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 3;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .card-course-category {
-    width: calc(50% - 3rem);
-  }
+.description .content .title {
+	font-size: 1.8rem;
 }
 
-@media (min-width: 800px) {
-  .flex-wrap {
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 3;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .card-course-category {
-    width: calc(33.33% - 3rem);
-  }
+.description .description-image {
+	max-height: 34rem;
+	border-radius: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	overflow: hidden;
 }
 
-@media (min-width: 1050px) {
-  .flex-wrap {
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
+/*------description section end------*/
+
+/*------products section------*/
+
+.see-more {
+	margin-top: 5rem;
+	text-align: center;
 }
 
-/* ------------------------------ FOOTER ------------------------------ */
+/*------products section end------*/
+
+/*------image gallery section------*/
+
+.grid-gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 2rem;
+}
+
+.grid-gallery .gallery-image {
+	border-radius: 8px;
+	overflow: hidden;
+	height: 100%;
+	aspect-ratio: 16 / 12;
+}
+
+.grid-gallery .gallery-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.section-title-container {
+	margin-block: 2rem;
+	text-align: center;
+}
+
+.section-title-container .section-title {
+	font-size: 1.8rem;
+}
+
+/*------image gallery section end------*/
+
+/*------about section------*/
+section.about .grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+	place-content: center;
+	align-items: center;
+}
+
+section.about .image-container {
+	height: 38rem;
+	overflow: hidden;
+	border-radius: 0.5rem;
+}
+
+section.about .image-container img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+section.about .grid-container .about-content {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.8rem;
+}
+
+section.about .about-content .about-sm-text {
+	color: var(--app-dark-color-primary);
+	font-weight: 600;
+}
+
+section.about .about-content .title {
+	text-transform: capitalize;
+}
+
+.about-student-detail {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.about-profile-image {
+	border-radius: 50%;
+	width: 3rem;
+	overflow: hidden;
+}
+
+.about-profile-name {
+	display: flex;
+	flex-direction: column;
+}
+
+.about-profile-name .profile-name {
+	font-weight: 700;
+}
+
+.about-profile-name .profile-category {
+	font-size: 0.85rem;
+}
+
+/*------about section end------*/
+
+/*------our team section------*/
+
+.team .title-container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5rem;
+	text-align: center;
+	width: 80%;
+	margin: auto;
+}
+
+.team .title-container>span:first-child {
+	color: var(--app-dark-color-primary);
+	font-weight: 600;
+}
+
+.team .title-container .title {
+	text-transform: capitalize;
+}
+
+.team .grid-tutors {
+	margin-top: 3rem;
+}
+
+.team .grid-tutors .grid-container {
+	display: grid;
+	gap: 1.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid-tutors .each-tutor {
+	height: 100%;
+	border-radius: 0.3rem;
+	overflow: hidden;
+	background-color: var(--app-light-background-color);
+}
+
+.grid-tutors .each-tutor .image-container {
+	height: 200px;
+	overflow: hidden;
+}
+
+.grid-tutors .each-tutor .image-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.grid-tutors .each-tutor .tutor-detail {
+	padding: 1.1rem 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	row-gap: 4px;
+}
+
+.grid-tutors .each-tutor .tutor-course {
+	font-size: 0.9rem;
+}
+
+.team .links {
+	margin-top: 4rem;
+	text-align: center;
+}
+
+.more-info .banner {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.5rem;
+	align-items: center;
+	background-color: var(--app-dark-color-primary);
+	padding: 3rem 1rem;
+	border-radius: 0.5rem;
+	color: var(--white);
+}
+
+.more-info .banner a {
+	background-color: var(--white);
+	color: var(--app-dark-color-primary);
+	padding: 0.8rem 2rem;
+	border-radius: 5px;
+	font-weight: 500;
+	border: 1.5px solid var(--app-dark-color-primary);
+	transition: 300ms ease;
+}
+
+.more-info .banner a:hover {
+	background-color: var(--app-dark-color-primary);
+	color: var(--white);
+	border-color: var(--white);
+}
