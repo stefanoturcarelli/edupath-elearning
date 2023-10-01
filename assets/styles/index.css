@@ -130,6 +130,147 @@ section {
 
 /* ------------------------- FOUR COLUMNS SECTION ------------------------- */
 
+.products-layout {
+  display: grid;
+  grid-template-rows: repeat(2, minmax(20rem, 40rem));
+  grid-template-columns: repeat(4, minmax(20rem, 25rem));
+  gap: 1rem;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.product-small-cards {
+  background-color: var(--app-var-background-color);
+  border-radius: 0.4rem;
+  box-shadow: #000 0 0 0.1rem 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-images {
+  width: 20rem;
+  height: 20rem;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-images img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8rem;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--app-var-primary-color);
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #5d5d5d;
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card-price-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--app-var-primary-color);
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card-rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-rating p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--app-var-title-products-color);
+  text-align: left;
+  line-height: 2rem;
+  margin-left: 2.5rem;
+}
+
+.card-rating i {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--app-var-star-color);
+  text-align: center;
+  line-height: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.card-product-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1.6rem;
+  color: var(--app-var-primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-product-link:hover {
+  text-decoration: underline;
+}
+
+/* .card-button {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 3.2rem;
+  border: none;
+  border-radius: 0.4rem;
+  outline: none;
+  background: var(--app-var-btn-background);
+  color: var(--app-var-background-color);
+  box-shadow: #000 0 0 0.1rem 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.card-button:hover {
+  background: var(--app-var-btn-background-hover);
+  color: var(--app-var-background-color);
+  text-shadow: #000 0.1rem 0.1rem 0.1rem;
+  transition: all 0.3s ease;
+} */
+
 /* -------------------------- Contact Form Section ------------------------- */
 
 .contact-form-container {
