@@ -1,0 +1,43 @@
+footer {
+	color: var(--app-light-header-color);
+	background-color: var(--app-light-color-primary);
+}
+footer .container {
+	max-width: 991px;
+	width: 100%;
+	margin-inline: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-block: 1rem;
+	flex-wrap: wrap;
+	padding-inline: 1rem;
+	gap: 1rem;
+}
+footer .ft-links {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+footer .ft-links .icon-container {
+	border-radius: 50%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.2s ease-in-out;
+	aspect-ratio: 1/1;
+	padding: 12px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	background-color: transparent;
+}
+footer .icon-container i {
+	line-height: 0;
+}
+footer .icon-container:hover {
+	background-color: var(--app-light-color-accent);
+}
+footer .ft-copyright {
+	font-size: 0.9rem;
+}

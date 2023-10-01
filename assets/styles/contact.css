@@ -1,0 +1,140 @@
+main.has-auth .container {
+	min-height: 100vh;
+	min-height: 100dvh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+section.auth-section {
+	padding: 0 1rem;
+}
+main .auth-section {
+	max-width: 600px;
+	width: 100%;
+	margin-inline: auto;
+}
+main :is(.contact-container) {
+	padding: 0 1rem;
+}
+main .HIFQOow .flex {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+main .HIFQOow .flex a {
+	text-decoration: underline;
+	color: var(--app-dark-color-primary);
+}
+main .contact-us-section form {
+	background-color: var(--app-light-background-color);
+	padding: 3rem 1.5rem 5rem;
+}
+main .contact-us-section form,
+main .auth-section form {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.5rem;
+	min-height: 300px;
+	margin-top: 3rem;
+	border-radius: 5px;
+}
+main.has-auth form {
+	background-color: var(--app-light-background-color);
+	border-radius: 5px;
+	padding: 3rem 1.5rem;
+	margin-top: 1rem;
+	border-radius: 10px;
+}
+
+form .form-input {
+	width: 100%;
+}
+form .form-input.password {
+	text-align: end;
+}
+form .form-input .asdjn {
+	margin-top: 2px;
+}
+form .form-input .asdjn a {
+	font-size: 0.85rem;
+}
+form .HIFQOow {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+form .HIFQOow .social-login {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+form .form-input .form-control {
+	min-height: 2.8rem;
+	width: 100%;
+	padding: 0.6rem 1rem;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+}
+form .form-input .form-control::placeholder {
+	font-size: 0.9rem;
+}
+form .form-input textarea.form-control {
+	min-height: 5rem;
+	resize: none;
+}
+form button {
+	width: 100%;
+	min-height: 3rem;
+	background-color: var(--app-dark-color-primary);
+	color: #fff;
+	padding-block: 0.7rem;
+	border-radius: 4px;
+}
+main h1 {
+	font-size: 2rem;
+}
+.contact-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	max-width: 991px;
+	margin-inline: auto;
+	margin-block: 5rem;
+	gap: 3rem;
+}
+.contact-container .reach-out-points {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.5rem;
+}
+.contact-container .v-container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.5rem;
+	margin-top: 2rem;
+}
+.contact-container .reach-out-points .each-reach-out {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.contact-container .each-reach-out .key {
+	font-weight: 600;
+}
+.know-more {
+	display: flex;
+	flex-direction: column;
+	margin-top: 4rem;
+	row-gap: 0.5rem;
+}
+.know-more span {
+	font-weight: 600;
+}
+.know-more a {
+	background-color: var(--app-dark-color-primary);
+	color: var(--white);
+	width: max-content;
+	padding: 0.6rem 1.5rem;
+	border-radius: 4px;
+}
