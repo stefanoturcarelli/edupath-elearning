@@ -1,0 +1,111 @@
+main.has-auth {
+	display: grid;
+	grid-template-columns: 1fr;
+	min-height: 100%;
+}
+main.has-auth .container {
+	min-height: 100vh;
+	min-height: 100dvh;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 auto;
+}
+main .container .v-logo-container {
+	margin-block: 0 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.4rem;
+}
+main aside {
+	display: none;
+}
+main .container .v-logo-container .v-title {
+	color: var(--app-dark-color-primary);
+	font-weight: 700;
+}
+main .container .v-logo-container .image-container {
+	max-width: 100px;
+}
+main aside.image-container {
+	position: relative;
+}
+main aside.image-container::before {
+	position: absolute;
+	inset: 0;
+	background-color: rgba(0 0 0 / 0.6);
+	content: "";
+}
+main aside.image-container img {
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+section.auth-section {
+	padding: 0 1rem;
+}
+main .HIFQOow .flex {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+main .HIFQOow .flex a {
+	text-decoration: underline;
+	color: var(--app-dark-color-primary);
+}
+main .auth-section form {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.5rem;
+	min-height: 300px;
+	margin-top: 3rem;
+	border-radius: 5px;
+}
+
+form .form-input {
+	width: 100%;
+}
+form .form-input.password {
+	text-align: end;
+}
+form .form-input .asdjn {
+	margin-top: 2px;
+}
+form .form-input .asdjn a {
+	font-size: 0.85rem;
+}
+form .HIFQOow {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+form .HIFQOow .social-login {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+form .form-input .form-control {
+	min-height: 2.8rem;
+	width: 100%;
+	padding: 0.6rem 1rem;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+}
+form .form-input .form-control::placeholder {
+	font-size: 0.9rem;
+}
+form .form-input textarea.form-control {
+	min-height: 5rem;
+	resize: none;
+}
+form button {
+	width: 100%;
+	min-height: 3rem;
+	background-color: var(--app-dark-color-primary);
+	color: #fff;
+	padding-block: 0.7rem;
+	border-radius: 4px;
+}

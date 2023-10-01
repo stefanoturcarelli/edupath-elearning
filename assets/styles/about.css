@@ -1,0 +1,68 @@
+.cat-container {
+	margin-top: 2rem;
+}
+main .container {
+	padding: 0 1rem;
+	margin-block: 3rem 5rem;
+	max-width: 991px;
+	margin-inline: auto;
+}
+.section-container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+}
+.section-container .cat-container a {
+	background-color: var(--app-dark-color-primary);
+	color: var(--white);
+	padding: 0.7rem 2rem;
+	border-radius: 4px;
+}
+.text-container {
+	margin-top: 1rem;
+	line-height: 1.6;
+}
+section.team-section {
+	margin-top: 5rem;
+}
+section .team {
+	margin-top: 2rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 3rem;
+}
+section .team-member {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	row-gap: 1rem;
+	height: 100%;
+}
+.team-member h2 {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 90%;
+}
+.team-member .image-container {
+	border-radius: 5px;
+	overflow: hidden;
+}
+.about-school {
+	margin-block: 5rem;
+}
+.v-grid-flow {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+	margin-bottom: 4rem;
+}
+.v-grid-flow .v-image-container {
+	border-radius: 1rem;
+	overflow: hidden;
+}
+.v-grid-flow .v-image-container img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
