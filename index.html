@@ -1,146 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Marcelo Lopes, Stefano Turcarelli">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="stylesheet" href="./assets/resets/reset.css">
-  <link rel="stylesheet" href="./assets/styles/global.css">
-  <link rel="stylesheet" href="./assets/styles/index.css">
-  <!-- OMG Information -->
-  <meta name="description"
-    content="EduPath is a platform that provides a wide range of educational resources for students, teachers, and parents.">
-  <meta name="keywords"
-    content="EduPath, education, resources, students, teachers, parents, learning, teaching, school, university, college, online, platform, courses, lessons">
-
-  <!-- Facebook Sharing -->
-  <meta property="og:title" content="EduPath">
-  <meta property="og:description"
-    content="EduPath is a platform that provides a wide range of educational resources for students, teachers, and parents.">
-  <meta property="og:image"
-    content="https://raw.githubusercontent.com/stefanoturcarelli/intro-to-web-development-final-project/main/assets/img/favicon.png">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="EduPath">
-  <meta property="og:locale" content="en_US">
-
-  <!-- Link to icon -->
-  <link rel="icon"
-    href="https://raw.githubusercontent.com/stefanoturcarelli/intro-to-web-development-final-project/main/assets/img/favicon.png"
-    type="image/x-icon">
-  <title>Home - EduPath</title>
-</head>
-
-<body>
-  <header>
-    <div class="container">
-      <div class="flex-container-header">
-        <div class="logo">
-          <a href="./index.html">
-            <h1>EduPath</h1>
-          </a>
-        </div>
-        <div class="nav-bar">
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./products.html">Courses</a></li>
-            <li><a href="./about-us.html">About</a></li>
-            <li><a href="./contact-us.html">Contact</a></li>
-            <li><a href="./login.html">Login</a></li>
-          </ul>
-        </div>
-        <div class="hamburger">
-          <i class="fas fa-bars"></i>
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Marcelo Lopes, Adeniyi Adedokun, Stefano Turcarelli"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <link rel="stylesheet" href="./assets/styles/global-rules.css" />
+    <link rel="stylesheet" href="./assets/styles/mediaquery.css" />
+    <!-- icon -->
+    <link rel="icon" href="./assets/img/favicon.png" />
+    <title>EduPath</title>
+  </head>
+  <body>
+    <header>
+      <div class="container container--flex">
+        <a href="/" class="logo container--flex">
+          <img src="./assets/img/favicon.png" alt="logo" />
+          <h2>EduPath</h2>
+        </a>
+        <div class="nav-search container--flex">
+          <form class="nav-form">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search" class="form-control" />
+          </form>
+          <nav>
+            <ul>
+              <li><a href="./index.html" class="active">Home</a></li>
+              <li><a href="./about-us.html">About Us</a></li>
+              <li><a href="./contact-us.html">Contact Us</a></li>
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./login.html">Login</a></li>
+            </ul>
+          </nav>
+          <div class="dropdown-container">
+            <div class="menu-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 8h24M4 16h24M4 24h24"
+                />
+              </svg>
+            </div>
+            <div class="dropdown">
+              <ul>
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./about-us.html">About Us</a></li>
+                <li><a href="./contact-us.html">Contact Us</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./login.html">Login</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  <main>
-    <!-- Hero Banner -->
-    <div class="hero-banner-index">
-      <div class="title-slogan">
-        <h1>EduPath</h1>
-        <div>
-          <p>
-            Dive into a world of limitless learning opportunities.
-          </p>
-          <p>
-            Your Gateway to Knowledge and Success!
-          </p>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="bg-layer-image">
+          <img
+            src="./assets/img/students-image-teacher.jpeg"
+            alt=""
+            class="img-fluid"
+          />
         </div>
-      </div>
-    </div>
-    <!-- Four columns section -->
-    <div class="container">
-      <section>
-
-        <div class="flex-wrap">
-          <div class="card-course-category card-1">
-            <h2>Coding</h2>
-            <p>
-              Unleash your coding potential with our comprehensive
-              range of programming courses.
-            </p>
-            <div>
-              <button>Learn More</button>
-            </div>
-          </div>
-          <div class="card-course-category card-2">
-            <h2>Cooking</h2>
-            <p>
-              Cook up a storm in your kitchen and impress friends and family
-              with your newfound culinary skills.
-            </p>
-            <div>
-              <button>Learn More</button>
-            </div>
-          </div>
-          <div class="card-course-category card-3">
-            <h2>Visuals</h2>
-            <p>
-              Unleash your inner artist and bring your creative
-              visions to life.
-            </p>
-            <div>
-              <button>Learn More</button>
-            </div>
-          </div>
-          <div class="card-course-category card-4">
-            <h2>Health</h2>
-            <p>
-              Your journey to a happier, healthier you begins here.
-            </p>
-            <div>
-              <button>Learn More</button>
-            </div>
+        <div class="hero-content">
+          <h1 class="title">
+            Welcome to a World of Infinite Possibilities: Your Learning Journey
+            Begins Here
+          </h1>
+          <span>Explore, Discover, and Create in a Learning Wonderland</span>
+          <div class="links-container">
+            <a href="./register.html" class="links">Get started</a>
           </div>
         </div>
       </section>
-    </div>
-  </main>
-  <footer>
-    <div class="container">
-      <div class="flex-container-footer">
-        <div>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-github"></i></a>
+      <div class="content-inner">
+        <section class="description">
+          <div class="content">
+            <h3 class="title">Getting Started</h3>
+            <span>
+              Welcome to our educational hub, a digital haven designed to foster
+              learning and growth. Dive into a diverse range of engaging courses
+              and curated tutorials meticulously crafted to expand your
+              knowledge and skillset. Whether you're a student looking to excel
+              in academics or a professional aiming to upskill, our platform
+              offers tailored content to suit your needs. Immerse yourself in
+              interactive lessons, insightful resources, and real-world
+              applications of the subjects you're passionate about. Our team of
+              dedicated educators and industry experts ensure that you receive
+              top-notch guidance and support throughout your learning journey.
+              Ready to embrace a world of endless learning possibilities? Click
+              the button below to take the first step towards a brighter, more
+              knowledgeable future.
+            </span>
+          </div>
+          <div class="description-image">
+            <img
+              src="./assets/img/girl-reading-in-library.jpg"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div>
+            <a href="./register.html" class="links">Register Now</a>
+          </div>
+        </section>
+        <section class="container products-grid">
+          <div class="section-title-container">
+            <h2 class="section-title">Our Products</h2>
+          </div>
+          <div class="products-container">
+            <div class="product">
+              <div class="product-container">
+                <img
+                  src="https://img.freepik.com/free-photo/front-view-stacked-books-ladders-education-day_23-2149241046.jpg?w=1060&t=st=1695821844~exp=1695822444~hmac=7ab418c11be7b827a8f7f054991da6ead7d5f4438ee7ebde567c7ec2c554fc49"
+                  alt="product"
+                />
+              </div>
+              <div class="product-detail">
+                <div class="star">
+                  <span>Star value</span>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h2>Product 1</h2>
+                <p>$ 49,90</p>
+                <button>Buy</button>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-container">
+                <img
+                  src="https://img.freepik.com/free-photo/boy-reading-book-class_23-2147663439.jpg?w=1060&t=st=1695821880~exp=1695822480~hmac=25ef6e45c910afa50fd785a039f8d1c9499e582072b5d371f41c4f3bd17e63ff"
+                  alt="product"
+                />
+              </div>
+              <div class="product-detail">
+                <div class="star">
+                  <span>Star value</span>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h2>Product 2</h2>
+                <p>$ 39.90</p>
+                <button>Buy</button>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-container">
+                <img
+                  src="https://img.freepik.com/free-photo/unrecognizable-boy-reading_23-2147663445.jpg?w=1060&t=st=1695821895~exp=1695822495~hmac=8e3d23bbc367777700a734e1f7ebac8a71dee603605ea8a4e313980aa34aa7b0"
+                  alt="product"
+                />
+              </div>
+              <div class="product-detail">
+                <div class="star">
+                  <span>Star value</span>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h2>Product 3</h2>
+                <p>$ 99.90</p>
+                <button>Buy</button>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-container">
+                <img
+                  src="https://img.freepik.com/premium-photo/vintage-books-stack-dark-background_771335-25720.jpg?size=626&ext=jpg"
+                  alt="product"
+                />
+              </div>
+              <div class="product-detail">
+                <div class="star">
+                  <span>Star value</span>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h2>Product 4</h2>
+                <p>$ 35.90</p>
+                <button>Buy</button>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-container">
+                <img
+                  src="https://img.freepik.com/free-photo/front-view-stacked-books-earth-globe-open-book-pencils-education-day_23-2149241018.jpg?w=1060&t=st=1695821921~exp=1695822521~hmac=edb673ec1bf225d32f67e1ade1c7df43c63ba9c8df076dfa022b4f6905004e88"
+                  alt="product"
+                />
+              </div>
+              <div class="product-detail">
+                <div class="star">
+                  <span>Star value</span>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h2>Product 5</h2>
+                <p>$ 84</p>
+                <button>Buy</button>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-container">
+                <img
+                  src="https://img.freepik.com/premium-photo/miniature-books-orange-cover-fly-blue-background_460171-1364.jpg?size=626&ext=jpg"
+                  alt="product"
+                />
+              </div>
+              <div class="product-detail">
+                <div class="star">
+                  <span>Star value</span>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h2>Product 6</h2>
+                <p>$ 100.00</p>
+                <button>Buy</button>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-container">
+                <img
+                  src="https://img.freepik.com/free-photo/stack-books-yellow-background-education-concept-3d-rendering_56104-1337.jpg?size=626&ext=jpg"
+                  alt="product"
+                />
+              </div>
+              <div class="product-detail">
+                <div class="star">
+                  <span>Star value</span>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h2>Product 7</h2>
+                <p>$ 100.00</p>
+                <button>Buy</button>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-container">
+                <img
+                  src="https://img.freepik.com/free-photo/stack-books-yellow-background-education-concept-3d-rendering_56104-1337.jpg?size=626&ext=jpg"
+                  alt="product"
+                />
+              </div>
+              <div class="product-detail">
+                <div class="star">
+                  <span>Star value</span>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h2>Product 8</h2>
+                <p>$ 53.90</p>
+                <button>Buy</button>
+              </div>
+            </div>
+          </div>
+          <div class="see-more">
+            <a href="./products.html" class="links">See More Products</a>
+          </div>
+        </section>
+        <section class="gallery-image">
+          <div class="section-title-container">
+            <h2 class="section-title">Our Gallery</h2>
+          </div>
+          <div class="grid-gallery">
+            <!-- each image @::start -->
+            <div class="gallery-image">
+              <img
+                src="./assets/img/children-in-class.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <!-- each image @::end -->
+            <!-- each image @::start -->
+            <div class="gallery-image">
+              <img
+                src="./assets/img/children-in-class-two.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <!-- each image @::end -->
+            <!-- each image @::start -->
+            <div class="gallery-image">
+              <img
+                src="./assets/img/children-in-class-three.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <!-- each image @::end -->
+            <!-- each image @::start -->
+            <div class="gallery-image">
+              <img
+                src="./assets/img/group-of-students-studying-together.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <!-- each image @::end -->
+            <!-- each image @::start -->
+            <div class="gallery-image">
+              <img
+                src="./assets/img/group-study-five.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <!-- each image @::end -->
+            <!-- each image @::start -->
+            <div class="gallery-image">
+              <img
+                src="./assets/img/group-study-three.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <!-- each image @::end -->
+            <!-- each image @::start -->
+            <div class="gallery-image">
+              <img
+                src="./assets/img/group-study-four.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <!-- each image @::end -->
+            <!-- each image @::start -->
+            <div class="gallery-image">
+              <img
+                src="./assets/img/group-study-one.jpeg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <!-- each image @::end -->
+            <div class="gallery-image">
+              <img
+                src="./assets/img/group-study-one.jpeg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <!-- each image @::end -->
+          </div>
+        </section>
+        <section class="about">
+          <div class="section-title-container">
+            <h2 class="section-title">About Us</h2>
+          </div>
+          <div class="grid-container">
+            <div class="image-container">
+              <img
+                src="./assets/img/students-reading.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="about-content">
+              <span class="about-sm-text">Who We Are</span>
+              <h2 class="title">What our students say about us</h2>
+              <span class="subcontent">
+                This educational web platform has been a game-changer for my
+                learning journey. The range of courses available is remarkable,
+                covering topics that align perfectly with my academic and career
+                goals. The interactive lessons and expert instructors have made
+                complex subjects feel digestible and enjoyable.
+              </span>
+              <div class="about-student-detail">
+                <div class="about-profile-image">
+                  <img
+                    src="./assets/img/user-two.jfif"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="about-profile-name">
+                  <span class="profile-name">Sam Smith</span>
+                  <span class="profile-category">Student</span>
+                </div>
+              </div>
+              <div class="read-more">
+                <a href="./about-us.html" class="links">Read more</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="team">
+          <div class="title-container">
+            <span>Our Team</span>
+            <h2 class="title">The best tutors in town</h2>
+            <span
+              >Meet the mentors inspiring your educational journey and helping
+              you succeed.</span
+            >
+          </div>
+          <div class="grid-tutors">
+            <div class="grid-container">
+              <div class="each-tutor">
+                <div class="image-container">
+                  <img
+                    src="./assets/img/tutor-one.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="tutor-detail">
+                  <h4 class="tutor-name">James Bay</h4>
+                  <span class="tutor-course">English Language</span>
+                </div>
+              </div>
+              <div class="each-tutor">
+                <div class="image-container">
+                  <img
+                    src="./assets/img/tutor-two.jpeg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="tutor-detail">
+                  <h4 class="tutor-name">Janet Depp</h4>
+                  <span class="tutor-course">Algebra</span>
+                </div>
+              </div>
+              <div class="each-tutor">
+                <div class="image-container">
+                  <img
+                    src="./assets/img/tutor-three.webp"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="tutor-detail">
+                  <h4 class="tutor-name">Angelina Jolie</h4>
+                  <span class="tutor-course">Science</span>
+                </div>
+              </div>
+            </div>
+            <div class="links">
+              <a href="./register.html" class="links"
+                >Start Your Learning Journey</a
+              >
+            </div>
+          </div>
+        </section>
+        <section class="more-info">
+          <div class="banner">
+            <h2 class="title">Want more information ?</h2>
+            <a href="./contact-us.html"> Contact Us</a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container container--flex">
+        <div class="ft-links">
+          <a href="#">
+            <div class="icon-container">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="icon-container">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="icon-container">
+              <i class="fab fa-twitter"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="icon-container">
+              <i class="fab fa-github"></i>
+            </div>
+          </a>
         </div>
-        <div>
-          <p>&copy; 2023 EduPath</p>
+        <div class="ft-copyright">
+          <p>© 2023 EduPath. All rights reserved.</p>
         </div>
       </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
