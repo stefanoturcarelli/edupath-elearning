@@ -43,7 +43,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1.6rem 3.2rem;
+}
+
+footer {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
@@ -243,6 +249,17 @@ footer i:hover {
         text-align: center;
         gap: 1rem;
     }    
+
+}
+
+@media (max-width: 800px) {
+
+    .flex-container-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
 
