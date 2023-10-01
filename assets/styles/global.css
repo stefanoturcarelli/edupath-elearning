@@ -29,6 +29,14 @@
     display: flex;
 }
 
+.flex-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}    
+
 .flex-container-header,
 .flex-container-footer {
     display: flex;
@@ -84,9 +92,6 @@ header {
     justify-content: space-between;
     align-items: center;    
     gap: 2.4rem;
-}
-main
-    
 }
 
 .nav-bar ul li a {
@@ -185,10 +190,8 @@ main
 /* --------------------------------- MAIN --------------------------------- */
 
 main {
-    display: flex;
     min-height: 100dvh;
     width: 100%;
-    /* padding: 1.6rem 3.2rem; */
     background-color: var(--app-color-quaternary);
     color: var(--app-color-secondary);
 }
