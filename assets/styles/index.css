@@ -77,7 +77,7 @@ section {
   background-repeat: no-repeat;
   background-position: 0%;
   background-size: cover;
-  height: 70rem;
+  height: 100dvh;
   color: var(--app-var-background-color);
   display: flex;
   flex-direction: column;
@@ -159,16 +159,16 @@ div button:hover {
 
 .card-course-category {
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
--webkit-backdrop-filter: blur(1rem);
-backdrop-filter: blur(1rem);
-border-radius: 0.4rem; 
-padding: 3rem;
-text-align: center;
-display: flex;
-flex-direction: column;
-gap: 2rem;
-justify-content: space-between;
-align-items: center;
+  -webkit-backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem);
+  border-radius: 0.4rem;
+  padding: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card-course-category h2 {
@@ -196,10 +196,10 @@ align-items: center;
     max-width: 800px;
     margin: 0 auto;
   }
-  
-.card-course-category {
-  width: calc(50% - 3rem);
-}
+
+  .card-course-category {
+    width: calc(50% - 3rem);
+  }
 }
 
 @media (min-width: 800px) {
@@ -210,19 +210,18 @@ align-items: center;
     gap: 3;
     max-width: 1200px;
     margin: 0 auto;
-}
+  }
 
-.card-course-category {
-  width: calc(33.33% - 3rem);
-}
+  .card-course-category {
+    width: calc(33.33% - 3rem);
+  }
 }
 
 @media (min-width: 1050px) {
   .flex-wrap {
     flex-direction: row;
     flex-wrap: nowrap;
-}
+  }
 }
 
 /* ------------------------------ FOOTER ------------------------------ */
-
