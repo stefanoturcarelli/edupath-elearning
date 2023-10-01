@@ -18,13 +18,18 @@
 	--app-dark-color-secondary: #7a671a;
 	--app-dark-color-accent: #abbede;
 	--white: #fff;
+	--app-header-background-color: #394f6e;
+	--app-footer-background-color: #5b6675;
+
+	--app-var-background-color: #fff;
+	--app-var-primary-color: #2e435e;
+	--app-var-secondary-color: #433bff;
+	--app-var-dark-color-primary: #4F709C;
+	--app-var-white: #fff;
+	--app-var-black: #000;
 }
 
 /* ----------------------------- GLOBAL STRUCTURE: GENERAL ----------------------------- */
-
-*:not(i) {
-	font-family: SpaceGrotesk;
-}
 
 body {
 	min-height: 100vh;
@@ -38,10 +43,18 @@ body main {
 	flex-grow: 1;
 }
 
+p,
+span {
+	font-size: 1rem;
+	line-height: 1.6;
+	word-spacing: 0.05rem;
+	letter-spacing: 0.05rem;
+}
+
 /* ----------------------- GLOBAL STRUCTURE : HEADER ----------------------- */
 
 header {
-	background-color: var(--app-light-color-primary);
+	background-color: var(--app-header-background-color);
 	color: var(--white);
 	padding: 0.7rem 1rem;
 }
@@ -210,6 +223,31 @@ main .get-started a:hover {
 	background-color: var(--app-light-color-primary);
 }
 
+/*------LINK BUTTONS------*/
+
+a.links {
+	background-color: var(--app-var-dark-color-primary);
+	font-size: 0.85rem;
+	font-weight: 500;
+	padding: 0.7rem 1.3rem;
+	color: var(--white);
+	border-radius: 4px;
+}
+
+.links-container {
+	margin-top: 2rem;
+}
+
+.links-container a {
+	background-color: var(--app-var-dark-color-primary);
+	padding: 0.7rem 1.5rem;
+	border-radius: 5px;
+}
+
+div a.links:hover {
+	background-color: var(--app-var-primary-color);
+}
+
 /* ----------------------- GLOBAL STRUCTURE : PRODUCTS ----------------------- */
 
 .products-container {
@@ -246,6 +284,20 @@ main .get-started a:hover {
 	font-size: 0.9rem;
 	font-size: 500;
 	border-radius: 4px;
+}
+
+.product button {
+	background-color: var(--app-var-dark-color-primary);
+	color: var(--app-var-background-color);
+	font-weight: 500;
+	padding: 0.6rem 1.3rem;
+	border-radius: 4px;
+	font-size: 0.8rem;
+	width: max-content;
+}
+
+.product button:hover {
+	background-color: var(--app-var-primary-color);
 }
 
 /* ----------------------- GLOBAL STRUCTURE : HERO BANNERS ----------------------- */
@@ -304,7 +356,7 @@ section .hero-content .title {
 
 footer {
 	color: var(--app-light-header-color);
-	background-color: var(--app-light-color-primary);
+	background-color: var(--app-footer-background-color);
 }
 
 footer .container {

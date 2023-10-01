@@ -3,22 +3,27 @@ main .container {
 	margin-inline: auto;
 	padding: 1rem;
 }
+
 .products-grid {
 	padding-block: 4rem;
 }
-.pre-products {
+
+.intro-text-products {
 	margin-top: 3rem;
 }
-.post-products {
+
+.after-text-products {
 	margin-block: 4rem;
 }
+
 .reach-out {
 	margin-top: 2rem;
 	display: flex;
 	flex-direction: column;
 	row-gap: 1rem;
 }
-.reach-out .cat {
+
+.reach-out .links {
 	background-color: var(--app-dark-color-primary);
 	color: var(--white);
 	font-weight: 500;
