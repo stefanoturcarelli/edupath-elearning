@@ -62,20 +62,32 @@ section .team-member {
 	margin-block: 5rem;
 }
 
-.v-grid-flow {
+.grid-flow {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 2rem;
 	margin-bottom: 4rem;
 }
 
-.v-grid-flow .v-image-container {
+.grid-flow .about-image-container {
 	border-radius: 1rem;
 	overflow: hidden;
 }
 
-.v-grid-flow .v-image-container img {
+.grid-flow .about-image-container img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
+}
+
+.v-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.text-content p {
+	word-spacing: 0.1rem;
+	line-height: 1.6;
+	letter-spacing: 0.1rem;
 }
