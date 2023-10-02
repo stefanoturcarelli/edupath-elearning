@@ -150,7 +150,7 @@ main h1 {
 }
 
 .form-input button[type="submit"]:hover {
-  background-color: var(--app-light-color-primary);
+  background-color: var(--app-var-primary-color);
 }
 
 .required-fields {
