@@ -4,16 +4,6 @@ main.has-auth {
   min-height: 100%;
 }
 
-main.has-auth .container {
-  min-height: 100vh;
-  min-height: 100dvh;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 auto;
-}
-
 main .container .v-logo-container {
   margin-block: 0 2rem;
   display: flex;

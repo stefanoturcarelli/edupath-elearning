@@ -12,42 +12,6 @@
   --app-var-gray-3: #e5e5e5;
 }
 
-/* 
-    URL with the colors
-    https://www.realtimecolors.com/?colors=050315-fbfbfe-2f27ce-dedcff-433bff
-*/
-
-/*------MAIN STYLES------*/
-main .content-inner {
-  padding: 1rem;
-}
-
-main .container {
-  max-width: 991px;
-  margin-inline: auto;
-  background-color: var(--app-var-background-color);
-}
-
-main h1 {
-  font-size: 2rem;
-}
-
-.content-inner {
-  max-width: 991px;
-  margin-inline: auto;
-  padding-block: 2rem;
-}
-
-.content-inner section:not(.products-grid) {
-  padding: 1rem;
-}
-
-section.bg-darker {
-  background-color: #f5f5f5;
-  border-radius: 1rem;
-  padding: 1rem;
-}
-
 /*------HERO BANNER------*/
 
 .banner .subcontent {
@@ -169,49 +133,6 @@ div a.links:hover {
   text-align: center;
 }
 
-.products-grid {
-  padding-bottom: 4rem;
-}
-
-.products-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem 1.5rem;
-  margin: 1rem;
-}
-
-.product {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.5rem 1rem;
-  padding: 1rem;
-  border-radius: 5px;
-  background-color: var(--app-var-background-color);
-}
-
-.product h2 {
-  text-align: center;
-  font-size: 1rem;
-}
-
-.product-img-container {
-  height: 12.5rem;
-  overflow: hidden;
-  border-radius: 5px;
-}
-
-.product,
-.product-img-container {
-  box-shadow: #d4d4d429 0 0 0.1rem 0;
-}
-
-.product-img-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 .product-card-description {
   min-height: 10rem;
@@ -257,15 +178,6 @@ div a.links:hover {
   font-weight: 500;
   text-align: center;
   align-self: center;
-}
-
-.price-rating {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 5px;
-  padding-bottom: 1rem;
-  border-bottom: #00000029 1px solid;
 }
 
 .fa-star {
@@ -483,10 +395,4 @@ section.about .about-content .title {
   background-color: var(--app-dark-color-primary);
   color: var(--white);
   border-color: var(--white);
-}
-
-.bg-darker {
-  background-color: #f5f5f5;
-  padding: 2rem;
-  border-radius: 1rem;
 }

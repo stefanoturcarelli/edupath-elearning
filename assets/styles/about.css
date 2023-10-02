@@ -2,13 +2,6 @@
   margin-top: 2rem;
 }
 
-main .container {
-  padding: 0 1rem;
-  margin-block: 3rem 5rem;
-  max-width: 991px;
-  margin-inline: auto;
-}
-
 .section-container {
   display: flex;
   flex-direction: column;
@@ -90,10 +83,4 @@ section .team-member {
   word-spacing: 0.1rem;
   line-height: 1.6;
   letter-spacing: 0.1rem;
-}
-
-section.bg-darker {
-  background-color: #f5f5f5;
-  padding: 2rem;
-  border-radius: 1rem;
 }
