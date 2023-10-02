@@ -26,7 +26,6 @@ main .container {
   max-width: 991px;
   margin-inline: auto;
   background-color: var(--app-var-background-color);
-  /* margin-block: 3rem 5rem; */
 }
 
 main h1 {
@@ -40,7 +39,13 @@ main h1 {
 }
 
 .content-inner section:not(.products-grid) {
-  padding-block: 3rem 5rem;
+  padding: 1rem;
+}
+
+section.bg-darker {
+  background-color: #f5f5f5;
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 /*------HERO BANNER------*/
@@ -138,7 +143,7 @@ div a.links:hover {
 .description .content {
   display: flex;
   flex-direction: column;
-  row-gap: 2rem;
+  gap: 1rem;
 }
 
 .description .content .title {
@@ -165,14 +170,14 @@ div a.links:hover {
 }
 
 .products-grid {
-  padding-block: 4rem;
+  padding-bottom: 4rem;
 }
 
 .products-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem 1.5rem;
-  margin-top: 3rem;
+  margin: 1rem;
 }
 
 .product {
@@ -188,6 +193,7 @@ div a.links:hover {
 
 .product h2 {
   text-align: center;
+  font-size: 1rem;
 }
 
 .product-img-container {
@@ -198,7 +204,7 @@ div a.links:hover {
 
 .product,
 .product-img-container {
-  box-shadow: #00000029 0 0 0.2rem 0;
+  box-shadow: #d4d4d429 0 0 0.1rem 0;
 }
 
 .product-img-container img {
@@ -258,7 +264,7 @@ div a.links:hover {
   align-items: center;
   justify-content: space-between;
   gap: 5px;
-  padding: 1rem 0;
+  padding-bottom: 1rem;
   border-bottom: #00000029 1px solid;
 }
 
@@ -310,8 +316,12 @@ div a.links:hover {
 }
 
 .section-title-container {
-  margin-block: 2rem;
   text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-title-container h2 {
+  padding-top: 3rem;
 }
 
 .section-title-container .section-title {
@@ -473,4 +483,10 @@ section.about .about-content .title {
   background-color: var(--app-dark-color-primary);
   color: var(--white);
   border-color: var(--white);
+}
+
+.bg-darker {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 1rem;
 }
