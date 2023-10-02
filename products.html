@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Marcelo Lopes, Stena" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="shortcut icon"
-      href="./assets/img/favicon.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="./assets/styles/reset.css" />
-    <link rel="stylesheet" href="./assets/styles/global-rules.css" />
-    <link rel="stylesheet" href="./assets/styles/products.css" />
-    <link rel="stylesheet" href="./assets/styles/mediaquery.css" />
-    <title>EduPath Products</title>
-  </head>
-  <body>
-    <header>
-      <div class="container container--flex">
-        <a href="./index.html" class="logo container--flex">
-          <img src="./assets/img/favicon.png" alt="logo" />
-          <h2>EduPath</h2>
-        </a>
-        <div class="nav-search container--flex">
-          <form class="nav-form">
-            <i class="fas fa-search"></i>
-            <input type="text" placeholder="Search" class="form-control" />
-          </form>
-          <nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Marcelo Lopes, Stena" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/styles/reset.css" />
+  <link rel="stylesheet" href="./assets/styles/global-rules.css" />
+  <link rel="stylesheet" href="./assets/styles/products.css" />
+  <link rel="stylesheet" href="./assets/styles/mediaquery.css" />
+  <title>EduPath Products</title>
+</head>
+
+<body>
+  <header>
+    <div class="container container--flex">
+      <a href="./index.html" class="logo container--flex">
+        <img src="./assets/img/favicon.png" alt="logo" />
+        <h2>EduPath</h2>
+      </a>
+      <div class="nav-search container--flex">
+        <form class="nav-form">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search" class="form-control" />
+        </form>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about-us.html">About Us</a></li>
+            <li><a href="./contact-us.html">Contact Us</a></li>
+            <li><a href="./products.html" class="active">Products</a></li>
+            <li><a href="./login.html">Login</a></li>
+          </ul>
+        </nav>
+        <div class="dropdown-container">
+          <div class="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 8h24M4 16h24M4 24h24" />
+            </svg>
+          </div>
+          <div class="dropdown">
             <ul>
               <li><a href="./index.html">Home</a></li>
               <li><a href="./about-us.html">About Us</a></li>
@@ -48,342 +57,306 @@
               <li><a href="./products.html" class="active">Products</a></li>
               <li><a href="./login.html">Login</a></li>
             </ul>
-          </nav>
-          <div class="dropdown-container">
-            <div class="menu-button">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-              >
-                <path
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 8h24M4 16h24M4 24h24"
-                />
-              </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="bg-layer-image">
+        <img
+          src="https://images.pexels.com/photos/6476255/pexels-photo-6476255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="" class="img-fluid" />
+      </div>
+      <div class="hero-content">
+        <h1 class="title">Our Products</h1>
+        <span> Enhance Learning with Our Educational Products </span>
+      </div>
+    </section>
+    <section class="container">
+      <div class="intro-text-products">
+        <p>
+          Explore our interactive learning tools that make education enjoyable
+          and effective. Dive into a world of hands-on experiences,
+          simulations, and immersive content that bring lessons to life. These
+          tools engage multiple senses and cater to diverse learning styles,
+          ensuring a comprehensive and enjoyable learning journey.
+        </p>
+      </div>
+      <div class="products-grid">
+        <h1>Products</h1>
+        <div class="products-container">
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                src="https://images.pexels.com/photos/3773478/pexels-photo-3773478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="product" />
             </div>
-            <div class="dropdown">
-              <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about-us.html">About Us</a></li>
-                <li><a href="./contact-us.html">Contact Us</a></li>
-                <li><a href="./products.html" class="active">Products</a></li>
-                <li><a href="./login.html">Login</a></li>
-              </ul>
+            <div class="product-card-title">
+              <h2>Photography</h2>
+            </div>
+            <div class="product-detail">
+              <div class="product-card-description">
+                <p>
+                  Learn the basics of photography and how to use a camera
+                  properly. This course will teach you how to take better
+                  photos and how to edit them in Photoshop.
+                </p>
+              </div>
+              <div class="price-rating">
+                <p>$ 49,90</p>
+                <div class="star">
+                  <p>4.7</p>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <button>Buy</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                src="https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="product" />
+            </div>
+            <div class="product-card-title">
+              <h2>Web Development</h2>
+            </div>
+            <div class="product-detail">
+              <div class="product-card-description">
+                <p>
+                  Learn the basics of web development and how to use HTML, CSS
+                  and JavaScript to create websites. This course will teach
+                  you how to build a website from scratch.
+                </p>
+              </div>
+              <div class="price-rating">
+                <p>$ 69,90</p>
+                <div class="star">
+                  <p>4.5</p>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <button>Buy</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                src="https://images.pexels.com/photos/416528/pexels-photo-416528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="product" />
+            </div>
+            <div class="product-card-title">
+              <h2>Water 101</h2>
+            </div>
+            <div class="product-detail">
+              <div class="product-card-description">
+                <p>
+                  Learn how to save water and protect the environment. This
+                  course will teach you how to conserve water in your home,
+                  garden, and community.
+                </p>
+              </div>
+              <div class="price-rating">
+                <p>$ 20,00</p>
+                <div class="star">
+                  <p>5.0</p>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <button>Buy</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="product" />
+            </div>
+            <div class="product-card-title">
+              <h2>Java</h2>
+            </div>
+            <div class="product-detail">
+              <div class="product-card-description">
+                <p>
+                  Learn the basics of Java programming and how to use it to
+                  create applications. This course will teach you how to write
+                  code in Java, compile it, and run it on your computer.
+                </p>
+              </div>
+              <div class="price-rating">
+                <p>$ 79,00</p>
+                <div class="star">
+                  <p>4.7</p>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <button>Buy</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                src="https://images.pexels.com/photos/3769013/pexels-photo-3769013.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="product" />
+            </div>
+            <div class="product-card-title">
+              <h2>Creative Writing</h2>
+            </div>
+            <div class="product-detail">
+              <div class="product-card-description">
+                <p>
+                  Learn how to write creatively and express yourself through
+                  words. This course will teach you how to write fiction,
+                  poetry, and nonfiction.
+                </p>
+              </div>
+              <div class="price-rating">
+                <p>$ 59,90</p>
+                <div class="star">
+                  <p>4.6</p>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <button>Buy</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                src="https://images.pexels.com/photos/542555/pexels-photo-542555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="product" />
+            </div>
+            <div class="product-card-title">
+              <h2>Painting</h2>
+            </div>
+            <div class="product-detail">
+              <div class="product-card-description">
+                <p>
+                  Learn how to paint with acrylics, watercolors, oils, and
+                  more. This course will teach you the basics of painting and
+                  give you tips on how to improve your skills.
+                </p>
+              </div>
+              <div class="price-rating">
+                <p>$ 79,90</p>
+                <div class="star">
+                  <p>4.3</p>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <button>Buy</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                src="https://images.pexels.com/photos/6509144/pexels-photo-6509144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="product" />
+            </div>
+            <div class="product-card-title">
+              <h2>Gardening 101</h2>
+            </div>
+            <div class="product-detail">
+              <div class="product-card-description">
+                <p>
+                  Learn how to grow your own food and flowers. This course
+                  will teach you the basics of gardening, including how to
+                  plant seeds, care for plants, and harvest vegetables.
+                </p>
+              </div>
+              <div class="price-rating">
+                <p>$ 39,90</p>
+                <div class="star">
+                  <p>4.5</p>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <button>Buy</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                src="https://images.pexels.com/photos/6287378/pexels-photo-6287378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="product" />
+            </div>
+            <div class="product-card-title">
+              <h2>Homemade Pasta</h2>
+            </div>
+            <div class="product-detail">
+              <div class="product-card-description">
+                <p>
+                  Learn how to make homemade pasta from scratch. This course
+                  will teach you the basics of pasta making, including how to
+                  mix the dough and roll it out.
+                </p>
+              </div>
+              <div class="price-rating">
+                <p>$ 19,90</p>
+                <div class="star">
+                  <p>5.0</p>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <button>Buy</button>
             </div>
           </div>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="bg-layer-image">
-          <img
-            src="https://images.pexels.com/photos/6476255/pexels-photo-6476255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-            class="img-fluid"
-          />
-        </div>
-        <div class="hero-content">
-          <h1 class="title">Our Products</h1>
-          <span> Enhance Learning with Our Educational Products </span>
-        </div>
-      </section>
-      <section class="container">
-        <div class="intro-text-products">
-          <p>
-            Explore our interactive learning tools that make education enjoyable
-            and effective. Dive into a world of hands-on experiences,
-            simulations, and immersive content that bring lessons to life. These
-            tools engage multiple senses and cater to diverse learning styles,
-            ensuring a comprehensive and enjoyable learning journey.
-          </p>
-        </div>
-        <div class="products-grid">
-          <h1>Products</h1>
-          <div class="products-container">
-            <div class="product">
-              <div class="product-img-container">
-                <img
-                  src="https://images.pexels.com/photos/3773478/pexels-photo-3773478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="product"
-                />
-              </div>
-              <div class="product-card-title">
-                <h2>Photography</h2>
-              </div>
-              <div class="product-detail">
-                <div class="product-card-description">
-                  <p>
-                    Learn the basics of photography and how to use a camera
-                    properly. This course will teach you how to take better
-                    photos and how to edit them in Photoshop.
-                  </p>
-                </div>
-                <div class="price-rating">
-                  <p>$ 49,90</p>
-                  <div class="star">
-                    <p>4.7</p>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-                <button>Buy</button>
-              </div>
-            </div>
-            <div class="product">
-              <div class="product-img-container">
-                <img
-                  src="https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="product"
-                />
-              </div>
-              <div class="product-card-title">
-                <h2>Web Development</h2>
-              </div>
-              <div class="product-detail">
-                <div class="product-card-description">
-                  <p>
-                    Learn the basics of web development and how to use HTML, CSS
-                    and JavaScript to create websites. This course will teach
-                    you how to build a website from scratch.
-                  </p>
-                </div>
-                <div class="price-rating">
-                  <p>$ 69,90</p>
-                  <div class="star">
-                    <p>4.5</p>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-                <button>Buy</button>
-              </div>
-            </div>
-            <div class="product">
-              <div class="product-img-container">
-                <img
-                  src="https://images.pexels.com/photos/416528/pexels-photo-416528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="product"
-                />
-              </div>
-              <div class="product-card-title">
-                <h2>Water 101</h2>
-              </div>
-              <div class="product-detail">
-                <div class="product-card-description">
-                  <p>
-                    Learn how to save water and protect the environment. This
-                    course will teach you how to conserve water in your home,
-                    garden, and community.
-                  </p>
-                </div>
-                <div class="price-rating">
-                  <p>$ 20,00</p>
-                  <div class="star">
-                    <p>5.0</p>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-                <button>Buy</button>
-              </div>
-            </div>
-            <div class="product">
-              <div class="product-img-container">
-                <img
-                  src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="product"
-                />
-              </div>
-              <div class="product-card-title">
-                <h2>Java</h2>
-              </div>
-              <div class="product-detail">
-                <div class="product-card-description">
-                  <p>
-                    Learn the basics of Java programming and how to use it to
-                    create applications. This course will teach you how to write
-                    code in Java, compile it, and run it on your computer.
-                  </p>
-                </div>
-                <div class="price-rating">
-                  <p>$ 79,00</p>
-                  <div class="star">
-                    <p>4.7</p>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-                <button>Buy</button>
-              </div>
-            </div>
-            <div class="product">
-              <div class="product-img-container">
-                <img
-                  src="https://images.pexels.com/photos/3769013/pexels-photo-3769013.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="product"
-                />
-              </div>
-              <div class="product-card-title">
-                <h2>Creative Writing</h2>
-              </div>
-              <div class="product-detail">
-                <div class="product-card-description">
-                  <p>
-                    Learn how to write creatively and express yourself through
-                    words. This course will teach you how to write fiction,
-                    poetry, and nonfiction.
-                  </p>
-                </div>
-                <div class="price-rating">
-                  <p>$ 59,90</p>
-                  <div class="star">
-                    <p>4.6</p>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-                <button>Buy</button>
-              </div>
-            </div>
-            <div class="product">
-              <div class="product-img-container">
-                <img
-                  src="https://images.pexels.com/photos/542555/pexels-photo-542555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="product"
-                />
-              </div>
-              <div class="product-card-title">
-                <h2>Painting</h2>
-              </div>
-              <div class="product-detail">
-                <div class="product-card-description">
-                  <p>
-                    Learn how to paint with acrylics, watercolors, oils, and
-                    more. This course will teach you the basics of painting and
-                    give you tips on how to improve your skills.
-                  </p>
-                </div>
-                <div class="price-rating">
-                  <p>$ 79,90</p>
-                  <div class="star">
-                    <p>4.3</p>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-                <button>Buy</button>
-              </div>
-            </div>
-            <div class="product">
-              <div class="product-img-container">
-                <img
-                  src="https://images.pexels.com/photos/6509144/pexels-photo-6509144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="product"
-                />
-              </div>
-              <div class="product-card-title">
-                <h2>Gardening 101</h2>
-              </div>
-              <div class="product-detail">
-                <div class="product-card-description">
-                  <p>
-                    Learn how to grow your own food and flowers. This course
-                    will teach you the basics of gardening, including how to
-                    plant seeds, care for plants, and harvest vegetables.
-                  </p>
-                </div>
-                <div class="price-rating">
-                  <p>$ 39,90</p>
-                  <div class="star">
-                    <p>4.5</p>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-                <button>Buy</button>
-              </div>
-            </div>
-            <div class="product">
-              <div class="product-img-container">
-                <img
-                  src="https://images.pexels.com/photos/6287378/pexels-photo-6287378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="product"
-                />
-              </div>
-              <div class="product-card-title">
-                <h2>Homemade Pasta</h2>
-              </div>
-              <div class="product-detail">
-                <div class="product-card-description">
-                  <p>
-                    Learn how to make homemade pasta from scratch. This course
-                    will teach you the basics of pasta making, including how to
-                    mix the dough and roll it out.
-                  </p>
-                </div>
-                <div class="price-rating">
-                  <p>$ 19,90</p>
-                  <div class="star">
-                    <p>5.0</p>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-                <button>Buy</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="after-text-products">
-          <p>
-            Immerse yourself in a diverse collection of books, carefully
-            selected to cover a wide range of subjects and interests. Our
-            educational books are curated to support various age groups and
-            learning levels, fostering a love for reading while expanding
-            knowledge and critical thinking skills.
-          </p>
-          <p>
-            At EduPath we are committed to supporting the educational journey of
-            learners at every stage. Our educational products are crafted with a
-            dedication to excellence, aiming to inspire a love for learning and
-            equip individuals with the knowledge and skills they need to succeed
-            in an ever-evolving world. Explore our range today and embark on a
-            path of educational enrichment!
-          </p>
-          <div class="reach-out">
-            <h1>Need a product and can't find it ?</h1>
-            <a href="./contact-us.html" class="links">Reach Out</a>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="container container--flex">
-        <div class="ft-links">
-          <a href="#">
-            <div class="icon-container">
-              <i class="fab fa-facebook-f"></i>
-            </div>
-          </a>
-          <a href="#">
-            <div class="icon-container">
-              <i class="fab fa-instagram"></i>
-            </div>
-          </a>
-          <a href="#">
-            <div class="icon-container">
-              <i class="fab fa-twitter"></i>
-            </div>
-          </a>
-          <a href="#">
-            <div class="icon-container">
-              <i class="fab fa-github"></i>
-            </div>
-          </a>
-        </div>
-        <div class="ft-copyright">
-          <p>© 2023 EduPath. All rights reserved.</p>
+      <div class="after-text-products">
+        <p>
+          Immerse yourself in a diverse collection of books, carefully
+          selected to cover a wide range of subjects and interests. Our
+          educational books are curated to support various age groups and
+          learning levels, fostering a love for reading while expanding
+          knowledge and critical thinking skills.
+        </p>
+        <p>
+          At EduPath we are committed to supporting the educational journey of
+          learners at every stage. Our educational products are crafted with a
+          dedication to excellence, aiming to inspire a love for learning and
+          equip individuals with the knowledge and skills they need to succeed
+          in an ever-evolving world. Explore our range today and embark on a
+          path of educational enrichment!
+        </p>
+        <div class="reach-out">
+          <h1>Need a product and can't find it ?</h1>
+          <a href="./contact-us.html" class="links">Reach Out</a>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+  </main>
+  <footer>
+    <div class="container container--flex">
+      <div class="ft-links">
+        <a href="#">
+          <div class="icon-container">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="icon-container">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="icon-container">
+            <i class="fab fa-twitter"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="icon-container">
+            <i class="fab fa-github"></i>
+          </div>
+        </a>
+      </div>
+      <div class="ft-copyright">
+        <p>© 2023 EduPath. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

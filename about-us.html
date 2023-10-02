@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Marcelo Lopes, Stena" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="shortcut icon"
-      href="./assets/img/favicon.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="./assets/styles/reset.css" />
-    <link rel="stylesheet" href="./assets/styles/global-rules.css" />
-    <link rel="stylesheet" href="./assets/styles/about.css" />
-    <link rel="stylesheet" href="./assets/styles/mediaquery.css" />
-    <title>EduPath About us</title>
-  </head>
-  <body>
-    <header>
-      <div class="container container--flex">
-        <a href="./index.html" class="logo container--flex">
-          <img src="./assets/img/favicon.png" alt="logo" />
-          <h2>EduPath</h2>
-        </a>
-        <div class="nav-search container--flex">
-          <form class="nav-form">
-            <i class="fas fa-search"></i>
-            <input type="text" placeholder="Search" class="form-control" />
-          </form>
-          <nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Marcelo Lopes, Stena" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/styles/reset.css" />
+  <link rel="stylesheet" href="./assets/styles/global-rules.css" />
+  <link rel="stylesheet" href="./assets/styles/about.css" />
+  <link rel="stylesheet" href="./assets/styles/mediaquery.css" />
+  <title>EduPath About us</title>
+</head>
+
+<body>
+  <header>
+    <div class="container container--flex">
+      <a href="./index.html" class="logo container--flex">
+        <img src="./assets/img/favicon.png" alt="logo" />
+        <h2>EduPath</h2>
+      </a>
+      <div class="nav-search container--flex">
+        <form class="nav-form">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search" class="form-control" />
+        </form>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about-us.html" class="active">About Us</a></li>
+            <li><a href="./contact-us.html">Contact Us</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./login.html">Login</a></li>
+          </ul>
+        </nav>
+        <div class="dropdown-container">
+          <div class="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 8h24M4 16h24M4 24h24" />
+            </svg>
+          </div>
+          <div class="dropdown">
             <ul>
               <li><a href="./index.html">Home</a></li>
               <li><a href="./about-us.html" class="active">About Us</a></li>
@@ -48,195 +57,162 @@
               <li><a href="./products.html">Products</a></li>
               <li><a href="./login.html">Login</a></li>
             </ul>
-          </nav>
-          <div class="dropdown-container">
-            <div class="menu-button">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-              >
-                <path
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 8h24M4 16h24M4 24h24"
-                />
-              </svg>
-            </div>
-            <div class="dropdown">
-              <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about-us.html" class="active">About Us</a></li>
-                <li><a href="./contact-us.html">Contact Us</a></li>
-                <li><a href="./products.html">Products</a></li>
-                <li><a href="./login.html">Login</a></li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="bg-layer-image">
-          <img
-            src="https://images.pexels.com/photos/6913299/pexels-photo-6913299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt=""
-            class="img-fluid"
-          />
-        </div>
-        <div class="hero-content">
-          <h1 class="title">Who We Are</h1>
-          <span>
-            Discover our story, values, and commitment to revolutionizing
-            education. Meet the team driving innovation and fostering a culture
-            of growth and learning.
-          </span>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="bg-layer-image">
+        <img
+          src="https://images.pexels.com/photos/6913299/pexels-photo-6913299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="" class="img-fluid" />
+      </div>
+      <div class="hero-content">
+        <h1 class="title">Who We Are</h1>
+        <span>
+          Discover our story, values, and commitment to revolutionizing
+          education. Meet the team driving innovation and fostering a culture
+          of growth and learning.
+        </span>
+      </div>
+    </section>
+    <div class="container">
+      <section class="section-container about-school">
+        <div class="grid-flow">
+          <div class="about-image-container">
+            <img
+              src="https://images.pexels.com/photos/3810792/pexels-photo-3810792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="" class="img-fluid" />
+          </div>
+          <div class="v-content">
+            <div class="title-container">
+              <h1>About EduPath</h1>
+            </div>
+            <div class="text-container">
+              <p class="text-content">
+                Meet the minds behind EduPath: Richard, Marcelo, and Stefano,
+                software development students who came together during their
+                college years. United by a shared vision for the potential of
+                online learning, we embarked on the journey of creating
+                EduPath. During those early days, we deftly balanced our
+                coursework while nurturing EduPath's growth, with each of us
+                contributing a unique set of skills: Richard's visionary
+                ideas, Marcelo's technical expertise, and Stefano's business
+                acumen.
+              </p>
+              <p>
+                Despite the inevitable challenges, our unwavering belief in
+                the transformative power of education propelled us forward.
+                The debut of our inaugural course, an introduction to coding,
+                garnered an overwhelmingly positive response. Today, EduPath
+                boasts a diverse array of courses spanning various domains,
+                and we remain steadfast in our commitment to continually
+                enhancing the learning experience. We warmly invite you to
+                join us on this thrilling journey toward educational
+                excellence.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
-      <div class="container">
-        <section class="section-container about-school">
-          <div class="grid-flow">
-            <div class="about-image-container">
-              <img
-                src="https://images.pexels.com/photos/3810792/pexels-photo-3810792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt=""
-                class="img-fluid"
-              />
+      <section class="section-container about-us-section">
+        <div class="grid-flow">
+          <div class="v-content">
+            <h1 class="v-title">About Team</h1>
+            <div class="text-container">
+              <p>
+                We’re Shella, Marcelo, and Stefano, three software development
+                students who met in college. We saw the potential of online
+                learning and created EduPath. In the early days, we juggled
+                coursework while developing EduPath. Each of us brought unique
+                skills - Alex’s visionary ideas, Bailey’s technical expertise,
+                and Charlie’s business acumen. Despite challenges, our belief
+                in the transformative power of education kept us going. The
+                launch of our first course, an introduction to coding,
+                received an overwhelming response. Today, EduPath offers a
+                wide array of courses across various domains. We’re
+                continuously evolving to provide the best learning experience.
+                Join us on this exciting journey.
+              </p>
             </div>
-            <div class="v-content">
-              <div class="title-container">
-                <h1>About EduPath</h1>
-              </div>
-              <div class="text-container">
-                <p class="text-content">
-                  Meet the minds behind EduPath: Richard, Marcelo, and Stefano,
-                  software development students who came together during their
-                  college years. United by a shared vision for the potential of
-                  online learning, we embarked on the journey of creating
-                  EduPath. During those early days, we deftly balanced our
-                  coursework while nurturing EduPath's growth, with each of us
-                  contributing a unique set of skills: Richard's visionary
-                  ideas, Marcelo's technical expertise, and Stefano's business
-                  acumen.
-                </p>
-                <p>
-                  Despite the inevitable challenges, our unwavering belief in
-                  the transformative power of education propelled us forward.
-                  The debut of our inaugural course, an introduction to coding,
-                  garnered an overwhelmingly positive response. Today, EduPath
-                  boasts a diverse array of courses spanning various domains,
-                  and we remain steadfast in our commitment to continually
-                  enhancing the learning experience. We warmly invite you to
-                  join us on this thrilling journey toward educational
-                  excellence.
-                </p>
-              </div>
+            <div class="links-container">
+              <a href="./contact-us.html" class="links"> Contact Us </a>
             </div>
           </div>
-        </section>
-        <section class="section-container about-us-section">
-          <div class="grid-flow">
-            <div class="v-content">
-              <h1 class="v-title">About Team</h1>
-              <div class="text-container">
-                <p>
-                  We’re Shella, Marcelo, and Stefano, three software development
-                  students who met in college. We saw the potential of online
-                  learning and created EduPath. In the early days, we juggled
-                  coursework while developing EduPath. Each of us brought unique
-                  skills - Alex’s visionary ideas, Bailey’s technical expertise,
-                  and Charlie’s business acumen. Despite challenges, our belief
-                  in the transformative power of education kept us going. The
-                  launch of our first course, an introduction to coding,
-                  received an overwhelming response. Today, EduPath offers a
-                  wide array of courses across various domains. We’re
-                  continuously evolving to provide the best learning experience.
-                  Join us on this exciting journey.
-                </p>
-              </div>
-              <div class="links-container">
-                <a href="./contact-us.html" class="links"> Contact Us </a>
-              </div>
-            </div>
-            <div class="about-image-container">
-              <img
-                src="https://images.pexels.com/photos/3277808/pexels-photo-3277808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt=""
-                class="img-fluid"
-              />
-            </div>
+          <div class="about-image-container">
+            <img
+              src="https://images.pexels.com/photos/3277808/pexels-photo-3277808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="" class="img-fluid" />
           </div>
-        </section>
-        <section class="team-section">
-          <h1>Our Team</h1>
-          <div class="team">
-            <div class="team-member">
-              <div class="image-container">
-                <img src="./assets/img/user-two.jfif" alt="team member" />
-              </div>
-              <div>
-                <h3>Shella Gates</h3>
-                <span>Co-Founder</span>
-              </div>
-            </div>
-            <div class="team-member">
-              <div class="image-container">
-                <img src="./assets/img/user-one.jfif" alt="team member" />
-              </div>
-              <div class="">
-                <h3>Marcelo Lopes Fernandes</h3>
-                <span class="">CEO </span>
-              </div>
-            </div>
-            <div class="team-member">
-              <div class="image-container">
-                <img
-                  src="https://avatars.githubusercontent.com/u/67341828?s=400&u=e7e2526444d305f4028273b105816b16e348d6b5&v=4"
-                  alt="team member"
-                />
-              </div>
-              <div class="">
-                <h3>Stefano Giuseppe Turcarelli</h3>
-                <span class="">Manager</span>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer>
-      <div class="container container--flex">
-        <div class="ft-links">
-          <a href="#">
-            <div class="icon-container">
-              <i class="fab fa-facebook-f"></i>
-            </div>
-          </a>
-          <a href="#">
-            <div class="icon-container">
-              <i class="fab fa-instagram"></i>
-            </div>
-          </a>
-          <a href="#">
-            <div class="icon-container">
-              <i class="fab fa-twitter"></i>
-            </div>
-          </a>
-          <a href="#">
-            <div class="icon-container">
-              <i class="fab fa-github"></i>
-            </div>
-          </a>
         </div>
-        <div class="ft-copyright">
-          <p>© 2023 EduPath. All rights reserved.</p>
+      </section>
+      <section class="team-section">
+        <h1>Our Team</h1>
+        <div class="team">
+          <div class="team-member">
+            <div class="image-container">
+              <img src="./assets/img/user-two.jfif" alt="team member" />
+            </div>
+            <div>
+              <h3>Shella Gates</h3>
+              <span>Co-Founder</span>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="image-container">
+              <img src="./assets/img/user-one.jfif" alt="team member" />
+            </div>
+            <div class="">
+              <h3>Marcelo Lopes Fernandes</h3>
+              <span class="">CEO </span>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="image-container">
+              <img
+                src="https://avatars.githubusercontent.com/u/67341828?s=400&u=e7e2526444d305f4028273b105816b16e348d6b5&v=4"
+                alt="team member" />
+            </div>
+            <div class="">
+              <h3>Stefano Giuseppe Turcarelli</h3>
+              <span class="">Manager</span>
+            </div>
+          </div>
         </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="container container--flex">
+      <div class="ft-links">
+        <a href="#">
+          <div class="icon-container">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="icon-container">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="icon-container">
+            <i class="fab fa-twitter"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="icon-container">
+            <i class="fab fa-github"></i>
+          </div>
+        </a>
       </div>
-    </footer>
-  </body>
+      <div class="ft-copyright">
+        <p>© 2023 EduPath. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

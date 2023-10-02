@@ -1,97 +1,97 @@
 @media all and (min-width: 640px) {
-	main.has-auth .container {
-		width: 80%;
-	}
+  main.has-auth .container {
+    width: 80%;
+  }
 }
 
 @media all and (min-width: 768px) {
-	main.has-auth {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-	}
+  main.has-auth {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-	main aside {
-		display: block;
-	}
+  main aside {
+    display: block;
+  }
 
-	.dropdown-container {
-		display: none;
-	}
+  .dropdown-container {
+    display: none;
+  }
 
-	.contact-container {
-		grid-template-columns: 0.8fr 1fr;
-	}
+  .contact-container {
+    grid-template-columns: 0.8fr 1fr;
+  }
 
-	.grid-flow {
-		grid-template-columns: 1fr 1fr;
-	}
+  .grid-flow {
+    grid-template-columns: 1fr 1fr;
+  }
 
-	section .hero-content {
-		width: 50%;
-	}
+  section .hero-content {
+    width: 50%;
+  }
 
-	section.about .grid-container {
-		grid-template-columns: 1fr 1fr;
-	}
+  section.about .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
 
-	.team .title-container {
-		width: 60%;
-	}
+  .team .title-container {
+    width: 60%;
+  }
 }
 
 @media all and (max-width: 768px) {
-	.nav-search nav {
-		display: none;
-	}
+  .nav-search nav {
+    display: none;
+  }
 
-	.about-us-section .about-image-container {
-		order: 1;
-	}
+  .about-us-section .about-image-container {
+    order: 1;
+  }
 
-	.about-us-section .v-content {
-		order: 2;
-	}
+  .about-us-section .v-content {
+    order: 2;
+  }
 
-	.grid-flow .about-image-container {
-		aspect-ratio: 16/9;
-	}
+  .grid-flow .about-image-container {
+    aspect-ratio: 16/9;
+  }
 }
 
 @media all and (max-width: 640px) {
-	header .nav-search {
-		flex-grow: 0;
-	}
+  header .nav-search {
+    flex-grow: 0;
+  }
 
-	.product .product-container {
-		width: 100%;
-	}
+  .product .product-container {
+    width: 100%;
+  }
 
-	.product {
-		flex-direction: column;
-		align-items: flex-start;
-	}
+  .product {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 @media all and (max-width: 501px) {
-	.logo h2 {
-		display: none;
-	}
+  .logo h2 {
+    display: none;
+  }
 
-	.products-container {
-		grid-template-columns: 1fr;
-	}
+  .products-container {
+    grid-template-columns: 1fr;
+  }
 
-	.product-img-container {
-		width: 100%;
-	}
+  .product-img-container {
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 400px) {
-	footer .container {
-		justify-content: center;
-	}
+  footer .container {
+    justify-content: center;
+  }
 
-	header .nav-form {
-		display: none;
-	}
+  header .nav-form {
+    display: none;
+  }
 }
