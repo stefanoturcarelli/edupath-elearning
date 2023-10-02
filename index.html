@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta tags -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="author"
-      content="Marcelo Lopes, Adeniyi Adedokun, Stefano Turcarelli"
-    />
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/styles/reset.css" />
-    <link rel="stylesheet" href="./assets/styles/index.css" />
-    <link rel="stylesheet" href="./assets/styles/global-rules.css" />
-    <link rel="stylesheet" href="./assets/styles/mediaquery.css" />
-    <!-- icon -->
-    <link rel="icon" href="./assets/img/favicon.png" />
-    <title>EduPath</title>
-  </head>
-  <body>
-    <header>
-      <div class="container container--flex">
-        <a href="/" class="logo container--flex">
-          <img src="./assets/img/favicon.png" alt="logo" />
-          <h2>EduPath</h2>
-        </a>
-        <div class="nav-search container--flex">
-          <form class="nav-form">
-            <i class="fas fa-search"></i>
-            <input type="text" placeholder="Search" class="form-control" />
-          </form>
-          <nav>
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Marcelo Lopes, Adeniyi Adedokun, Stefano Turcarelli" />
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900&display=swap"
+    rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/styles/reset.css" />
+  <link rel="stylesheet" href="./assets/styles/index.css" />
+  <link rel="stylesheet" href="./assets/styles/global-rules.css" />
+  <link rel="stylesheet" href="./assets/styles/mediaquery.css" />
+  <!-- icon -->
+  <link rel="icon" href="./assets/img/favicon.png" />
+  <title>EduPath</title>
+</head>
+
+<body>
+  <header>
+    <div class="container container--flex">
+      <a href="./index.html" class="logo container--flex">
+        <img src="./assets/img/favicon.png" alt="logo" />
+        <h2>EduPath</h2>
+      </a>
+      <div class="nav-search container--flex">
+        <form class="nav-form">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search" class="form-control" />
+        </form>
+        <nav>
+          <ul>
+            <li><a href="./index.html" class="active">Home</a></li>
+            <li><a href="./about-us.html">About Us</a></li>
+            <li><a href="./contact-us.html">Contact Us</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./login.html">Login</a></li>
+          </ul>
+        </nav>
+        <div class="dropdown-container">
+          <div class="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 8h24M4 16h24M4 24h24" />
+            </svg>
+          </div>
+          <div class="dropdown">
             <ul>
               <li><a href="./index.html" class="active">Home</a></li>
               <li><a href="./about-us.html">About Us</a></li>
@@ -52,451 +62,381 @@
               <li><a href="./products.html">Products</a></li>
               <li><a href="./login.html">Login</a></li>
             </ul>
-          </nav>
-          <div class="dropdown-container">
-            <div class="menu-button">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-              >
-                <path
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 8h24M4 16h24M4 24h24"
-                />
-              </svg>
-            </div>
-            <div class="dropdown">
-              <ul>
-                <li><a href="./index.html" class="active">Home</a></li>
-                <li><a href="./about-us.html">About Us</a></li>
-                <li><a href="./contact-us.html">Contact Us</a></li>
-                <li><a href="./products.html">Products</a></li>
-                <li><a href="./login.html">Login</a></li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="bg-layer-image">
-          <img
-            src="https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt=""
-            class="img-fluid"
-          />
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="bg-layer-image">
+        <img
+          src="https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="" class="img-fluid" />
+      </div>
+      <div class="hero-content">
+        <h1 class="title">
+          A World of Infinite Possibilities: Your Learning Journey Begins Here
+        </h1>
+        <span>Login and Explore, Discover, and Create in a Learning Wonderland</span>
+        <div class="links-container">
+          <a href="./products.html" class="links">Get Started</a>
         </div>
-        <div class="hero-content">
-          <h1 class="title">
-            A World of Infinite Possibilities: Your Learning Journey Begins Here
-          </h1>
-          <span>Login and Explore, Discover, and Create in a Learning Wonderland</span>
-          <div class="links-container">
-            <a href="./login.html" class="links">Login</a>
+      </div>
+    </section>
+    <div class="content-inner">
+      <section class="description">
+        <div class="content">
+          <h3 class="title">Don't have an account ? Don't worry </h3>
+          <span>
+            Welcome to our online learning hub, where growth knows no bounds.
+            Register now and explore a vast amount of courses, expert tutorials, and tailored content.
+            Dive into interactive lessons, insightful resources, and
+            real-world applications. Our dedicated team of educators and
+            experts ensures top-notch guidance. Ready for a brighter, more
+            knowledgeable future?
+          </span>
+        </div>
+        <div class="description-image">
+          <img
+            src="https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="" class="img-fluid" />
+        </div>
+        <div>
+          <a href="./register.html" class="links">Register Now</a>
+        </div>
+      </section>
+      <section class="container products-grid">
+        <div class="section-title-container">
+          <h2 class="section-title">See some of our courses</h2>
+        </div>
+        <div class="products-container">
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                src="https://images.pexels.com/photos/3773478/pexels-photo-3773478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="product" />
+            </div>
+            <h2>Photography</h2>
+            <div class="product-detail">
+              <div class="price-rating">
+                <p>$ 49,90</p>
+                <div class="star">
+                  <p>4.7</p>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <a href="./products.html">About this product</a>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                src="https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="product" />
+            </div>
+            <h2>Web Development</h2>
+            <div class="product-detail">
+              <div class="price-rating">
+                <p>$ 49,90</p>
+                <div class="star">
+                  <p>4.7</p>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <a href="./products.html">About this product</a>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                src="https://images.pexels.com/photos/416528/pexels-photo-416528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="product" />
+            </div>
+            <h2>Water 101</h2>
+            <div class="product-detail">
+              <div class="price-rating">
+                <p>$ 49,90</p>
+                <div class="star">
+                  <p>4.7</p>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <a href="./products.html">About this product</a>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="product" />
+            </div>
+            <h2>JavaScript</h2>
+            <div class="product-detail">
+              <div class="price-rating">
+                <p>$ 49,90</p>
+                <div class="star">
+                  <p>4.7</p>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <a href="./products.html">About this product</a>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                src="https://images.pexels.com/photos/3769013/pexels-photo-3769013.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="product" />
+            </div>
+            <h2>Creative Writing</h2>
+            <div class="product-detail">
+              <div class="price-rating">
+                <p>$ 49,90</p>
+                <div class="star">
+                  <p>4.7</p>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <a href="./products.html">About this product</a>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                src="https://images.pexels.com/photos/542555/pexels-photo-542555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="product" />
+            </div>
+            <h2>Painting</h2>
+            <div class="product-detail">
+              <div class="price-rating">
+                <p>$ 49,90</p>
+                <div class="star">
+                  <p>4.7</p>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <a href="./products.html">About this product</a>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                src="https://images.pexels.com/photos/6509144/pexels-photo-6509144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="product" />
+            </div>
+            <h2>Gardening 101</h2>
+            <div class="product-detail">
+              <div class="price-rating">
+                <p>$ 49,90</p>
+                <div class="star">
+                  <p>4.7</p>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <a href="./products.html">About this product</a>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                src="https://images.pexels.com/photos/6287378/pexels-photo-6287378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="product" />
+            </div>
+            <h2>Homemade Pasta</h2>
+            <div class="product-detail">
+              <div class="product-detail">
+                <div class="price-rating">
+                  <p>$ 49,90</p>
+                  <div class="star">
+                    <p>4.7</p>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <a href="./products.html">About this product</a>
+              </div>
+            </div>
+          </div>
+      </section>
+      <div class="see-more">
+        <a href="./products.html" class="links">See More Products</a>
+      </div>
+      <section class="gallery-image">
+        <div class="section-title-container">
+          <h2 class="section-title">Experience a variety of categories of knowledge</h2>
+        </div>
+        <div class="grid-gallery">
+          <div class="gallery-image">
+            <img
+              src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="" class="img-fluid" />
+          </div>
+          <div class="gallery-image">
+            <img
+              src="https://images.pexels.com/photos/4144222/pexels-photo-4144222.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="" class="img-fluid" />
+          </div>
+          <div class="gallery-image">
+            <img
+              src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="" class="img-fluid" />
+          </div>
+          <div class="gallery-image">
+            <img
+              src="https://images.pexels.com/photos/4050347/pexels-photo-4050347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="" class="img-fluid" />
+          </div>
+          <div class="gallery-image">
+            <img
+              src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="" class="img-fluid" />
+          </div>
+          <div class="gallery-image">
+            <img
+              src="https://images.pexels.com/photos/4476376/pexels-photo-4476376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="" class="img-fluid" />
+          </div>
+          <div class="gallery-image">
+            <img
+              src="https://images.pexels.com/photos/811572/pexels-photo-811572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="" class="img-fluid" />
+          </div>
+          <div class="gallery-image">
+            <img
+              src="https://images.pexels.com/photos/2097/desk-office-pen-ruler.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="" class="img-fluid" />
+          </div>
+          <div class="gallery-image">
+            <img
+              src="https://images.pexels.com/photos/5238079/pexels-photo-5238079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="" class="img-fluid" />
           </div>
         </div>
       </section>
-      <div class="content-inner">
-        <section class="description">
-          <div class="content">
-            <h3 class="title">Don't have an account ? Don't worry </h3>
-            <span>
-              Welcome to our online learning hub, where growth knows no bounds.
-              Register now and explore a vast amount of courses, expert tutorials, and tailored content.
-              Dive into interactive lessons, insightful resources, and
-              real-world applications. Our dedicated team of educators and
-              experts ensures top-notch guidance. Ready for a brighter, more
-              knowledgeable future?
-            </span>
-          </div>
-          <div class="description-image">
+      <section class="about">
+        <div class="section-title-container">
+          <h2 class="section-title">About Us</h2>
+        </div>
+        <div class="grid-container">
+          <div class="image-container">
             <img
-              src="https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt=""
-              class="img-fluid"
-            />
+              src="https://images.pexels.com/photos/7688164/pexels-photo-7688164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="" class="img-fluid" />
           </div>
-          <div>
-            <a href="./register.html" class="links">Register Now</a>
-          </div>
-        </section>
-        <section class="container products-grid">
-          <div class="section-title-container">
-            <h2 class="section-title">See some of our courses</h2>
-          </div>
-          <div class="products-container">
-            <div class="product">
-              <div class="product-img-container">
-                <img
-                  src="https://images.pexels.com/photos/3773478/pexels-photo-3773478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="product"
-                />
+          <div class="about-content">
+            <span class="about-sm-text">Who We Are</span>
+            <h2 class="title">What our students say about us</h2>
+            <span class="subcontent">
+              This educational web platform has been a game-changer for my
+              learning journey. The range of courses available is remarkable,
+              covering topics that align perfectly with my academic and career
+              goals. The interactive lessons and expert instructors have made
+              complex subjects feel digestible and enjoyable.
+            </span>
+            <div class="about-student-detail">
+              <div class="about-profile-image">
+                <img src="./assets/img/user-two.jfif" alt="" class="img-fluid" />
               </div>
-              <h2>Photography</h2>
-              <div class="product-detail">
-                <div class="price-rating">
-                  <p>$ 49,90</p>
-                  <div class="star">
-                    <p>4.7</p>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-                <a href="./products.html">About this product</a>
+              <div class="about-profile-name">
+                <span class="profile-name">Sam Smith</span>
+                <span class="profile-category">Student</span>
               </div>
             </div>
-            <div class="product">
-              <div class="product-img-container">
-                <img
-                  src="https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="product"
-                />
-              </div>
-              <h2>Web Development</h2>
-              <div class="product-detail">
-                <div class="price-rating">
-                  <p>$ 49,90</p>
-                  <div class="star">
-                    <p>4.7</p>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-                <a href="./products.html">About this product</a>
-              </div>
-            </div>
-            <div class="product">
-              <div class="product-img-container">
-                <img
-                  src="https://images.pexels.com/photos/416528/pexels-photo-416528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="product"
-                />
-              </div>
-              <h2>Water 101</h2>
-              <div class="product-detail">
-                <div class="price-rating">
-                  <p>$ 49,90</p>
-                  <div class="star">
-                    <p>4.7</p>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-                <a href="./products.html">About this product</a>
-              </div>
-            </div>
-            <div class="product">
-              <div class="product-img-container">
-                <img
-                  src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="product"
-                />
-              </div>
-              <h2>JavaScript</h2>
-              <div class="product-detail">
-                <div class="price-rating">
-                  <p>$ 49,90</p>
-                  <div class="star">
-                    <p>4.7</p>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-                <a href="./products.html">About this product</a>
-              </div>
-            </div>
-            <div class="product">
-              <div class="product-img-container">
-                <img
-                  src="https://images.pexels.com/photos/3769013/pexels-photo-3769013.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="product"
-                />
-              </div>
-              <h2>Creative Writing</h2>
-              <div class="product-detail">
-                <div class="price-rating">
-                  <p>$ 49,90</p>
-                  <div class="star">
-                    <p>4.7</p>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-                <a href="./products.html">About this product</a>
-              </div>
-            </div>
-            <div class="product">
-              <div class="product-img-container">
-                <img
-                  src="https://images.pexels.com/photos/542555/pexels-photo-542555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="product"
-                />
-              </div>
-              <h2>Painting</h2>
-              <div class="product-detail">
-                <div class="price-rating">
-                  <p>$ 49,90</p>
-                  <div class="star">
-                    <p>4.7</p>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-                <a href="./products.html">About this product</a>
-              </div>
-            </div>
-            <div class="product">
-              <div class="product-img-container">
-                <img
-                  src="https://images.pexels.com/photos/6509144/pexels-photo-6509144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="product"
-                />
-              </div>
-              <h2>Gardening 101</h2>
-              <div class="product-detail">
-                <div class="price-rating">
-                  <p>$ 49,90</p>
-                  <div class="star">
-                    <p>4.7</p>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-                <a href="./products.html">About this product</a>
-              </div>
-            </div>
-            <div class="product">
-              <div class="product-img-container">
-                <img
-                  src="https://images.pexels.com/photos/6287378/pexels-photo-6287378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="product"
-                />
-              </div>
-              <h2>Homemade Pasta</h2>
-              <div class="product-detail">
-                <div class="product-detail">
-                  <div class="price-rating">
-                    <p>$ 49,90</p>
-                    <div class="star">
-                      <p>4.7</p>
-                      <i class="fas fa-star"></i>
-                    </div>
-                  </div>
-                  <a href="./products.html">About this product</a>
-                </div>
+            <div class="read-more">
+              <a href="./about-us.html" class="links">Read more</a>
             </div>
           </div>
-        </section>
-        <div class="see-more">
-          <a href="./products.html" class="links">See More Products</a>
         </div>
-        <section class="gallery-image">
-          <div class="section-title-container">
-            <h2 class="section-title">Experience a variety of categories of knowledge</h2>
-          </div>
-          <div class="grid-gallery">
-            <div class="gallery-image">
-              <img
-                src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt=""
-                class="img-fluid"
-              />
-            </div>
-            <div class="gallery-image">
-              <img
-                src="https://images.pexels.com/photos/4144222/pexels-photo-4144222.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt=""
-                class="img-fluid"
-              />
-            </div>
-            <div class="gallery-image">
-              <img
-                src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt=""
-                class="img-fluid"
-              />
-            </div>
-            <div class="gallery-image">
-              <img
-                src="https://images.pexels.com/photos/4050347/pexels-photo-4050347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt=""
-                class="img-fluid"
-              />
-            </div>
-            <div class="gallery-image">
-              <img
-                src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt=""
-                class="img-fluid"
-              />
-            </div>
-            <div class="gallery-image">
-              <img
-                src="https://images.pexels.com/photos/4476376/pexels-photo-4476376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt=""
-                class="img-fluid"
-              />
-            </div>
-            <div class="gallery-image">
-              <img
-                src="https://images.pexels.com/photos/811572/pexels-photo-811572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt=""
-                class="img-fluid"
-              />
-            </div>
-            <div class="gallery-image">
-              <img
-                src="https://images.pexels.com/photos/2097/desk-office-pen-ruler.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt=""
-                class="img-fluid"
-              />
-            </div>
-            <div class="gallery-image">
-              <img
-                src="https://images.pexels.com/photos/5238079/pexels-photo-5238079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt=""
-                class="img-fluid"
-              />
-            </div>
-          </div>
-        </section>
-        <section class="about">
-          <div class="section-title-container">
-            <h2 class="section-title">About Us</h2>
-          </div>
+      </section>
+      <section class="team">
+        <div class="title-container">
+          <span>Our Team</span>
+          <h2 class="title">The best tutors in town</h2>
+          <p>
+            Allow us to introduce the mentors who play a vital role in shaping
+            your educational journey, inspiring you along the way, and
+            providing the support you need to succeed. See some of the professionals
+            who make the best online course possible.
+          </p>
+        </div>
+        <div class="grid-tutors">
           <div class="grid-container">
-            <div class="image-container">
-              <img
-                src="https://images.pexels.com/photos/7688164/pexels-photo-7688164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt=""
-                class="img-fluid"
-              />
-            </div>
-            <div class="about-content">
-              <span class="about-sm-text">Who We Are</span>
-              <h2 class="title">What our students say about us</h2>
-              <span class="subcontent">
-                This educational web platform has been a game-changer for my
-                learning journey. The range of courses available is remarkable,
-                covering topics that align perfectly with my academic and career
-                goals. The interactive lessons and expert instructors have made
-                complex subjects feel digestible and enjoyable.
-              </span>
-              <div class="about-student-detail">
-                <div class="about-profile-image">
-                  <img
-                    src="./assets/img/user-two.jfif"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="about-profile-name">
-                  <span class="profile-name">Sam Smith</span>
-                  <span class="profile-category">Student</span>
-                </div>
+            <div class="each-tutor">
+              <div class="image-container">
+                <img
+                  src="https://images.pexels.com/photos/7092613/pexels-photo-7092613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt="" class="img-fluid" />
               </div>
-              <div class="read-more">
-                <a href="./about-us.html" class="links">Read more</a>
+              <div class="tutor-detail">
+                <h4 class="tutor-name">James Anderson</h4>
+                <span class="tutor-course">English Language</span>
+              </div>
+            </div>
+            <div class="each-tutor">
+              <div class="image-container">
+                <img
+                  src="https://images.pexels.com/photos/17450183/pexels-photo-17450183/free-photo-of-a-teaching-looking-toward-a-student-raising-their-hand.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt="" class="img-fluid" />
+              </div>
+              <div class="tutor-detail">
+                <h4 class="tutor-name">Emily Parker</h4>
+                <span class="tutor-course">Calculus</span>
+              </div>
+            </div>
+            <div class="each-tutor">
+              <div class="image-container">
+                <img
+                  src="https://images.pexels.com/photos/1181487/pexels-photo-1181487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt="" class="img-fluid" />
+              </div>
+              <div class="tutor-detail">
+                <h4 class="tutor-name">Sarah Davis</h4>
+                <span class="tutor-course">Statics</span>
               </div>
             </div>
           </div>
-        </section>
-        <section class="team">
-          <div class="title-container">
-            <span>Our Team</span>
-            <h2 class="title">The best tutors in town</h2>
-            <p>
-              Allow us to introduce the mentors who play a vital role in shaping
-              your educational journey, inspiring you along the way, and
-              providing the support you need to succeed. See some of the professionals 
-              who make the best online course possible.
-            </p>
+          <div class="links">
+            <a href="./register.html" class="links">Start Your Learning Journey</a>
           </div>
-          <div class="grid-tutors">
-            <div class="grid-container">
-              <div class="each-tutor">
-                <div class="image-container">
-                  <img
-                    src="https://images.pexels.com/photos/7092613/pexels-photo-7092613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="tutor-detail">
-                  <h4 class="tutor-name">James Anderson</h4>
-                  <span class="tutor-course">English Language</span>
-                </div>
-              </div>
-              <div class="each-tutor">
-                <div class="image-container">
-                  <img
-                    src="https://images.pexels.com/photos/17450183/pexels-photo-17450183/free-photo-of-a-teaching-looking-toward-a-student-raising-their-hand.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="tutor-detail">
-                  <h4 class="tutor-name">Emily Parker</h4>
-                  <span class="tutor-course">Calculus</span>
-                </div>
-              </div>
-              <div class="each-tutor">
-                <div class="image-container">
-                  <img
-                    src="https://images.pexels.com/photos/1181487/pexels-photo-1181487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="tutor-detail">
-                  <h4 class="tutor-name">Sarah Davis</h4>
-                  <span class="tutor-course">Statics</span>
-                </div>
-              </div>
-            </div>
-            <div class="links">
-              <a href="./register.html" class="links"
-                >Start Your Learning Journey</a
-              >
-            </div>
-          </div>
-        </section>
-        <section class="more-info">
-          <div class="banner">
-            <h2 class="title">Want more information ?</h2>
-            <a href="./contact-us.html"> Contact Us</a>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer>
-      <div class="container container--flex">
-        <div class="ft-links">
-          <a href="#">
-            <div class="icon-container">
-              <i class="fab fa-facebook-f"></i>
-            </div>
-          </a>
-          <a href="#">
-            <div class="icon-container">
-              <i class="fab fa-instagram"></i>
-            </div>
-          </a>
-          <a href="#">
-            <div class="icon-container">
-              <i class="fab fa-twitter"></i>
-            </div>
-          </a>
-          <a href="#">
-            <div class="icon-container">
-              <i class="fab fa-github"></i>
-            </div>
-          </a>
         </div>
-        <div class="ft-copyright">
-          <p>© 2023 EduPath. All rights reserved.</p>
+      </section>
+      <section class="more-info">
+        <div class="banner">
+          <h2 class="title">Want more information ?</h2>
+          <a href="./contact-us.html"> Contact Us</a>
         </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="container container--flex">
+      <div class="ft-links">
+        <a href="#">
+          <div class="icon-container">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="icon-container">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="icon-container">
+            <i class="fab fa-twitter"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="icon-container">
+            <i class="fab fa-github"></i>
+          </div>
+        </a>
       </div>
-    </footer>
-  </body>
+      <div class="ft-copyright">
+        <p>© 2023 EduPath. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
