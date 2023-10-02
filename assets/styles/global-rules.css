@@ -83,6 +83,12 @@ header .nav-search {
   gap: 1rem;
 }
 
+@media (max-width: 900px) {
+  .nav-form {
+    display: none;
+  }
+}
+
 nav ul {
   display: flex;
   align-items: center;
@@ -100,7 +106,7 @@ nav ul a {
 
 img,
 .img-fluid {
-  height: auto;
+  height: 100%;
   max-width: 100%;
 }
 
@@ -256,11 +262,15 @@ section {
 }
 
 section.hero {
-  height: 80dvh;
+  height: 19rem;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width) {
+
 }
 
 section.hero::before {

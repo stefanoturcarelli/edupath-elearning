@@ -152,3 +152,8 @@ main h1 {
 .form-input button[type="submit"]:hover {
   background-color: var(--app-light-color-primary);
 }
+
+.required-fields {
+  font-size: 0.8rem;
+  color: #808080;
+}
