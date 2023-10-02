@@ -157,11 +157,136 @@ div a.links:hover {
 
 /*------description section end------*/
 
-/*------products section------*/
+/*------tiny products section------*/
+
+
 
 .see-more {
 	margin-top: 5rem;
 	text-align: center;
+}
+
+.products-grid {
+	padding-block: 4rem;
+}
+
+
+.products-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 2rem 1.5rem;
+	margin-top: 3rem;
+}
+
+.product {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.5rem 1rem;
+	padding: 1rem;
+	border-radius: 5px;
+	background-color: var(--app-var-background-color);
+}
+
+.product h2 {
+	text-align: center;
+}
+
+.product-img-container {
+	height: 12.5rem;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.product,
+.product-img-container {
+	box-shadow: #00000029 0 0 0.2rem 0;
+}
+
+.product-img-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.product-card-description {
+	min-height: 10rem;
+	min-width: 100%;
+	font-size: 0.9rem;
+	font-weight: 500;
+	padding-top: 1rem;
+	border-top: #00000029 1px solid;
+	border-bottom: #00000029 1px solid;
+}
+
+.product .product-img-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.product-detail button {
+	padding: 0.6rem 1.8rem;
+	margin-top: 1rem;
+	font-size: 0.9rem;
+	font-size: 500;
+	border-radius: 4px;
+}
+
+.product button {
+	background-color: var(--app-var-dark-color-primary);
+	color: var(--app-var-background-color);
+	font-weight: 500;
+	padding: 0.6rem 1.3rem;
+	border-radius: 4px;
+	font-size: 0.8rem;
+	width: 100%;
+}
+
+.product button:hover {
+	background-color: var(--app-var-primary-color);
+}
+
+.product-card-title {
+	min-width: 100%;
+	font-size: 1rem;
+	font-weight: 500;
+	text-align: center;
+	align-self: center;
+}
+
+.price-rating {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 5px;
+	padding: 1rem 0;
+	border-bottom: #00000029 1px solid;
+}
+
+.fa-star {
+	color: var(--app-var-stars-color);
+	padding-bottom: 0.2rem;
+}
+
+.star {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+}
+
+.product div a {
+	background-color: var(--app-var-dark-color-primary);
+	color: var(--white);
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+
+.product div a:hover {
+	background-color: var(--app-var-primary-color);
 }
 
 /*------products section end------*/
