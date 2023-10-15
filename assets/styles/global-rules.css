@@ -262,14 +262,10 @@ section {
 }
 
 section.hero {
-  height: 19rem;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-@media (max-width) {
 }
 
 section.hero::before {
@@ -361,10 +357,4 @@ footer .icon-container:hover {
 
 footer .ft-copyright {
   font-size: 0.9rem;
-}
-
-@media (max-width: 900px) {
-  footer .container {
-    justify-content: center;
-  }
 }

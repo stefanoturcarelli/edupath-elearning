@@ -1,174 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Marcelo Lopes, Adeniyi Adedokun, Stefano Turcarelli"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/global-rules.css" />
+    <link rel="stylesheet" href="./assets/styles/contact.css" />
+    <link rel="stylesheet" href="./assets/styles/mediaquery.css" />
+    <title>EduPath Contact us</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Marcelo Lopes, Stena" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="./assets/styles/reset.css" />
-  <link rel="stylesheet" href="./assets/styles/global-rules.css" />
-  <link rel="stylesheet" href="./assets/styles/contact.css" />
-  <link rel="stylesheet" href="./assets/styles/mediaquery.css" />
-  <title>EduPath Contact us</title>
-</head>
-
-<body>
-  <header>
-    <div class="container container--flex">
-      <a href="./index.html" class="logo container--flex">
-        <img src="./assets/img/favicon.png" alt="logo" />
-        <h2>EduPath</h2>
-      </a>
-      <div class="nav-search container--flex">
-        <form class="nav-form">
-          <i class="fas fa-search"></i>
-          <input type="text" placeholder="Search" class="form-control" />
-        </form>
-        <nav>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about-us.html">About Us</a></li>
-            <li><a href="./contact-us.html" class="active">Contact Us</a></li>
-            <li><a href="./products.html">Products</a></li>
-            <!-- <li><a href="./login.html">Login</a></li> -->
-          </ul>
-        </nav>
-        <div class="dropdown-container">
-          <div class="menu-button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 8h24M4 16h24M4 24h24" />
-            </svg>
-          </div>
-          <div class="dropdown">
+  <body>
+    <header>
+      <div class="container container--flex">
+        <a href="./index.html" class="logo container--flex">
+          <img src="./assets/img/favicon.png" alt="logo" />
+          <h2>EduPath</h2>
+        </a>
+        <div class="nav-search container--flex">
+          <form class="nav-form">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search" class="form-control" />
+          </form>
+          <nav>
             <ul>
               <li><a href="./index.html">Home</a></li>
               <li><a href="./about-us.html">About Us</a></li>
-              <li>
-                <a href="./contact-us.html" class="active">Contact Us</a>
-              </li>
+              <li><a href="./contact-us.html" class="active">Contact Us</a></li>
               <li><a href="./products.html">Products</a></li>
               <li><a href="./login.html">Login</a></li>
             </ul>
+          </nav>
+          <div class="dropdown-container">
+            <div class="menu-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 8h24M4 16h24M4 24h24"
+                />
+              </svg>
+            </div>
+            <div class="dropdown">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about-us.html">About Us</a></li>
+                <li>
+                  <a href="./contact-us.html" class="active">Contact Us</a>
+                </li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./login.html">Login</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
-  <main>
-    <section class="hero">
-      <div class="bg-layer-image">
-        <img
-          src="https://images.pexels.com/photos/7709157/pexels-photo-7709157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          alt="" class="img-fluid" />
-      </div>
-      <div class="hero-content">
-        <h1 class="title">Contact Us</h1>
-      </div>
-    </section>
-    <div class="contact-container">
-      <section class="reach-out-points">
-        <h1>Let's Connect</h1>
-        <div class="v-container">
-          <div class="each-reach-out">
-            <span class="key">Address:</span>
-            <span class="value">
-              123 Sesame St., MB
-            </span>
-          </div>
-          <!-- <div class="each-reach-out">
-            <span class="key">Phone: </span>
-            <span class="value">
-              <a href="tel:+2349023262985">(431)123-4867</a>
-            </span>
-          </div> -->
-          <div class="each-reach-out">
-            <span class="key">Email:</span>
-            <span class="value"><a href="mailto:edupath@email.com">edupath@email.com</a></span>
-          </div>
-          <div class="each-reach-out">
-            <span class="key">Whatsapp:</span>
-            <span class="value"><a href="#">(431)123-4867</a></span>
-          </div>
-          <div class="each-reach-out">
-            <span class="key">X:</span>
-            <span class="value"><a href="">@EduPath_real</a></span>
-          </div>
-          <div class="each-reach-out">
-            <span class="key">Facebook:</span>
-            <span class="value"><a href="#">@EduPath</a></span>
-          </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="bg-layer-image">
+          <img
+            src="https://images.pexels.com/photos/7709157/pexels-photo-7709157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+            class="img-fluid"
+          />
         </div>
-        <div class="know-more">
-          <span>Want to know more ?</span>
-          <a href="./about-us.html" class="links">See more about us</a>
+        <div class="hero-content">
+          <h1 class="title">Contact Us</h1>
+          <span>
+            Feel free to reach out to us! We're here to answer any questions you
+            may have for us
+          </span>
         </div>
       </section>
-      <section class="contact-us-section">
-        <h1>Send us a message</h1>
-        <p>
-          Feel free to reach out to us! We're here to answer any questions you
-          may have for us
-        </p>
-        <form action="">
-          <p class="required-fields">All fields are required</p>
-          <div class="form-input">
-            <input type="text" placeholder="John Doe" class="form-control" />
+      <div class="contact-container">
+        <section class="reach-out-points">
+          <h1>Let's Connect</h1>
+          <div class="v-container">
+            <div class="each-reach-out">
+              <span class="key">Address:</span>
+              <span class="value"> 123 Sesame St., MB </span>
+            </div>
+            <div class="each-reach-out">
+              <span class="key">Email:</span>
+              <span class="value"
+                ><a href="mailto:edupath@email.com">edupath@email.com</a></span
+              >
+            </div>
+            <div class="each-reach-out">
+              <span class="key">Whatsapp:</span>
+              <span class="value"><a href="#">(431)123-4867</a></span>
+            </div>
+            <div class="each-reach-out">
+              <span class="key">X:</span>
+              <span class="value"><a href="">@EduPath_real</a></span>
+            </div>
+            <div class="each-reach-out">
+              <span class="key">Facebook:</span>
+              <span class="value"><a href="#">@EduPath</a></span>
+            </div>
           </div>
-          <div class="form-input">
-            <input type="email" placeholder="johndoe@email.com" class="form-control" />
+          <div class="know-more">
+            <span>Want to know more ?</span>
+            <a href="./about-us.html" class="links">See more about us</a>
           </div>
-          <div class="form-input">
-            <input type="text" placeholder="Subject" class="form-control" />
-          </div>
-          <div class="form-input">
-            <textarea placeholder="Your message" class="form-control"></textarea>
-          </div>
-          <div class="form-input">
-            <button type="submit">Send</button>
-          </div>
-        </form>
-      </section>
-    </div>
-  </main>
-  <footer>
-    <div class="container container--flex">
-      <div class="ft-links">
-        <a href="#">
-          <div class="icon-container">
-            <i class="fab fa-facebook-f"></i>
-          </div>
-        </a>
-        <a href="#">
-          <div class="icon-container">
-            <i class="fab fa-instagram"></i>
-          </div>
-        </a>
-        <a href="#">
-          <div class="icon-container">
-            <i class="fab fa-twitter"></i>
-          </div>
-        </a>
-        <a href="#">
-          <div class="icon-container">
-            <i class="fab fa-github"></i>
-          </div>
-        </a>
+        </section>
+        <section class="contact-us-section">
+          <h1>Send us a message</h1>
+          <form action="">
+            <p class="required-fields">All fields are required</p>
+            <div class="form-input">
+              <label>Full Name</label>
+              <input type="text" placeholder="John Doe" class="form-control" />
+            </div>
+            <div class="form-input">
+              <label>Email</label>
+              <input
+                type="email"
+                placeholder="johndoe@email.com"
+                class="form-control"
+              />
+            </div>
+            <div class="form-input">
+              <label>Subject</label>
+              <input
+                type="text"
+                placeholder="Course suggestion"
+                class="form-control"
+              />
+            </div>
+            <div class="form-input">
+              <label>Message</label>
+              <textarea
+                placeholder="Your message"
+                class="form-control"
+              ></textarea>
+            </div>
+            <div class="form-input">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </section>
       </div>
-      <div class="ft-copyright">
-        <p>© 2023 EduPath. All rights reserved.</p>
+    </main>
+    <footer>
+      <div class="container container--flex">
+        <div class="ft-links">
+          <a href="#">
+            <div class="icon-container">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="icon-container">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="icon-container">
+              <i class="fab fa-twitter"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="icon-container">
+              <i class="fab fa-github"></i>
+            </div>
+          </a>
+        </div>
+        <div class="ft-copyright">
+          <p>© 2023 EduPath. All rights reserved.</p>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
