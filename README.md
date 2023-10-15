@@ -2,7 +2,7 @@
 
 # **Edupath**
 
-![Sorry, but something went wrong about loading the image!](assets/img/favicon.png "Edupath Logo")
+![Edupath Logo](assets/img/favicon.png "Edupath Logo")
 
 </div>
 
@@ -11,7 +11,6 @@
 - [**Edupath**](#edupath)
   - [📋 **Table of Contents**](#-table-of-contents)
   - [📖 **Introduction**](#-introduction)
-  - [📚 **What is Edupath?**](#-what-is-edupath)
   - [📑 **Task Objectives**](#-task-objectives)
   - [📌 **Our challenges**](#-our-challenges)
   - [👾 **Code Snippets**](#-code-snippets)
@@ -22,12 +21,7 @@
 
 ## 📖 **Introduction**
 
-Edupath is one project that I worked with my teammates from **MITT**. Me and my teammates are first time students on the field of web development. We are all from different backgrounds
-and new to the field of web development.We are taking the course of **_Software Development_** at **_MITT_**.
-
-## 📚 **What is Edupath?**
-
-EduPath starts as an **_assignment_** for us to to create a website for a **_fake company_**, that we called **Edupath**. The company is a fake company that provides online courses for students. The website is a platform for students to register and enroll in courses.And future steps for me in this project I will add a platform for teachers to create courses and manage their courses. And also to make possible website management for the admin and more features for the students. Additional features with **_JavaScript_** will be added in the future.
+EduPath starts as an **_assignment_** for us to to create a website for a **_fake company_**, that we called **Edupath**. The company is a fake company that provides online courses for students. The website is a platform for students to register and enroll in courses.
 
 ## 📑 **Task Objectives**
 
@@ -183,11 +177,11 @@ There is a lot of code in this project. So I will show you some of the code that
 
   And here is an image of the result of the codes above. The image below is the **_mobile screen size_**. When the screen size reach a certain value we change properties on the navigation bar to hide the **_list of links_** and show the **_hamburger icon_**. And when the **_hamburger icon_** is clicked it will show the **_list of links_**. The **_hamburger icon_** is a **_button_** that when clicked it will show the **_list of links_**.
 
-  ![Sorry, but something went wrong about loading the image!](./assets/img/image-2.png "Dropdown Menu_hamburger_icon")
+  ![DropD-menu](./assets/img/image-2.png "Dropdown Menu")
 
 - ## **_HTML_** and **_CSS_** code for the **_hero-banner_** section of the website
 
-  This section of **_HTML_** is present in all pages of the website. This is the **_hero-banner_** section of the website. This section is the first thing that the user will see when they visit the website. This section is also responsive for different screen sizes. The **_content_** varies for different pages of the website.
+  This section of **_HTML_** is present in all pages of the website. This is the **_hero-banner_** section of the website. This section is the first thing that the user will see when they visit the website.
 
   ```html
   <section class="hero">
@@ -210,13 +204,11 @@ There is a lot of code in this project. So I will show you some of the code that
   </section>
   ```
 
-  This section is a simple example of code where we used simple names to improve **_readability_**.
+  The image below represents the hero-banner section above. This image is responsive for different screen sizes. But we started with the **_desktop first approach_** for the **_media queries_** on this website. So we face a lot of challenges to make this section **_responsive_** on the **_mobile screen sizes_**.
 
-  The image below represents the hero-banner section above. This image is responsive for different screen sizes. But we started with the **_desktop first approach_** for the **_media queries_** on this website. So we face a lot of challenges to make this section **_responsive_** on the **_mobile screen sizes_**. Still need a few more adjustments for this section to be perfectly **_responsive_** and we will do it in the future.
+  ![Home-Hero-Banner](./assets/img/image.png "Home-Hero-Banner")
 
-  ![Sorry, but something went wrong about loading the image!](/assets/img/image.png "Home Page Hero Banner")
-
-  The **_CSS_** code below demonstrate the media queries for the website. To understand media queries in a simple way the **_@media_** rule is used to define different style rules for different media types/devices.
+  The **_CSS_** code below demonstrate the **_media queries_** for the website.The **_media queries_** in a simple way is the **_@media_** rule that is used to define different style rules for different media types/devices.
 
   ```css
   @media (max-width: 900px) {
@@ -336,9 +328,7 @@ There is a lot of code in this project. So I will show you some of the code that
   }
   ```
 
-  The **_CSS_** media queries above still need a few more adjustments for this section to be perfectly **_responsive_** . As you see in the code above we use **_min-width_** and **_max-width_** to make the website **_responsive_** for different screen sizes and as the screen size gets smaller the **_CSS_** code gets more specific to make the sections **_responsive_** for the screen size.
-
-  You can see the css rules making the **_grid elements_** responsive for different screen sizes. Changing the **_grid-template-columns_** to make the **_grid elements_** responsive for different screen sizes until they reach the value of **_1fr_** which means **_1 fraction_** of the available space.
+  As you see in the code above we use **_min-width_** and **_max-width_** to make the website **_responsive_** for different screen sizes and as the screen size gets smaller the **_CSS_** code gets more specific to make the sections **_responsive_** for the screen size.
 
   If you start for the **_mobile first approach_** you will see that the **_CSS_** code will be more simple and you will have less code to make the website **_responsive_** for different screen sizes. But we started with the **_desktop first approach_** and we had to make a lot of changes to make the website **_responsive_** for different screen sizes.
 
@@ -357,31 +347,17 @@ Fell free to explore the website and give us some feedback.
 
 ## 👊 **Challenges**
 
-As I mentioned before we are new to the field of web development. So we had a lot of challenges in this project.
+As I mentioned our challenges were **_communication_** between teammates, **_time management_**, implementing **_new things_** to our design and code, adapting **_media queries_** for different screen sizes and using **_Git_** and **_GitHub_** for the first time.
 
-**_Communication_** between teammates was one of the challenges that we faced in this project. We had to learn how to communicate with each other been international students and from different backgrounds. We had to learn how to communicate with each other to finish the project on time.
-
-**_Time management_** was another challenge that we faced in this project. We had deal with different schedules outside of college and we had to learn how to manage our time to finish the project on time.
-
-**_Implementing new things_** to our design and code was difficult, because leading with codes that we never saw before was a challenge. We had to learn how to implement new things to our design and code to make the website more attractive and functional.
-
-**_Adapting media queries_** for different screen sizes was hard. When you are at the beginning and do not how some properties works, it becomes pretty hard to understand what is going on in every change. We had to learn how to use **_min-width_** and **_max-width_** to make the website responsive for different screen sizes.
-
-**_Git_** and **_GitHub_** at the beginning of the project we had a lot of challenges with them. We had problems with **_merge conflicts_** and **_pull requests_**. But we learned a lot from our mistakes and we are more confident with **_Git_** and **_GitHub_** now.
-
-Those problems with **_merge conflicts_** and **_pull requests_** they happen because we were working on the same files at the same time. So we had to learn how to work with **_branches_** and **_pull requests_** to avoid **_merge conflicts_** and unwanted changes in the code.
-
-We grab videos from **_YouTube_** to learn how to work with **_Git_** and **_GitHub_**. The video is from **_Traversy Media_** and the link is below.
+And the most challenge one was **_Git_** and **_GitHub_**. At the beginning of the project we had a lot of challenges with them. We had problems with **_merge conflicts_** and **_pull requests_** So we grab videos from **_YouTube_** to learn how to work with **_Git_** and **_GitHub_**.
 
 - [Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
-
-And this one is from Coder Coder and the link is below.
 
 - [Git & GitHub Tutorial for Beginners](https://www.youtube.com/watch?v=8Dd7KRpKeaE&t=1s&ab_channel=CoderCoder)
 
 ## 🏗️ **Future Steps**
 
-And here are some of the future steps for this project. Probably I will add more than this in the future.
+And here are some of the future steps for this project.
 
 - [ ] Add a platform for teachers to create courses and manage their courses.
 - [ ] Make possible website management for the admin.
@@ -390,10 +366,10 @@ And here are some of the future steps for this project. Probably I will add more
 
 ## 👨‍💻 **Our Team**
 
-MITT Students envolved in this project:
+Authors of this project:
 
 - [Marcelo Lopes Fernandes](https://github.com/marcelolop)
 - [Stefano Turcarelli](https://github.com/stefanoturcarelli)
 - [Richard](https://github.com/TheNiyiRichard)
 
-  Readme.md file created by [Marcelo Lopes Fernandes](https://github.com/marcelolop)
+  Readme created by [Marcelo Lopes Fernandes](https://github.com/marcelolop)
