@@ -59,11 +59,7 @@ section {
 }
 
 section.hero {
-  height: 500px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100dvh;
 }
 
 section.hero::before {
@@ -151,7 +147,7 @@ div a.links:hover {
 }
 
 .description .description-image {
-  max-height: 34rem;
+  max-height: 30rem;
   border-radius: 1rem;
   display: flex;
   align-items: center;

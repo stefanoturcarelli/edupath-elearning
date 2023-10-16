@@ -9,6 +9,10 @@ main .container {
   margin-inline: auto;
 }
 
+section.hero {
+  height: 50dvh;
+}
+
 .section-container {
   display: flex;
   flex-direction: column;

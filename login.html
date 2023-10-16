@@ -1,86 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Marcelo Lopes, Stena" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="./assets/styles/reset.css" />
-  <link rel="stylesheet" href="./assets/styles/global-rules.css" />
-  <link rel="stylesheet" href="./assets/styles/auth.css" />
-  <link rel="stylesheet" href="./assets/styles/mediaquery.css" />
-  <title>EduPath Login/Sing up</title>
-</head>
-
-<body>
-  <main class="has-auth">
-    <aside class="image-container">
-      <img src="./assets/img/students-image-teacher.jpeg" alt="" class="img-fluid" />
-    </aside>
-    <div class="container">
-      <div class="v-logo-container">
-        <div class="image-container">
-          <img src="./assets/img/favicon.png" alt="" class="img-fluid" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Marcelo Lopes, Adeniyi Adedokun, Stefano Turcarelli"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/global-rules.css" />
+    <link rel="stylesheet" href="./assets/styles/auth.css" />
+    <link rel="stylesheet" href="./assets/styles/mediaquery.css" />
+    <title>EduPath Login/Sing up</title>
+  </head>
+  <body>
+    <main class="has-auth">
+      <aside class="image-container">
+        <img
+          src="./assets/img/students-image-teacher.jpeg"
+          alt=""
+          class="img-fluid"
+        />
+      </aside>
+      <div class="container">
+        <div class="v-logo-container">
+          <div class="image-container">
+            <img src="./assets/img/favicon.png" alt="" class="img-fluid" />
+          </div>
+          <h1 class="v-title">EduPath</h1>
         </div>
-        <h1 class="v-title">EduPath</h1>
+        <section class="auth-section">
+          <form action="">
+            <h1>Login</h1>
+            <div class="form-input">
+              <input type="email" placeholder="Email" class="form-control" />
+            </div>
+            <div class="form-input password">
+              <input
+                type="password"
+                placeholder="Password"
+                class="form-control"
+              />
+              <div class="forgot-pas-link">
+                <a href="#">Forgot your password?</a>
+              </div>
+            </div>
+            <div class="form-input">
+              <button type="submit">Register</button>
+            </div>
+            <div class="alternative-text">
+              <span>
+                <p>Or Login with</p>
+              </span>
+              <div class="social-login">
+                <a href="">
+                  <i class="fab fa-google"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="alternative-text">
+              <span class="flex">
+                <p>Don't have an account?</p>
+                <a href="./register.html">Register</a>
+              </span>
+            </div>
+            <a href="./index.html" class="links">
+              <i class="fas fa-home"></i>
+              Home
+            </a>
+          </form>
+        </section>
       </div>
-      <section class="auth-section">
-        <form action="">
-          <h1>Login</h1>
-          <div class="form-input">
-            <input type="email" placeholder="Email" class="form-control" />
-          </div>
-          <div class="form-input password">
-            <input type="password" placeholder="Password" class="form-control" />
-            <div class="forgot-pas-link">
-              <a href="#">Forgot your password?</a>
-            </div>
-          </div>
-          <div class="form-input">
-            <button type="submit">Register</button>
-          </div>
-          <div class="alternative-text">
-            <span>
-              <p>Or Login with</p>
-            </span>
-            <div class="social-login">
-              <a href="">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="">
-                <i class="fab fa-facebook"></i>
-              </a>
-              <a href="">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="alternative-text">
-            <span class="flex">
-              <p>Don't have an account?</p>
-              <a href="./register.html">Register</a>
-            </span>
-          </div>
-          <a href="./index.html" class="links">
-            <i class="fas fa-home"></i>
-            Home
-          </a>
-        </form>
-      </section>
-    </div>
-  </main>
-</body>
-
+    </main>
+  </body>
 </html>
